@@ -1,0 +1,97 @@
+                   </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_select_splitter.html" class="nav-link ">
+                                        <span class="title">Select Splitter</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_typeahead.html" class="nav-link ">
+                                        <span class="title">Typeahead Autocomplete</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_tagsinput.html" class="nav-link ">
+                                        <span class="title">Bootstrap Tagsinput</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_switch.html" class="nav-link ">
+                                        <span class="title">Bootstrap Switch</span>
+                                        <span class="badge badge-success">6</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_maxlength.html" class="nav-link ">
+                                        <span class="title">Bootstrap Maxlength</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_fileinput.html" class="nav-link ">
+                                        <span class="title">Bootstrap File Input</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_touchspin.html" class="nav-link ">
+                                        <span class="title">Bootstrap Touchspin</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_form_tools.html" class="nav-link ">
+                                        <span class="title">Form Widgets & Tools</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_context_menu.html" class="nav-link ">
+                                        <span class="title">Context Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_editors.html" class="nav-link ">
+                                        <span class="title">Markdown & WYSIWYG Editors</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_code_editors.html" class="nav-link ">
+                                        <span class="title">Code Editors</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_ion_sliders.html" class="nav-link ">
+                                        <span class="title">Ion Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_noui_sliders.html" class="nav-link ">
+                                        <span class="title">NoUI Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_knob_dials.html" class="nav-link ">
+                                        <span class="title">Knob Circle Dials</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">Form Stuff</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="form_controls.html" class="nav-link ">
+                                        <span class="title">Bootstrap Form
+                                            <br>Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_controls_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation.html" class="nav-link ">
+                               

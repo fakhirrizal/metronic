@@ -1,0 +1,1391 @@
+ex;
+        i--;
+
+        var index = this.get2DCursorLocation(i).charIndex,
+            isNewline = index > prevIndex;
+
+        if (isNewline) {
+          this.removeStyleObject(isNewline, i + 1);
+        }
+        else {
+          this.removeStyleObject(this.get2DCursorLocation(i).charIndex === 0, i);
+        }
+
+      }
+
+      this.text = this.text.slice(0, start) +
+                  this.text.slice(end);
+      this._clearCache();
+    },
+
+    /**
+     * Inserts a character where cursor is (replacing selection if one exists)
+     * @param {String} _chars Characters to insert
+     */
+    insertChars: function(_chars, useCopiedStyle) {
+      var isEndOfLine = this.text.slice(this.selectionStart, this.selectionStart + 1) === '\n';
+
+      this.text = this.text.slice(0, this.selectionStart) +
+                    _chars +
+                  this.text.slice(this.selectionEnd);
+
+      if (this.selectionStart === this.selectionEnd) {
+        this.insertStyleObjects(_chars, isEndOfLine, useCopiedStyle);
+      }
+      // else if (this.selectionEnd - this.selectionStart > 1) {
+      // TODO: replace styles properly
+      // console.log('replacing MORE than 1 char');
+      // }
+      this.setSelectionStart(this.selectionStart + _chars.length);
+      this.setSelectionEnd(this.selectionStart);
+      this._clearCache();
+      this.canvas && this.canvas.renderAll();
+
+      this.setCoords();
+      this.fire('changed');
+      this.canvas && this.canvas.fire('text:changed', { target: this });
+    },
+
+    /**
+     * Inserts new style object
+     * @param {Number} lineIndex Index of a line
+     * @param {Number} charIndex Index of a char
+     * @param {Boolean} isEndOfLine True if it's end of line
+     */
+    insertNewlineStyleObject: function(lineIndex, charIndex, isEndOfLine) {
+
+      this.shiftLineStyles(lineIndex, +1);
+
+      if (!this.styles[lineIndex + 1]) {
+        this.styles[lineIndex + 1] = { };
+      }
+
+      var currentCharStyle = this.styles[lineIndex][charIndex - 1],
+          newLineStyles = { };
+
+      // if there's nothing after cursor,
+      // we clone current char style onto the next (otherwise empty) line
+      if (isEndOfLine) {
+        newLineStyles[0] = clone(currentCharStyle);
+        this.styles[lineIndex + 1] = newLineStyles;
+      }
+      // otherwise we clone styles of all chars
+      // after cursor onto the next line, from the beginning
+      else {
+        for (var index in this.styles[lineIndex]) {
+          if (parseInt(index, 10) >= charIndex) {
+            newLineStyles[parseInt(index, 10) - charIndex] = this.styles[lineIndex][index];
+            // remove lines from the previous line since they're on a new line now
+            delete this.styles[lineIndex][index];
+          }
+        }
+        this.styles[lineIndex + 1] = newLineStyles;
+      }
+      this._clearCache();
+    },
+
+    /**
+     * Inserts style object for a given line/char index
+     * @param {Number} lineIndex Index of a line
+     * @param {Number} charIndex Index of a char
+     * @param {Object} [style] Style object to insert, if given
+     */
+    insertCharStyleObject: function(lineIndex, charIndex, style) {
+
+      var currentLineStyles = this.styles[lineIndex],
+          currentLineStylesCloned = clone(currentLineStyles);
+
+      if (charIndex === 0 && !style) {
+        charIndex = 1;
+      }
+
+      // shift all char styles by 1 forward
+      // 0,1,2,3 -> (charIndex=2) -> 0,1,3,4 -> (insert 2) -> 0,1,2,3,4
+      for (var index in currentLineStylesCloned) {
+        var numericIndex = parseInt(index, 10);
+        if (numericIndex >= charIndex) {
+          currentLineStyles[numericIndex + 1] = currentLineStylesCloned[numericIndex];
+          //delete currentLineStyles[index];
+        }
+      }
+
+      this.styles[lineIndex][charIndex] =
+        style || clone(currentLineStyles[charIndex - 1]);
+      this._clearCache();
+    },
+
+    /**
+     * Inserts style object(s)
+     * @param {String} _chars Characters at the location where style is inserted
+     * @param {Boolean} isEndOfLine True if it's end of line
+     * @param {Boolean} [useCopiedStyle] Style to insert
+     */
+    insertStyleObjects: function(_chars, isEndOfLine, useCopiedStyle) {
+      // removed shortcircuit over isEmptyStyles
+
+      var cursorLocation = this.get2DCursorLocation(),
+          lineIndex = cursorLocation.lineIndex,
+          charIndex = cursorLocation.charIndex;
+
+      if (!this.styles[lineIndex]) {
+        this.styles[lineIndex] = { };
+      }
+
+      if (_chars === '\n') {
+        this.insertNewlineStyleObject(lineIndex, charIndex, isEndOfLine);
+      }
+      else {
+        if (useCopiedStyle) {
+          this._insertStyles(this.copiedStyles);
+        }
+        else {
+          // TODO: support multiple style insertion if _chars.length > 1
+          this.insertCharStyleObject(lineIndex, charIndex);
+        }
+      }
+    },
+
+    /**
+     * @private
+     */
+    _insertStyles: function(styles) {
+      for (var i = 0, len = styles.length; i < len; i++) {
+
+        var cursorLocation = this.get2DCursorLocation(this.selectionStart + i),
+            lineIndex = cursorLocation.lineIndex,
+            charIndex = cursorLocation.charIndex;
+
+        this.insertCharStyleObject(lineIndex, charIndex, styles[i]);
+      }
+    },
+
+    /**
+     * Shifts line styles up or down
+     * @param {Number} lineIndex Index of a line
+     * @param {Number} offset Can be -1 or +1
+     */
+    shiftLineStyles: function(lineIndex, offset) {
+      // shift all line styles by 1 upward
+      var clonedStyles = clone(this.styles);
+      for (var line in this.styles) {
+        var numericLine = parseInt(line, 10);
+        if (numericLine > lineIndex) {
+          this.styles[numericLine + offset] = clonedStyles[numericLine];
+        }
+      }
+    },
+
+    /**
+     * Removes style object
+     * @param {Boolean} isBeginningOfLine True if cursor is at the beginning of line
+     * @param {Number} [index] Optional index. When not given, current selectionStart is used.
+     */
+    removeStyleObject: function(isBeginningOfLine, index) {
+
+      var cursorLocation = this.get2DCursorLocation(index),
+          lineIndex = cursorLocation.lineIndex,
+          charIndex = cursorLocation.charIndex;
+
+      if (isBeginningOfLine) {
+
+        var textOnPreviousLine = this._textLines[lineIndex - 1],
+            newCharIndexOnPrevLine = textOnPreviousLine
+              ? textOnPreviousLine.length
+              : 0;
+
+        if (!this.styles[lineIndex - 1]) {
+          this.styles[lineIndex - 1] = { };
+        }
+
+        for (charIndex in this.styles[lineIndex]) {
+          this.styles[lineIndex - 1][parseInt(charIndex, 10) + newCharIndexOnPrevLine]
+            = this.styles[lineIndex][charIndex];
+        }
+
+        this.shiftLineStyles(lineIndex, -1);
+      }
+      else {
+        var currentLineStyles = this.styles[lineIndex];
+
+        if (currentLineStyles) {
+          var offset = this.selectionStart === this.selectionEnd ? -1 : 0;
+          delete currentLineStyles[charIndex + offset];
+          // console.log('deleting', lineIndex, charIndex + offset);
+        }
+
+        var currentLineStylesCloned = clone(currentLineStyles);
+
+        // shift all styles by 1 backwards
+        for (var i in currentLineStylesCloned) {
+          var numericIndex = parseInt(i, 10);
+          if (numericIndex >= charIndex && numericIndex !== 0) {
+            currentLineStyles[numericIndex - 1] = currentLineStylesCloned[numericIndex];
+            delete currentLineStyles[numericIndex];
+          }
+        }
+      }
+    },
+
+    /**
+     * Inserts new line
+     */
+    insertNewline: function() {
+      this.insertChars('\n');
+    }
+  });
+})();
+
+
+fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.prototype */ {
+  /**
+   * Initializes "dbclick" event handler
+   */
+  initDoubleClickSimulation: function() {
+
+    // for double click
+    this.__lastClickTime = +new Date();
+
+    // for triple click
+    this.__lastLastClickTime = +new Date();
+
+    this.__lastPointer = { };
+
+    this.on('mousedown', this.onMouseDown.bind(this));
+  },
+
+  onMouseDown: function(options) {
+
+    this.__newClickTime = +new Date();
+    var newPointer = this.canvas.getPointer(options.e);
+
+    if (this.isTripleClick(newPointer)) {
+      this.fire('tripleclick', options);
+      this._stopEvent(options.e);
+    }
+    else if (this.isDoubleClick(newPointer)) {
+      this.fire('dblclick', options);
+      this._stopEvent(options.e);
+    }
+
+    this.__lastLastClickTime = this.__lastClickTime;
+    this.__lastClickTime = this.__newClickTime;
+    this.__lastPointer = newPointer;
+    this.__lastIsEditing = this.isEditing;
+    this.__lastSelected = this.selected;
+  },
+
+  isDoubleClick: function(newPointer) {
+    return this.__newClickTime - this.__lastClickTime < 500 &&
+        this.__lastPointer.x === newPointer.x &&
+        this.__lastPointer.y === newPointer.y && this.__lastIsEditing;
+  },
+
+  isTripleClick: function(newPointer) {
+    return this.__newClickTime - this.__lastClickTime < 500 &&
+        this.__lastClickTime - this.__lastLastClickTime < 500 &&
+        this.__lastPointer.x === newPointer.x &&
+        this.__lastPointer.y === newPointer.y;
+  },
+
+  /**
+   * @private
+   */
+  _stopEvent: function(e) {
+    e.preventDefault && e.preventDefault();
+    e.stopPropagation && e.stopPropagation();
+  },
+
+  /**
+   * Initializes event handlers related to cursor or selection
+   */
+  initCursorSelectionHandlers: function() {
+    this.initSelectedHandler();
+    this.initMousedownHandler();
+    this.initMouseupHandler();
+    this.initClicks();
+  },
+
+  /**
+   * Initializes double and triple click event handlers
+   */
+  initClicks: function() {
+    this.on('dblclick', function(options) {
+      this.selectWord(this.getSelectionStartFromPointer(options.e));
+    });
+    this.on('tripleclick', function(options) {
+      this.selectLine(this.getSelectionStartFromPointer(options.e));
+    });
+  },
+
+  /**
+   * Initializes "mousedown" event handler
+   */
+  initMousedownHandler: function() {
+    this.on('mousedown', function(options) {
+
+      var pointer = this.canvas.getPointer(options.e);
+
+      this.__mousedownX = pointer.x;
+      this.__mousedownY = pointer.y;
+      this.__isMousedown = true;
+
+      if (this.hiddenTextarea && this.canvas) {
+        this.canvas.wrapperEl.appendChild(this.hiddenTextarea);
+      }
+
+      if (this.selected) {
+        this.setCursorByClick(options.e);
+      }
+
+      if (this.isEditing) {
+        this.__selectionStartOnMouseDown = this.selectionStart;
+        this.initDelayedCursor(true);
+      }
+    });
+  },
+
+  /**
+   * @private
+   */
+  _isObjectMoved: function(e) {
+    var pointer = this.canvas.getPointer(e);
+
+    return this.__mousedownX !== pointer.x ||
+           this.__mousedownY !== pointer.y;
+  },
+
+  /**
+   * Initializes "mouseup" event handler
+   */
+  initMouseupHandler: function() {
+    this.on('mouseup', function(options) {
+      this.__isMousedown = false;
+      if (this._isObjectMoved(options.e)) {
+        return;
+      }
+
+      if (this.__lastSelected) {
+        this.enterEditing();
+        this.initDelayedCursor(true);
+      }
+      this.selected = true;
+    });
+  },
+
+  /**
+   * Changes cursor location in a text depending on passed pointer (x/y) object
+   * @param {Event} e Event object
+   */
+  setCursorByClick: function(e) {
+    var newSelectionStart = this.getSelectionStartFromPointer(e);
+
+    if (e.shiftKey) {
+      if (newSelectionStart < this.selectionStart) {
+        this.setSelectionEnd(this.selectionStart);
+        this.setSelectionStart(newSelectionStart);
+      }
+      else {
+        this.setSelectionEnd(newSelectionStart);
+      }
+    }
+    else {
+      this.setSelectionStart(newSelectionStart);
+      this.setSelectionEnd(newSelectionStart);
+    }
+  },
+
+  /**
+   * @private
+   * @param {Event} e Event object
+   * @return {Object} Coordinates of a pointer (x, y)
+   */
+  _getLocalRotatedPointer: function(e) {
+    var pointer = this.canvas.getPointer(e),
+
+        pClicked = new fabric.Point(pointer.x, pointer.y),
+        pLeftTop = new fabric.Point(this.left, this.top),
+
+        rotated = fabric.util.rotatePoint(
+          pClicked, pLeftTop, fabric.util.degreesToRadians(-this.angle));
+
+    return this.getLocalPointer(e, rotated);
+  },
+
+  /**
+   * Returns index of a character corresponding to where an object was clicked
+   * @param {Event} e Event object
+   * @return {Number} Index of a character
+   */
+  getSelectionStartFromPointer: function(e) {
+    var mouseOffset = this._getLocalRotatedPointer(e),
+        prevWidth = 0,
+        width = 0,
+        height = 0,
+        charIndex = 0,
+        newSelectionStart,
+        line;
+
+    for (var i = 0, len = this._textLines.length; i < len; i++) {
+      line = this._textLines[i].split('');
+      height += this._getHeightOfLine(this.ctx, i) * this.scaleY;
+
+      var widthOfLine = this._getLineWidth(this.ctx, i),
+          lineLeftOffset = this._getLineLeftOffset(widthOfLine);
+
+      width = lineLeftOffset * this.scaleX;
+
+      if (this.flipX) {
+        // when oject is horizontally flipped we reverse chars
+        this._textLines[i] = line.reverse().join('');
+      }
+
+      for (var j = 0, jlen = line.length; j < jlen; j++) {
+
+        var _char = line[j];
+        prevWidth = width;
+
+        width += this._getWidthOfChar(this.ctx, _char, i, this.flipX ? jlen - j : j) *
+                 this.scaleX;
+
+        if (height <= mouseOffset.y || width <= mouseOffset.x) {
+          charIndex++;
+          continue;
+        }
+
+        return this._getNewSelectionStartFromOffset(
+          mouseOffset, prevWidth, width, charIndex + i, jlen);
+      }
+
+      if (mouseOffset.y < height) {
+        return this._getNewSelectionStartFromOffset(
+          mouseOffset, prevWidth, width, charIndex + i, jlen);
+      }
+    }
+
+    // clicked somewhere after all chars, so set at the end
+    if (typeof newSelectionStart === 'undefined') {
+      return this.text.length;
+    }
+  },
+
+  /**
+   * @private
+   */
+  _getNewSelectionStartFromOffset: function(mouseOffset, prevWidth, width, index, jlen) {
+
+    var distanceBtwLastCharAndCursor = mouseOffset.x - prevWidth,
+        distanceBtwNextCharAndCursor = width - mouseOffset.x,
+        offset = distanceBtwNextCharAndCursor > distanceBtwLastCharAndCursor ? 0 : 1,
+        newSelectionStart = index + offset;
+
+    // if object is horizontally flipped, mirror cursor location from the end
+    if (this.flipX) {
+      newSelectionStart = jlen - newSelectionStart;
+    }
+
+    if (newSelectionStart > this.text.length) {
+      newSelectionStart = this.text.length;
+    }
+
+    return newSelectionStart;
+  }
+});
+
+
+fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.prototype */ {
+
+  /**
+   * Initializes hidden textarea (needed to bring up keyboard in iOS)
+   */
+  initHiddenTextarea: function() {
+    this.hiddenTextarea = fabric.document.createElement('textarea');
+
+    this.hiddenTextarea.setAttribute('autocapitalize', 'off');
+    this.hiddenTextarea.style.cssText = 'position: fixed; bottom: 20px; left: 0px; opacity: 0;'
+                                        + ' width: 0px; height: 0px; z-index: -999;';
+    fabric.document.body.appendChild(this.hiddenTextarea);
+
+    fabric.util.addListener(this.hiddenTextarea, 'keydown', this.onKeyDown.bind(this));
+    fabric.util.addListener(this.hiddenTextarea, 'keypress', this.onKeyPress.bind(this));
+    fabric.util.addListener(this.hiddenTextarea, 'copy', this.copy.bind(this));
+    fabric.util.addListener(this.hiddenTextarea, 'paste', this.paste.bind(this));
+
+    if (!this._clickHandlerInitialized && this.canvas) {
+      fabric.util.addListener(this.canvas.upperCanvasEl, 'click', this.onClick.bind(this));
+      this._clickHandlerInitialized = true;
+    }
+  },
+
+  /**
+   * @private
+   */
+  _keysMap: {
+    8:  'removeChars',
+    9:  'exitEditing',
+    27: 'exitEditing',
+    13: 'insertNewline',
+    33: 'moveCursorUp',
+    34: 'moveCursorDown',
+    35: 'moveCursorRight',
+    36: 'moveCursorLeft',
+    37: 'moveCursorLeft',
+    38: 'moveCursorUp',
+    39: 'moveCursorRight',
+    40: 'moveCursorDown',
+    46: 'forwardDelete'
+  },
+
+  /**
+   * @private
+   */
+  _ctrlKeysMap: {
+    65: 'selectAll',
+    88: 'cut'
+  },
+
+  onClick: function() {
+    // No need to trigger click event here, focus is enough to have the keyboard appear on Android
+    this.hiddenTextarea && this.hiddenTextarea.focus();
+  },
+
+  /**
+   * Handles keyup event
+   * @param {Event} e Event object
+   */
+  onKeyDown: function(e) {
+    if (!this.isEditing) {
+      return;
+    }
+    if (e.keyCode in this._keysMap) {
+      this[this._keysMap[e.keyCode]](e);
+    }
+    else if ((e.keyCode in this._ctrlKeysMap) && (e.ctrlKey || e.metaKey)) {
+      this[this._ctrlKeysMap[e.keyCode]](e);
+    }
+    else {
+      return;
+    }
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    this.canvas && this.canvas.renderAll();
+  },
+
+  /**
+   * Forward delete
+   */
+  forwardDelete: function(e) {
+    if (this.selectionStart === this.selectionEnd) {
+      this.moveCursorRight(e);
+    }
+    this.removeChars(e);
+  },
+
+  /**
+   * Copies selected text
+   * @param {Event} e Event object
+   */
+  copy: function(e) {
+    var selectedText = this.getSelectedText(),
+        clipboardData = this._getClipboardData(e);
+
+    // Check for backward compatibility with old browsers
+    if (clipboardData) {
+      clipboardData.setData('text', selectedText);
+    }
+
+    this.copiedText = selectedText;
+    this.copiedStyles = this.getSelectionStyles(
+                          this.selectionStart,
+                          this.selectionEnd);
+  },
+
+  /**
+   * Pastes text
+   * @param {Event} e Event object
+   */
+  paste: function(e) {
+    var copiedText = null,
+        clipboardData = this._getClipboardData(e);
+
+    // Check for backward compatibility with old browsers
+    if (clipboardData) {
+      copiedText = clipboardData.getData('text');
+    }
+    else {
+      copiedText = this.copiedText;
+    }
+
+    if (copiedText) {
+      this.insertChars(copiedText, true);
+    }
+  },
+
+  /**
+   * Cuts text
+   * @param {Event} e Event object
+   */
+  cut: function(e) {
+    if (this.selectionStart === this.selectionEnd) {
+      return;
+    }
+
+    this.copy();
+    this.removeChars(e);
+  },
+
+  /**
+   * @private
+   * @param {Event} e Event object
+   * @return {Object} Clipboard data object
+   */
+  _getClipboardData: function(e) {
+    return e && (e.clipboardData || fabric.window.clipboardData);
+  },
+
+  /**
+   * Handles keypress event
+   * @param {Event} e Event object
+   */
+  onKeyPress: function(e) {
+    if (!this.isEditing || e.metaKey || e.ctrlKey) {
+      return;
+    }
+    if (e.which !== 0) {
+      this.insertChars(String.fromCharCode(e.which));
+    }
+    e.stopPropagation();
+  },
+
+  /**
+   * Gets start offset of a selection
+   * @param {Event} e Event object
+   * @param {Boolean} isRight
+   * @return {Number}
+   */
+  getDownCursorOffset: function(e, isRight) {
+    var selectionProp = isRight ? this.selectionEnd : this.selectionStart,
+        _char, lineLeftOffset,
+        textBeforeCursor = this.text.slice(0, selectionProp),
+        textAfterCursor = this.text.slice(selectionProp),
+
+        textOnSameLineBeforeCursor = textBeforeCursor.slice(textBeforeCursor.lastIndexOf('\n') + 1),
+        textOnSameLineAfterCursor = textAfterCursor.match(/(.*)\n?/)[1],
+        textOnNextLine = (textAfterCursor.match(/.*\n(.*)\n?/) || { })[1] || '',
+
+        cursorLocation = this.get2DCursorLocation(selectionProp);
+
+    // if on last line, down cursor goes to end of line
+    if (cursorLocation.lineIndex === this._textLines.length - 1 || e.metaKey || e.keyCode === 34) {
+
+      // move to the end of a text
+      return this.text.length - selectionProp;
+    }
+
+    var widthOfSameLineBeforeCursor = this._getLineWidth(this.ctx, cursorLocation.lineIndex);
+    lineLeftOffset = this._getLineLeftOffset(widthOfSameLineBeforeCursor);
+
+    var widthOfCharsOnSameLineBeforeCursor = lineLeftOffset,
+        lineIndex = cursorLocation.lineIndex;
+
+    for (var i = 0, len = textOnSameLineBeforeCursor.length; i < len; i++) {
+      _char = textOnSameLineBeforeCursor[i];
+      widthOfCharsOnSameLineBeforeCursor += this._getWidthOfChar(this.ctx, _char, lineIndex, i);
+    }
+
+    var indexOnNextLine = this._getIndexOnNextLine(
+      cursorLocation, textOnNextLine, widthOfCharsOnSameLineBeforeCursor);
+
+    return textOnSameLineAfterCursor.length + 1 + indexOnNextLine;
+  },
+
+  /**
+   * @private
+   */
+  _getIndexOnNextLine: function(cursorLocation, textOnNextLine, widthOfCharsOnSameLineBeforeCursor) {
+    var lineIndex = cursorLocation.lineIndex + 1,
+        widthOfNextLine = this._getLineWidth(this.ctx, lineIndex),
+        lineLeftOffset = this._getLineLeftOffset(widthOfNextLine),
+        widthOfCharsOnNextLine = lineLeftOffset,
+        indexOnNextLine = 0,
+        foundMatch;
+
+    for (var j = 0, jlen = textOnNextLine.length; j < jlen; j++) {
+
+      var _char = textOnNextLine[j],
+          widthOfChar = this._getWidthOfChar(this.ctx, _char, lineIndex, j);
+
+      widthOfCharsOnNextLine += widthOfChar;
+
+      if (widthOfCharsOnNextLine > widthOfCharsOnSameLineBeforeCursor) {
+
+        foundMatch = true;
+
+        var leftEdge = widthOfCharsOnNextLine - widthOfChar,
+            rightEdge = widthOfCharsOnNextLine,
+            offsetFromLeftEdge = Math.abs(leftEdge - widthOfCharsOnSameLineBeforeCursor),
+            offsetFromRightEdge = Math.abs(rightEdge - widthOfCharsOnSameLineBeforeCursor);
+
+        indexOnNextLine = offsetFromRightEdge < offsetFromLeftEdge ? j + 1 : j;
+
+        break;
+      }
+    }
+
+    // reached end
+    if (!foundMatch) {
+      indexOnNextLine = textOnNextLine.length;
+    }
+
+    return indexOnNextLine;
+  },
+
+  /**
+   * Moves cursor down
+   * @param {Event} e Event object
+   */
+  moveCursorDown: function(e) {
+    this.abortCursorAnimation();
+    this._currentCursorOpacity = 1;
+
+    var offset = this.getDownCursorOffset(e, this._selectionDirection === 'right');
+
+    if (e.shiftKey) {
+      this.moveCursorDownWithShift(offset);
+    }
+    else {
+      this.moveCursorDownWithoutShift(offset);
+    }
+
+    this.initDelayedCursor();
+  },
+
+  /**
+   * Moves cursor down without keeping selection
+   * @param {Number} offset
+   */
+  moveCursorDownWithoutShift: function(offset) {
+    this._selectionDirection = 'right';
+    this.setSelectionStart(this.selectionStart + offset);
+    this.setSelectionEnd(this.selectionStart);
+  },
+
+  /**
+   * private
+   */
+  swapSelectionPoints: function() {
+    var swapSel = this.selectionEnd;
+    this.setSelectionEnd(this.selectionStart);
+    this.setSelectionStart(swapSel);
+  },
+
+  /**
+   * Moves cursor down while keeping selection
+   * @param {Number} offset
+   */
+  moveCursorDownWithShift: function(offset) {
+    if (this.selectionEnd === this.selectionStart) {
+      this._selectionDirection = 'right';
+    }
+    if (this._selectionDirection === 'right') {
+      this.setSelectionEnd(this.selectionEnd + offset);
+    }
+    else {
+      this.setSelectionStart(this.selectionStart + offset);
+    }
+    if (this.selectionEnd < this.selectionStart  && this._selectionDirection === 'left') {
+      this.swapSelectionPoints();
+      this._selectionDirection = 'right';
+    }
+    if (this.selectionEnd > this.text.length) {
+      this.setSelectionEnd(this.text.length);
+    }
+  },
+
+  /**
+   * @param {Event} e Event object
+   * @param {Boolean} isRight
+   * @return {Number}
+   */
+  getUpCursorOffset: function(e, isRight) {
+    var selectionProp = isRight ? this.selectionEnd : this.selectionStart,
+        cursorLocation = this.get2DCursorLocation(selectionProp);
+    // if on first line, up cursor goes to start of line
+    if (cursorLocation.lineIndex === 0 || e.metaKey || e.keyCode === 33) {
+      return selectionProp;
+    }
+
+    var textBeforeCursor = this.text.slice(0, selectionProp),
+        textOnSameLineBeforeCursor = textBeforeCursor.slice(textBeforeCursor.lastIndexOf('\n') + 1),
+        textOnPreviousLine = (textBeforeCursor.match(/\n?(.*)\n.*$/) || {})[1] || '',
+        _char,
+        widthOfSameLineBeforeCursor = this._getLineWidth(this.ctx, cursorLocation.lineIndex),
+        lineLeftOffset = this._getLineLeftOffset(widthOfSameLineBeforeCursor),
+        widthOfCharsOnSameLineBeforeCursor = lineLeftOffset,
+        lineIndex = cursorLocation.lineIndex;
+
+    for (var i = 0, len = textOnSameLineBeforeCursor.length; i < len; i++) {
+      _char = textOnSameLineBeforeCursor[i];
+      widthOfCharsOnSameLineBeforeCursor += this._getWidthOfChar(this.ctx, _char, lineIndex, i);
+    }
+
+    var indexOnPrevLine = this._getIndexOnPrevLine(
+      cursorLocation, textOnPreviousLine, widthOfCharsOnSameLineBeforeCursor);
+
+    return textOnPreviousLine.length - indexOnPrevLine + textOnSameLineBeforeCursor.length;
+  },
+
+  /**
+   * @private
+   */
+  _getIndexOnPrevLine: function(cursorLocation, textOnPreviousLine, widthOfCharsOnSameLineBeforeCursor) {
+
+    var lineIndex = cursorLocation.lineIndex - 1,
+        widthOfPreviousLine = this._getLineWidth(this.ctx, lineIndex),
+        lineLeftOffset = this._getLineLeftOffset(widthOfPreviousLine),
+        widthOfCharsOnPreviousLine = lineLeftOffset,
+        indexOnPrevLine = 0,
+        foundMatch;
+
+    for (var j = 0, jlen = textOnPreviousLine.length; j < jlen; j++) {
+
+      var _char = textOnPreviousLine[j],
+          widthOfChar = this._getWidthOfChar(this.ctx, _char, lineIndex, j);
+
+      widthOfCharsOnPreviousLine += widthOfChar;
+
+      if (widthOfCharsOnPreviousLine > widthOfCharsOnSameLineBeforeCursor) {
+
+        foundMatch = true;
+
+        var leftEdge = widthOfCharsOnPreviousLine - widthOfChar,
+            rightEdge = widthOfCharsOnPreviousLine,
+            offsetFromLeftEdge = Math.abs(leftEdge - widthOfCharsOnSameLineBeforeCursor),
+            offsetFromRightEdge = Math.abs(rightEdge - widthOfCharsOnSameLineBeforeCursor);
+
+        indexOnPrevLine = offsetFromRightEdge < offsetFromLeftEdge ? j : (j - 1);
+
+        break;
+      }
+    }
+
+    // reached end
+    if (!foundMatch) {
+      indexOnPrevLine = textOnPreviousLine.length - 1;
+    }
+
+    return indexOnPrevLine;
+  },
+
+  /**
+   * Moves cursor up
+   * @param {Event} e Event object
+   */
+  moveCursorUp: function(e) {
+
+    this.abortCursorAnimation();
+    this._currentCursorOpacity = 1;
+
+    var offset = this.getUpCursorOffset(e, this._selectionDirection === 'right');
+    if (e.shiftKey) {
+      this.moveCursorUpWithShift(offset);
+    }
+    else {
+      this.moveCursorUpWithoutShift(offset);
+    }
+
+    this.initDelayedCursor();
+  },
+
+  /**
+   * Moves cursor up with shift
+   * @param {Number} offset
+   */
+  moveCursorUpWithShift: function(offset) {
+    if (this.selectionEnd === this.selectionStart) {
+      this._selectionDirection = 'left';
+    }
+    if (this._selectionDirection === 'right') {
+      this.setSelectionEnd(this.selectionEnd - offset);
+    }
+    else {
+      this.setSelectionStart(this.selectionStart - offset);
+    }
+    if (this.selectionEnd < this.selectionStart && this._selectionDirection === 'right') {
+      this.swapSelectionPoints();
+      this._selectionDirection = 'left';
+    }
+  },
+
+  /**
+   * Moves cursor up without shift
+   * @param {Number} offset
+   */
+  moveCursorUpWithoutShift: function(offset) {
+    if (this.selectionStart === this.selectionEnd) {
+      this.setSelectionStart(this.selectionStart - offset);
+    }
+    this.setSelectionEnd(this.selectionStart);
+
+    this._selectionDirection = 'left';
+  },
+
+  /**
+   * Moves cursor left
+   * @param {Event} e Event object
+   */
+  moveCursorLeft: function(e) {
+    if (this.selectionStart === 0 && this.selectionEnd === 0) {
+      return;
+    }
+
+    this.abortCursorAnimation();
+    this._currentCursorOpacity = 1;
+
+    if (e.shiftKey) {
+      this.moveCursorLeftWithShift(e);
+    }
+    else {
+      this.moveCursorLeftWithoutShift(e);
+    }
+
+    this.initDelayedCursor();
+  },
+
+  /**
+   * @private
+   */
+  _move: function(e, prop, direction) {
+    var propMethod = (prop === 'selectionStart' ? 'setSelectionStart' : 'setSelectionEnd');
+    if (e.altKey) {
+      this[propMethod](this['findWordBoundary' + direction](this[prop]));
+    }
+    else if (e.metaKey || e.keyCode === 35 ||  e.keyCode === 36 ) {
+      this[propMethod](this['findLineBoundary' + direction](this[prop]));
+    }
+    else {
+      this[propMethod](this[prop] + (direction === 'Left' ? -1 : 1));
+    }
+  },
+
+  /**
+   * @private
+   */
+  _moveLeft: function(e, prop) {
+    this._move(e, prop, 'Left');
+  },
+
+  /**
+   * @private
+   */
+  _moveRight: function(e, prop) {
+    this._move(e, prop, 'Right');
+  },
+
+  /**
+   * Moves cursor left without keeping selection
+   * @param {Event} e
+   */
+  moveCursorLeftWithoutShift: function(e) {
+    this._selectight: 0;
+  left: 0; }
+
+/* week and day number styling */
+.fc-day-top.fc-other-month {
+  opacity: 0.3; }
+
+.fc-dayGrid-view .fc-week-number,
+.fc-dayGrid-view .fc-day-number {
+  padding: 2px; }
+
+.fc-dayGrid-view th.fc-week-number,
+.fc-dayGrid-view th.fc-day-number {
+  padding: 0 2px;
+  /* column headers can't have as much v space */ }
+
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+  float: left; }
+
+.fc-rtl .fc-dayGrid-view .fc-day-top .fc-day-number {
+  float: right; }
+
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-week-number {
+  float: right;
+  border-radius: 0 0 0 3px; }
+
+.fc-rtl .fc-dayGrid-view .fc-day-top .fc-week-number {
+  float: left;
+  border-radius: 0 0 3px 0; }
+
+.fc-dayGrid-view .fc-day-top .fc-week-number {
+  min-width: 1.5em;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #808080; }
+
+/* when week/day number have own column */
+.fc-dayGrid-view td.fc-week-number {
+  text-align: center; }
+
+.fc-dayGrid-view td.fc-week-number > * {
+  /* work around the way we do column resizing and ensure a minimum width */
+  display: inline-block;
+  min-width: 1.25em; }
+
+/* List View
+--------------------------------------------------------------------------------------------------*/
+/* possibly reusable */
+.fc-event-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px; }
+
+/* view wrapper */
+.fc-rtl .fc-list-view {
+  direction: ltr;
+  /* unlike core views, leverage browser RTL */ }
+
+.fc-list-view {
+  border-width: 1px;
+  border-style: solid; }
+
+/* table resets */
+.fc .fc-list-table {
+  table-layout: auto;
+  /* for shrinkwrapping cell content */ }
+
+.fc-list-table td {
+  border-width: 1px 0 0;
+  padding: 8px 14px; }
+
+.fc-list-table tr:first-child td {
+  border-top-width: 0; }
+
+/* day headings with the list */
+.fc-list-heading {
+  border-bottom-width: 1px; }
+
+.fc-list-heading td {
+  font-weight: bold; }
+
+.fc-ltr .fc-list-heading-main {
+  float: right; }
+
+.fc-ltr .fc-list-heading-alt {
+  float: left; }
+
+.fc-rtl .fc-list-heading-main {
+  float: left; }
+
+.fc-rtl .fc-list-heading-alt {
+  float: right; }
+
+/* event list items */
+.fc-list-item.fc-has-url {
+  cursor: pointer;
+  /* whole row will be clickable */ }
+
+.fc-list-item-marker,
+.fc-list-item-time {
+  white-space: nowrap;
+  width: 1px; }
+
+/* make the dot closer to the event title */
+.fc-ltr .fc-list-item-marker {
+  padding-left: 0; }
+
+.fc-rtl .fc-list-item-marker {
+  padding-right: 0; }
+
+.fc-list-item-title a {
+  /* every event title cell has an <a> tag */
+  text-decoration: none;
+  color: inherit; }
+
+.fc-list-item-title a[href]:hover {
+  /* hover effect only on titles with hrefs */
+  text-decoration: underline; }
+
+/* message when no events */
+.fc-list-empty-wrap2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+.fc-list-empty-wrap1 {
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.fc-list-empty {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.fc-unthemed .fc-list-empty {
+  /* theme will provide own background */
+  background-color: #eee; }
+
+/* TimeGridView all-day area
+--------------------------------------------------------------------------------------------------*/
+.fc-timeGrid-view .fc-day-grid {
+  position: relative;
+  z-index: 2;
+  /* so the "more.." popover will be over the time grid */ }
+
+.fc-timeGrid-view .fc-day-grid .fc-row {
+  min-height: 3em;
+  /* all-day section will never get shorter than this */ }
+
+.fc-timeGrid-view .fc-day-grid .fc-row .fc-content-skeleton {
+  padding-bottom: 1em;
+  /* give space underneath events for clicking/selecting days */ }
+
+/* TimeGrid axis running down the side (for both the all-day area and the slot area)
+--------------------------------------------------------------------------------------------------*/
+.fc .fc-axis {
+  /* .fc to overcome default cell styles */
+  vertical-align: middle;
+  padding: 0 4px;
+  white-space: nowrap; }
+
+.fc-ltr .fc-axis {
+  text-align: left; }
+
+.fc-rtl .fc-axis {
+  text-align: right; }
+
+/* TimeGrid Structure
+--------------------------------------------------------------------------------------------------*/
+.fc-time-grid-container,
+.fc-time-grid {
+  /* so slats/bg/content/etc positions get scoped within here */
+  position: relative;
+  z-index: 1; }
+
+.fc-time-grid {
+  min-height: 100%;
+  /* so if height setting is 'auto', .fc-bg stretches to fill height */ }
+
+.fc-time-grid table {
+  /* don't put outer borders on slats/bg/content/etc */
+  border: 0 hidden transparent; }
+
+.fc-time-grid > .fc-bg {
+  z-index: 1; }
+
+.fc-time-grid .fc-slats,
+.fc-time-grid > hr {
+  /* the <hr> TimeGridView injects when grid is shorter than scroller */
+  position: relative;
+  z-index: 2; }
+
+.fc-time-grid .fc-content-col {
+  position: relative;
+  /* because now-indicator lives directly inside */ }
+
+.fc-time-grid .fc-content-skeleton {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0; }
+
+/* divs within a cell within the fc-content-skeleton */
+.fc-time-grid .fc-business-container {
+  position: relative;
+  z-index: 1; }
+
+.fc-time-grid .fc-bgevent-container {
+  position: relative;
+  z-index: 2; }
+
+.fc-time-grid .fc-highlight-container {
+  position: relative;
+  z-index: 3; }
+
+.fc-time-grid .fc-event-container {
+  position: relative;
+  z-index: 4; }
+
+.fc-time-grid .fc-now-indicator-line {
+  z-index: 5; }
+
+.fc-time-grid .fc-mirror-container {
+  /* also is fc-event-container */
+  position: relative;
+  z-index: 6; }
+
+/* TimeGrid Slats (lines that run horizontally)
+--------------------------------------------------------------------------------------------------*/
+.fc-time-grid .fc-slats td {
+  height: 1.5em;
+  border-bottom: 0;
+  /* each cell is responsible for its top border */ }
+
+.fc-time-grid .fc-slats .fc-minor td {
+  border-top-style: dotted; }
+
+/* TimeGrid Highlighting Slots
+--------------------------------------------------------------------------------------------------*/
+.fc-time-grid .fc-highlight-container {
+  /* a div within a cell within the fc-highlight-skeleton */
+  position: relative;
+  /* scopes the left/right of the fc-highlight to be in the column */ }
+
+.fc-time-grid .fc-highlight {
+  position: absolute;
+  right: 0;
+  left: 0;
+  /* top and bottom will be in by JS */ }
+
+/* TimeGrid Event Containment
+--------------------------------------------------------------------------------------------------*/
+.fc-ltr .fc-time-grid .fc-event-container {
+  /* space on the sides of events for LTR (default) */
+  margin: 0 2px 0 2.5%; }
+
+.fc-rtl .fc-time-grid .fc-event-container {
+  /* space on the sides of events for RTL */
+  margin: 0 2.5% 0 2px; }
+
+.fc-time-grid .fc-event,
+.fc-time-grid .fc-bgevent {
+  position: absolute;
+  z-index: 1;
+  /* scope inner z-index's */ }
+
+.fc-time-grid .fc-bgevent {
+  /* background events always span full width */
+  right: 0;
+  left: 0; }
+
+/* TimeGrid Event Styling
+----------------------------------------------------------------------------------------------------
+We use the full "fc-time-grid-event" class instead of using descendants because the event won't
+be a descendant of the grid when it is being dragged.
+*/
+.fc-time-grid-event {
+  margin-bottom: 1px; }
+
+.fc-time-grid-event-inset {
+  -webkit-box-shadow: 0px 0px 0px 1px #fff;
+  box-shadow: 0px 0px 0px 1px #fff; }
+
+.fc-time-grid-event.fc-not-start {
+  /* events that are continuing from another day */
+  /* replace space made by the top border with padding */
+  border-top-width: 0;
+  padding-top: 1px;
+  /* remove top rounded corners */
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+.fc-time-grid-event.fc-not-end {
+  /* replace space made by the top border with padding */
+  border-bottom-width: 0;
+  padding-bottom: 1px;
+  /* remove bottom rounded corners */
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.fc-time-grid-event .fc-content {
+  overflow: hidden;
+  max-height: 100%; }
+
+.fc-time-grid-event .fc-time,
+.fc-time-grid-event .fc-title {
+  padding: 0 1px; }
+
+.fc-time-grid-event .fc-time {
+  font-size: 0.85em;
+  white-space: nowrap; }
+
+/* short mode, where time and title are on the same line */
+.fc-time-grid-event.fc-short .fc-content {
+  /* don't wrap to second line (now that contents will be inline) */
+  white-space: nowrap; }
+
+.fc-time-grid-event.fc-short .fc-time,
+.fc-time-grid-event.fc-short .fc-title {
+  /* put the time and title on the same line */
+  display: inline-block;
+  vertical-align: top; }
+
+.fc-time-grid-event.fc-short .fc-time span {
+  display: none;
+  /* don't display the full time text... */ }
+
+.fc-time-grid-event.fc-short .fc-time:before {
+  content: attr(data-start);
+  /* ...instead, display only the start time */ }
+
+.fc-time-grid-event.fc-short .fc-time:after {
+  content: " - ";
+  /* seperate with a dash, wrapped in nbsp's */ }
+
+.fc-time-grid-event.fc-short .fc-title {
+  font-size: 0.85em;
+  /* make the title text the same size as the time */
+  padding: 0;
+  /* undo padding from above */ }
+
+/* resizer (cursor device) */
+.fc-time-grid-event.fc-allow-mouse-resize .fc-resizer {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 8px;
+  overflow: hidden;
+  line-height: 8px;
+  font-size: 11px;
+  font-family: monospace;
+  text-align: center;
+  cursor: s-resize; }
+
+.fc-time-grid-event.fc-allow-mouse-resize .fc-resizer:after {
+  content: "="; }
+
+/* resizer (touch device) */
+.fc-time-grid-event.fc-selected .fc-resizer {
+  /* 10x10 dot */
+  border-radius: 5px;
+  border-width: 1px;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-color: inherit;
+  background: #fff;
+  /* horizontally center */
+  right: 50%;
+  margin-right: -5px;
+  /* center on the bottom edge */
+  bottom: -5px; }
+
+/* Now Indicator
+--------------------------------------------------------------------------------------------------*/
+.fc-time-grid .fc-now-indicator-line {
+  border-top-width: 1px;
+  right: 0;
+  left: 0; }
+
+/* arrow on axis */
+.fc-time-grid .fc-now-indicator-arrow {
+  margin-top: -5px;
+  /* vertically center on top coordinate */ }
+
+.fc-ltr .fc-time-grid .fc-now-indicator-arrow {
+  right: 0;
+  /* triangle pointing right... */
+  border-width: 5px 6px 5px 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent; }
+
+.fc-rtl .fc-time-grid .fc-now-indicator-arrow {
+  left: 0;
+  /* triangle pointing left... */
+  border-width: 5px 0 5px 6px;
+  border-top-color: transparent;
+  border-bottom-color: transparent; }

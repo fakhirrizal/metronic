@@ -1,0 +1,322 @@
+                                                                             <a href="javascript:;" class="btn btn-lg yellow"> Yellow
+                                                                                    <i class="icon-anchor"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg purple">
+                                                                                    <i class="icon-bell"> </i> Purple </a>
+                                                                                <a href="javascript:;" class="btn btn-lg green"> Green
+                                                                                    <i class="icon-present"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg grey-cascade"> Dark
+                                                                                    <i class="icon-pin"> </i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Default Buttons</h4>
+                                                                                <a href="javascript:;" class="btn default"> Default
+                                                                                    <i class="icon-social-dribbble"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn red"> Red
+                                                                                    <i class="icon-crop"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn blue">
+                                                                                    <i class="icon-screen-desktop"> </i> Blue </a>
+                                                                                <a href="javascript:;" class="btn green"> Green
+                                                                                    <i class="icon-badge"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn yellow"> Yellow
+                                                                                    <i class="icon-anchor"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn purple">
+                                                                                    <i class="icon-bell"> </i> Purple </a>
+                                                                                <a href="javascript:;" class="btn green"> Green
+                                                                                    <i class="icon-present"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn grey-cascade"> Dark
+                                                                                    <i class="icon-pin"> </i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Small Buttons</h4>
+                                                                                <a href="javascript:;" class="btn btn-sm default"> Default
+                                                                                    <i class="icon-social-dribbble"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-sm red"> Red
+                                                                                    <i class="icon-crop"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-sm blue">
+                                                                                    <i class="icon-screen-desktop"> </i> Blue </a>
+                                                                                <a href="javascript:;" class="btn btn-sm green"> Green
+                                                                                    <i class="icon-badge"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-sm yellow"> Yellow
+                                                                                    <i class="icon-anchor"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-sm purple">
+                                                                                    <i class="icon-bell"> </i> Purple </a>
+                                                                                <a href="javascript:;" class="btn btn-sm green"> Green
+                                                                                    <i class="icon-present"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-sm grey-cascade"> Dark
+                                                                                    <i class="icon-pin"> </i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Extra Small Buttons</h4>
+                                                                                <a href="javascript:;" class="btn btn-sm default"> Default
+                                                                                    <i class="icon-social-dribbble"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-xs red"> Red
+                                                                                    <i class="icon-crop"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-xs blue">
+                                                                                    <i class="icon-screen-desktop"> </i> Blue </a>
+                                                                                <a href="javascript:;" class="btn btn-xs green"> Green
+                                                                                    <i class="icon-badge"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-xs yellow"> Yellow
+                                                                                    <i class="icon-anchor"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-xs purple">
+                                                                                    <i class="icon-bell"> </i> Purple </a>
+                                                                                <a href="javascript:;" class="btn btn-xs green"> Green
+                                                                                    <i class="icon-present"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-xs grey-cascade"> Dark
+                                                                                    <i class="icon-pin"> </i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Icon Only Buttons</h4>
+                                                                                <a href="javascript:;" class="btn btn-icon-only default">
+                                                                                    <i class="icon-social-dribbble"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only red">
+                                                                                    <i class="icon-crop"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only blue">
+                                                                                    <i class="icon-screen-desktop"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only green">
+                                                                                    <i class="icon-badge"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only yellow">
+                                                                                    <i class="icon-anchor"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only purple">
+                                                                                    <i class="icon-bell"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only green">
+                                                                                    <i class="icon-present"> </i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-icon-only grey-cascade">
+                                                                                    <i class="icon-pin"> </i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-pane " id="buttons_metro">
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Navigation Large Icons Buttons</h4>
+                                                                                <a href="javascript:;" class="btn btn-lg default m-icon-big"> Submit
+                                                                                    <i class="m-icon-big-swapleft"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg green m-icon-big"> Submit
+                                                                                    <i class="m-icon-big-swapright m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg blue m-icon-big"> Submit
+                                                                                    <i class="m-icon-big-swapdown m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg dark m-icon-big"> Submit
+                                                                                    <i class="m-icon-big-swapup m-icon-white"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Navigation Large Icons Only Buttons</h4>
+                                                                                <a href="javascript:;" class="btn btn-lg default m-icon-big m-icon-only">
+                                                                                    <i class="m-icon-big-swapleft"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg green m-icon-big m-icon-only">
+                                                                                    <i class="m-icon-big-swapright m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg blue m-icon-big m-icon-only">
+                                                                                    <i class="m-icon-big-swapdown m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-lg dark m-icon-big m-icon-only">
+                                                                                    <i class="m-icon-big-swapup m-icon-white"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Navigation Block Large Icons</h4>
+                                                                                <button class="btn blue btn-block btn-lg m-icon-big">Button
+                                                                                    <i class="m-icon-big-swapright m-icon-white"></i>
+                                                                                </button>
+                                                                                <a href="javascript:;" class="btn green btn-block btn-lg m-icon-big"> Link
+                                                                                    <i class="m-icon-big-swapright m-icon-white"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Navigation Defualt Icons Buttons</h4>
+                                                                                <a href="javascript:;" class="btn default m-icon"> Submit
+                                                                                    <i class="m-icon-swapleft"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn green m-icon"> Submit
+                                                                                    <i class="m-icon-swapright m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn blue m-icon"> Submit
+                                                                                    <i class="m-icon-swapdown m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn dark m-icon"> Submit
+                                                                                    <i class="m-icon-swapup m-icon-white"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Navigation Defualt Icons Only Buttons</h4>
+                                                                                <a href="javascript:;" class="btn default m-icon m-icon-only">
+                                                                                    <i class="m-icon-swapleft"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn green m-icon m-icon-only">
+                                                                                    <i class="m-icon-swapright m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn blue m-icon m-icon-only">
+                                                                                    <i class="m-icon-swapdown m-icon-white"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn dark m-icon m-icon-only">
+                                                                                    <i class="m-icon-swapup m-icon-white"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <h4 class="block">Navigation Block Defualt Icons</h4>
+                                                                                <button class="btn blue btn-block m-icon">Button
+                                                                                    <i class="m-icon-swapright m-icon-white"></i>
+                                                                                </button>
+                                                                                <a href="javascript:;" class="btn green btn-block m-icon"> Link
+                                                                                    <i class="m-icon-swapright m-icon-white"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- END BUTTONS WITH ICONS PORTLET-->
+                                                            <!-- BEGIN BLOCK BUTTONS PORTLET-->
+                                                            <div class="portlet light bordered">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption">
+                                                                        <i class="icon-settings font-green-sharp"></i>
+                                                                        <span class="caption-subject font-green-sharp bold uppercase">Font Awesome Styled Buttons</span>
+                                                                    </div>
+                                                                    <div class="actions">
+                                                                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                                            <i class="icon-cloud-upload"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                                            <i class="icon-wrench"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                                            <i class="icon-trash"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="portlet-body">
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <div> Users </div>
+                                                                        <span class="badge badge-danger"> 2 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-barcode"></i>
+                                                                        <div> Products </div>
+                                                                        <span class="badge badge-success"> 4 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-bar-chart-o"></i>
+                                                                        <div> Reports </div>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-sitemap"></i>
+                                                                        <div> Categories </div>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                        <div> Calendar </div>
+                                                                        <span class="badge badge-success"> 4 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-envelope"></i>
+                                                                        <div> Inbox </div>
+                                                                        <span class="badge badge-info"> 12 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-bullhorn"></i>
+                                                                        <div> Notification </div>
+                                                                        <span class="badge badge-danger"> 3 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-map-marker"></i>
+                                                                        <div> Locations </div>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-money">
+                                                                            <i></i>
+                                                                        </i>
+                                                                        <div> Finance </div>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-plane"></i>
+                                                                        <div> Projects </div>
+                                                                        <span class="badge badge-info"> 21 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-thumbs-up"></i>
+                                                                        <div> Feedback </div>
+                                                                        <span class="badge badge-info"> 2 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-cloud"></i>
+                                                                        <div> Servers </div>
+                                                                        <span class="badge badge-danger"> 2 </span>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-globe"></i>
+                                                                        <div> Regions </div>
+                                                                    </a>
+                                                                    <a href="javascript:;" class="icon-btn">
+                                                                        <i class="fa fa-heart-o"></i>
+                                                                        <div> Popularity </div>
+                                                                        <span class="badge badge-info"> 221 </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- BEGIN BLOCK BUTTONS PORTLET-->
+                                                            <div class="portlet light bordered">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption">
+                                                                        <i class="icon-settings font-green-sharp"></i>
+                                                                        <span class="caption-subject font-green-sharp bold uppercase">List Social Icons(UL)</span>
+                                                                    </div>
+                                                                    <div class="actions">
+                                                                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                                            <i class="icon-cloud-upload"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                                            <i class="icon-wrench"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                                                            <i class="icon-trash"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="portlet-body util-btn-margin-bottom-5">
+                                                                    <ul class="social-icons">
+                                                                        <li>
+                                                                            <a href="javascript:;" data-original-title="amazon" class="amazon"> </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:;" data-original-title="behance" class="behance"> </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:;" data-original-title="blogger" class="blogger"> </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:;" data-original-title="deviantart" class="deviantart"> </a>
+                                                                        </li>
+                      

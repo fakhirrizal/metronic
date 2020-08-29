@@ -1,0 +1,36 @@
+gered.  The setvalue functionality does this for you.
+
+### option
+Get or set an option on an existing inputmask.
+
+```javascript
+$("#CellPhone").inputmask("option", {
+  onBeforePaste: function (pastedValue, opts) {
+      return phoneNumOnPaste(pastedValue, opts);
+  }
+})
+$("#CellPhone").inputmask("option", "onBeforePaste")
+```
+
+## General
+### set a value and apply mask
+this can be done with the traditional jquery.val function (all browsers) or JavaScript value property for browsers which implement lookupGetter or getOwnPropertyDescriptor
+
+```javascript
+$(document).ready(function(){
+   $("#number").val(12345);
+
+   var number = document.getElementById("number");
+   number.value = 12345;
+});
+```
+
+with the autoUnmaskoption you can change the return of $.fn.val (or value property) to unmaskedvalue or the maskedvalue
+
+```javascript
+$(document).ready(function(){
+       $('#<%= tbDate.ClientID%>').inputmask({ "mask": "d/m/y", 'autoUnmask' : true});    //  value: 23/03/1973
+    alert($('#<%= tbDate.ClientID%>').val());    // shows 23031973     (autoUnmask: true)
+
+    var tbDate = document.getElementById("<%= tbDate.ClientID%>");
+    alert(tbDate.value);    // shows 23031973   

@@ -1,0 +1,809 @@
+s="btn-group-img btn-group">
+                                <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img src="../assets/layouts/layout5/img/avatar1.jpg" alt=""> </button>
+                                <ul class="dropdown-menu-v2" role="menu">
+                                    <li>
+                                        <a href="page_user_profile_1.html">
+                                            <i class="icon-user"></i> My Profile
+                                            <span class="badge badge-danger">1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_calendar.html">
+                                            <i class="icon-calendar"></i> My Calendar </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_inbox.html">
+                                            <i class="icon-envelope-open"></i> My Inbox
+                                            <span class="badge badge-danger"> 3 </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_todo_2.html">
+                                            <i class="icon-rocket"></i> My Tasks
+                                            <span class="badge badge-success"> 7 </span>
+                                        </a>
+                                    </li>
+                                    <li class="divider"> </li>
+                                    <li>
+                                        <a href="page_user_lock_1.html">
+                                            <i class="icon-lock"></i> Lock Screen </a>
+                                    </li>
+                                    <li>
+                                        <a href="page_user_login_1.html">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END USER PROFILE -->
+                        </div>
+                        <!-- END TOPBAR ACTIONS -->
+                    </div>
+                </div>
+                <!--/container-->
+            </nav>
+        </header>
+        <!-- END HEADER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="container-fluid">
+            <div class="page-content page-content-popup">
+                <div class="page-content-fixed-header">
+                    <!-- BEGIN BREADCRUMBS -->
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a href="#">General</a>
+                        </li>
+                        <li>
+                            <a href="#">Search</a>
+                        </li>
+                        <li>Search Results 5</li>
+                    </ul>
+                    <!-- END BREADCRUMBS -->
+                    <div class="content-header-menu">
+                        <!-- BEGIN DROPDOWN AJAX MENU -->
+                        <div class="dropdown-ajax-menu btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                            </button>
+                            <ul class="dropdown-menu-v2">
+                                <li>
+                                    <a href="start.html">Application</a>
+                                </li>
+                                <li>
+                                    <a href="start.html">Reports</a>
+                                </li>
+                                <li>
+                                    <a href="start.html">Templates</a>
+                                </li>
+                                <li>
+                                    <a href="start.html">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END DROPDOWN AJAX MENU -->
+                        <!-- BEGIN MENU TOGGLER -->
+                        <button type="button" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="toggle-icon">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+                        </button>
+                        <!-- END MENU TOGGLER -->
+                    </div>
+                </div>
+                <div class="page-sidebar-wrapper">
+                    <!-- BEGIN SIDEBAR -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <div class="page-sidebar navbar-collapse collapse">
+                        <!-- BEGIN SIDEBAR MENU -->
+                        <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                        <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                        <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                        <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                        <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                        <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                        <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                            <li class="nav-item start ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-home"></i>
+                                    <span class="title">Dashboard</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item start ">
+                                        <a href="index.html" class="nav-link ">
+                                            <i class="icon-bar-chart"></i>
+                                            <span class="title">Dashboard 1</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item start ">
+                                        <a href="dashboard_2.html" class="nav-link ">
+                                            <i class="icon-bulb"></i>
+                                            <span class="title">Dashboard 2</span>
+                                            <span class="badge badge-success">1</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item start ">
+                                        <a href="dashboard_3.html" class="nav-link ">
+                                            <i class="icon-graph"></i>
+                                            <span class="title">Dashboard 3</span>
+                                            <span class="badge badge-danger">5</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="heading">
+                                <h3 class="uppercase">Features</h3>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-diamond"></i>
+                                    <span class="title">UI Features</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="ui_colors.html" class="nav-link ">
+                                            <span class="title">Color Library</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_general.html" class="nav-link ">
+                                            <span class="title">General Components</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_buttons.html" class="nav-link ">
+                                            <span class="title">Buttons</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_buttons_spinner.html" class="nav-link ">
+                                            <span class="title">Spinner Buttons</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_confirmations.html" class="nav-link ">
+                                            <span class="title">Popover Confirmations</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_icons.html" class="nav-link ">
+                                            <span class="title">Font Icons</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_socicons.html" class="nav-link ">
+                                            <span class="title">Social Icons</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_typography.html" class="nav-link ">
+                                            <span class="title">Typography</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_tabs_accordions_navs.html" class="nav-link ">
+                                            <span class="title">Tabs, Accordions & Navs</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_timeline.html" class="nav-link ">
+                                            <span class="title">Timeline 1</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_timeline_2.html" class="nav-link ">
+                                            <span class="title">Timeline 2</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_timeline_horizontal.html" class="nav-link ">
+                                            <span class="title">Horizontal Timeline</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_tree.html" class="nav-link ">
+                                            <span class="title">Tree View</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <span class="title">Page Progress Bar</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item ">
+                                                <a href="ui_page_progress_style_1.html" class="nav-link "> Flash </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="ui_page_progress_style_2.html" class="nav-link "> Big Counter </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_blockui.html" class="nav-link ">
+                                            <span class="title">Block UI</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_bootstrap_growl.html" class="nav-link ">
+                                            <span class="title">Bootstrap Growl Notifications</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_notific8.html" class="nav-link ">
+                                            <span class="title">Notific8 Notifications</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_toastr.html" class="nav-link ">
+                                            <span class="title">Toastr Notifications</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_bootbox.html" class="nav-link ">
+                                            <span class="title">Bootbox Dialogs</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_alerts_api.html" class="nav-link ">
+                                            <span class="title">Metronic Alerts API</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_session_timeout.html" class="nav-link ">
+                                            <span class="title">Session Timeout</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_idle_timeout.html" class="nav-link ">
+                                            <span class="title">User Idle Timeout</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_modals.html" class="nav-link ">
+                                            <span class="title">Modals</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_extended_modals.html" class="nav-link ">
+                                            <span class="title">Extended Modals</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_tiles.html" class="nav-link ">
+                                            <span class="title">Tiles</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_datepaginator.html" class="nav-link ">
+                                            <span class="title">Date Paginator</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ui_nestable.html" class="nav-link ">
+                                            <span class="title">Nestable List</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-puzzle"></i>
+                                    <span class="title">Components</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="components_date_time_pickers.html" class="nav-link ">
+                                            <span class="title">Date & Time Pickers</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_color_pickers.html" class="nav-link ">
+                                            <span class="title">Color Pickers</span>
+                                            <span class="badge badge-danger">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_select2.html" class="nav-link ">
+                                            <span class="title">Select2 Dropdowns</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_select.html" class="nav-link ">
+                                            <span class="title">Bootstrap Select</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_multi_select.html" class="nav-link ">
+                                            <span class="title">Multi Select</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_select_splitter.html" class="nav-link ">
+                                            <span class="title">Select Splitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_typeahead.html" class="nav-link ">
+                                            <span class="title">Typeahead Autocomplete</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_tagsinput.html" class="nav-link ">
+                                            <span class="title">Bootstrap Tagsinput</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_switch.html" class="nav-link ">
+                                            <span class="title">Bootstrap Switch</span>
+                                            <span class="badge badge-success">6</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_maxlength.html" class="nav-link ">
+                                            <span class="title">Bootstrap Maxlength</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_fileinput.html" class="nav-link ">
+                                            <span class="title">Bootstrap File Input</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_bootstrap_touchspin.html" class="nav-link ">
+                                            <span class="title">Bootstrap Touchspin</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_form_tools.html" class="nav-link ">
+                                            <span class="title">Form Widgets & Tools</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_context_menu.html" class="nav-link ">
+                                            <span class="title">Context Menu</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_editors.html" class="nav-link ">
+                                            <span class="title">Markdown & WYSIWYG Editors</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_code_editors.html" class="nav-link ">
+                                            <span class="title">Code Editors</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_ion_sliders.html" class="nav-link ">
+                                            <span class="title">Ion Range Sliders</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_noui_sliders.html" class="nav-link ">
+                                            <span class="title">NoUI Range Sliders</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="components_knob_dials.html" class="nav-link ">
+                                            <span class="title">Knob Circle Dials</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-settings"></i>
+                                    <span class="title">Form Stuff</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="form_controls.html" class="nav-link ">
+                                            <span class="title">Bootstrap Form
+                                                <br>Controls</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_controls_md.html" class="nav-link ">
+                                            <span class="title">Material Design
+                                                <br>Form Controls</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_validation.html" class="nav-link ">
+                                            <span class="title">Form Validation</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_validation_states_md.html" class="nav-link ">
+                                            <span class="title">Material Design
+                                                <br>Form Validation States</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_validation_md.html" class="nav-link ">
+                                            <span class="title">Material Design
+                                                <br>Form Validation</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_layouts.html" class="nav-link ">
+                                            <span class="title">Form Layouts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_input_mask.html" class="nav-link ">
+                                            <span class="title">Form Input Mask</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_editable.html" class="nav-link ">
+                                            <span class="title">Form X-editable</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_wizard.html" class="nav-link ">
+                                            <span class="title">Form Wizard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_icheck.html" class="nav-link ">
+                                            <span class="title">iCheck Controls</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_image_crop.html" class="nav-link ">
+                                            <span class="title">Image Cropping</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_fileupload.html" class="nav-link ">
+                                            <span class="title">Multiple File Upload</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="form_dropzone.html" class="nav-link ">
+                                            <span class="title">Dropzone File Upload</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-bulb"></i>
+                                    <span class="title">Elements</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="elements_steps.html" class="nav-link ">
+                                            <span class="title">Steps</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="elements_lists.html" class="nav-link ">
+                                            <span class="title">Lists</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="elements_ribbons.html" class="nav-link ">
+                                            <span class="title">Ribbons</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="elements_overlay.html" class="nav-link ">
+                                            <span class="title">Overlays</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="elements_cards.html" class="nav-link ">
+                                            <span class="title">User Cards</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-briefcase"></i>
+                                    <span class="title">Tables</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="table_static_basic.html" class="nav-link ">
+                                            <span class="title">Basic Tables</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="table_static_responsive.html" class="nav-link ">
+                                            <span class="title">Responsive Tables</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="table_bootstrap.html" class="nav-link ">
+                                            <span class="title">Bootstrap Tables</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <span class="title">Datatables</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_managed.html" class="nav-link "> Managed Datatables </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_buttons.html" class="nav-link "> Buttons Extension </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_colreorder.html" class="nav-link "> Colreorder Extension </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_rowreorder.html" class="nav-link "> Rowreorder Extension </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_scroller.html" class="nav-link "> Scroller Extension </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_fixedheader.html" class="nav-link "> FixedHeader Extension </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_responsive.html" class="nav-link "> Responsive Extension </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_editable.html" class="nav-link "> Editable Datatables </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="table_datatables_ajax.html" class="nav-link "> Ajax Datatables </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="?p=" class="nav-link nav-toggle">
+                                    <i class="icon-wallet"></i>
+                                    <span class="title">Portlets</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="portlet_boxed.html" class="nav-link ">
+                                            <span class="title">Boxed Portlets</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="portlet_light.html" class="nav-link ">
+                                            <span class="title">Light Portlets</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="portlet_solid.html" class="nav-link ">
+                                            <span class="title">Solid Portlets</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="portlet_ajax.html" class="nav-link ">
+                                            <span class="title">Ajax Portlets</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="portlet_draggable.html" class="nav-link ">
+                                            <span class="title">Draggable Portlets</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-bar-chart"></i>
+                                    <span class="title">Charts</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="charts_amcharts.html" class="nav-link ">
+                                            <span class="title">amChart</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="charts_flotcharts.html" class="nav-link ">
+                                            <span class="title">Flot Charts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="charts_flowchart.html" class="nav-link ">
+                                            <span class="title">Flow Charts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="charts_google.html" class="nav-link ">
+                                            <span class="title">Google Charts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="charts_echarts.html" class="nav-link ">
+                                            <span class="title">eCharts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="charts_morris.html" class="nav-link ">
+                                            <span class="title">Morris Charts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <span class="title">HighCharts</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item ">
+                                                <a href="charts_highcharts.html" class="nav-link "> HighCharts </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="charts_highstock.html" class="nav-link "> HighStock </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="charts_highmaps.html" class="nav-link "> HighMaps </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-pointer"></i>
+                                    <span class="title">Maps</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="maps_google.html" class="nav-link ">
+                                            <span class="title">Google Maps</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="maps_vector.html" class="nav-link ">
+                                            <span class="title">Vector Maps</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="heading">
+                                <h3 class="uppercase">Layouts</h3>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="layout_blank_page.html" class="nav-link ">
+                                    <i class="icon-layers"></i>
+                                    <span class="title">Blank Page</span>
+                                </a>
+                            </li>
+                            <li class="heading">
+                                <h3 class="uppercase">Pages</h3>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-basket"></i>
+                                    <span class="title">eCommerce</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="ecommerce_index.html" class="nav-link ">
+                                            <i class="icon-home"></i>
+                                            <span class="title">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ecommerce_orders.html" class="nav-link ">
+                                            <i class="icon-basket"></i>
+                                            <span class="title">Orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ecommerce_orders_view.html" class="nav-link ">
+                                            <i class="icon-tag"></i>
+                                            <span class="title">Order View</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ecommerce_products.html" class="nav-link ">
+                                            <i class="icon-graph"></i>
+                                            <span class="title">Products</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="ecommerce_products_edit.html" class="nav-link ">
+                                            <i class="icon-graph"></i>
+                                            <span class="title">Product Edit</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-docs"></i>
+                                    <span class="title">Apps</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item  ">
+                                        <a href="app_todo.html" class="nav-link ">
+                                            <i class="icon-clock"></i>
+                                            <span class="title">Todo 1</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="app_todo_2.html" class="nav-link ">
+                                            <i class="icon-check"></i>
+                                            <span class="title">Todo 2</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="app_inbox.html" class="nav-link ">
+                                            <i class="icon-envelope"></i>
+                                            <span class="title">Inbox</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="app_calendar.html" class="nav-link ">
+                                            <i class="icon-calendar"></i>
+                                            <span class="title">Calendar</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="app_ticket.html" class="nav-link ">
+                                            <i class="icon-notebook"></i>
+                                            <span class="title">Support</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                     Û¿™†mäªZ˝XÑ6?ëW«∑ÔäµJ‚≠˚b≠aV∆v*ﬁuv€|Zza•oJﬁkªµäªÆ%VìæD•¯“áo˙âÛÂ§˝›qWn}Œ*‚H w≈\z‰”èû*≥uqVÎΩU¢⁄ˆ≈\käµ◊¯bÆ´´˛÷*ÏUﬂÌ‚ÆÎ◊Ô≈]\Uÿ™„^∏´TÔäµ˙ÒVÍv´kQ“ïÒ≈[ﬁü«mv|±U¿‘‚´áOs¯b´èæ«Ô≈UcF`Õø ªP–h+LU<∞∞ïûe°1D{Êo€*f«ø_sìqÎQä’È˝1W]˚x˚bJ[]«.’⁄æ-WÉZë–ıƒ™Ím˛}Nu6é$™˙ùœ~√¶E-Ó{u#«hö¸ª‚Ñ˜…ﬁOÛüµ¯<∑Â®∑≤R‚‚J≠µ•∞4iÁaˆTvXÏªÊø_áEÑÊ hC¨èpo√ÜYe√‹óﬂó˙Â∂Ä∫Ç¶Ye+.´™J πæπû§ü ã“(∆»=Ís¡˚WµsvÜo&¿}1È˙˚À◊ÈÙÒ√¸O{-∑ÎÕKê™ø€ë)T≠>X⁄ªñ›qUº¸q*±§5¿™fO†‚¬M˜5¿™®¿ı8•Á©î@–bÖjm˙∞™”âWoÄ+c∂n¥`V´Ö[¿ñªü(voﬂªp>8´gha)o¶hûÿi‡Hk¥w¬6WVÉ|âUπ?Î∂ŸıÁÆÆ‘Ò≈\{bÆ'∑„ä¥qUµ≈]‘◊æ*Ôñ*‚z‚≠{‚≠◊kv*ÍëÙw≈]◊p≈[ÈäªıbÆ”w_·ä∫ò´æ{b´Ö)¯èû*∏PuÔä∑∆á}»≈[ßJn}±UE†€æ*ΩWë‹_⁄r	ÓÔäßñ6^àYfZ0ﬁ4ßŸ≠>&Ò;l;|Ú@!1Ëzûµ=´u•;„ÖWh nª6¿Ü‘äÌ˛~Á	J˙ÏOOÏ»¥:SÆ\75z·µ\:{cjÔÙ¿≠äÔ‹¯wﬂ7S∞⁄ùé)O|ù‰Ìœﬁ`ÉÀ^[ÑI}(ın.d®∂¥∂SGûvvXÏ7Ã~øã	Àî–Ë:»˜Ï8eñ\1˛«‹_óˇ ó˙ÂæÄ∫Ñ¶Y%"]STîq}r=GßŸQ“8∆ =Ís¡˚WµsvÜo&¿}1È˙˚À◊ÈÙÒ√¸O{-Qﬂ5.B†ß›ÖWÅK|«Lh™“˛¯c>®ºï≠M\*¶d°‹·§;÷^ÄÔàµHÂﬁùr{*amw/ ·◊ı`…‰∂ù¿‹≠æ∂T«nªI'¿™âª9c∞PÌ”t9±3ôYa®È⁄Ωåûèy˛õrºÌØm$Y°ïkJ´° Ó2YqOåfHËS	
+«)fÌ±WaCt¬≠oí•o!JÏUÿ´}0+æXBñÒWSÔ≈.≈ZØlï!¿b≠åäZ≈-*–¬U«ÆW$ø´˜Á‘Oü:æ5h¸±V´M∆*Óø<UÆõ˛8´ªbÆﬂk¶*Ô√¯‚ÆÿÌä∫æÿ´X´ªb≠Ù≈\I˛∏´bï´N‡u¶*„ä∏◊È≈]˛u≈]Ôæ*∏nœ¶*›6ﬂq€wŸ$Up;S^•”äØUÂ@M 4$˚˛ºUêÿ€4éu°ñ#–2÷éﬂÂo∑Ü—üà=€…±m(GÀ√•∂€˙b∞{ò°P5Ì∏‹¯”"…≥^Çõ‚U¬ï Ù¿´©„◊√l@z¯b≠˚u≈]QZtß˘úU>Úwìµˇ >ÎyoÀP	oe≠≈ƒïˆñ¿¸SŒ√Ï†Í«·]Û_Ø◊·—a9röêÎ#‹∞aûip≈˜Â˜Â˜óø.4–Ù2À1Y5]RP≈ı¬è∂Ù˚(Ω#ål£ﬁß<#µ{W7hfÒ2l”ëØºΩ~üO1·èƒ˜≤ S†Õ@rWØLíVùv¿J]À"¨-Lù°cIO|âJã…Là›T^O}Ç®güz˛Y;bR€≠~ ‘î2z”˜\{Ô‡OAó«óF@1˝sÛEÚ˝π∏Û&ßômJ≠≤í◊ŸcZªWË∞”v~\∆±ƒÀœßÕ¢yÄ‹óé˘Ø˛rèQGìO¸æ±K8Bäj˙åbk¶ØxÌÍQ=ãÚ9€h=ñ•úŸÓü7[ó_[E„ö◊öº·Æœy®k˙˛•}}[‹+‹»}X\ÉË¥jBpbÓ¬ÒˆŒÎã¬;ÚÂÁﬁÍéIHŸ%˙)‰/ÈûRÚfá†Ë˙q“l‡¥ÜV”›ΩIc∏∏EñoUˇ jBÏym~¢zçDÚN\DìøêÂ^Tıò # $Æ˘ØovE[˜˚±
+ÓŸ*Wm„ivp¸0oÆ´u¡ißô¬≠~¨ï!√Ü˚`)vEì∞°¨RÓò°i?Êpø+ÔüPæ~›v°Èä¥I5≈Z'wÔä∏˛´]{˝¯´Ω˚w≈]˛u≈]”lU£Oßwæ*·ﬂq€orzPbÆÈ€w∂*ÏU›ˆ≈[˙v≈[8™„¯¯b≠Væÿ´{ˆÔæ*∏l+ä´Gëæ–U˛v4oÛ€OllD4ñQG˜Hg‹ˇ ï··í™‰xıË2Hv‡ç˚‚´◊∆µ¿ñË;uÈÇ’•à©†√hTØèaLÉ'ºª˜8™„ÚÏOÜ(^(zo]ç1W∫u≈-ÔÙx‚©ˇ í¸ïÊÃ~/.˘n ˜L=[ªπj-¨ÌÎFûw~ ıc≤Êª¥{Gá	ÀîÌ–uëÓçõ`ñip«˚ry»>^¸π–W@Ú˙2&•© †\ﬂ\ORR:(ˇ u∆>ı9‡›ß⁄ôªC7âóê˙c“#ÒÃΩ~<p«Ü?⁄ Tf®πÈÑlÆÈíCD¯}8iÜïE§˙0“©4ø~DÑ°‰òVµ¶Aìj⁄‘:lA§´ªöG
+ê	ßR}≤ÃXåŒﬂ6ù<◊Õˇ ô∂z™Õ´\4brEΩç∂ÚÀƒo÷õÏ«7⁄.ÀûsPπí‚eŒ"7xñΩ˘”ÊA4“abG¨ß‘üè≥E?ÍåÏÙæœbÅπ˙œÿÍ≤k	‰ÛôßºøùÓ.%yÓe˛ˆ‚V.‰ˇ ¨’&ô◊`”F"Ä†:8ô&’RE=EbPñÎﬂqÙåÿÅMEÏÛèøó≥y”ÛœP‘≠˘yoBU÷nKí9?˙,EG# ‰À÷ãúß¥›•˘])ÑOØ'§{øà˛á?Eáéw–>ËÃK»’v$±>'|Òw®U£"≠‰Rﬂœ
+∂?πÆ¸qWï+±•l`*Ï[˘tƒ´ª{`Mª
+íV˝+∞+±MµÔäª‹Ù≈.Ø›âVè_ñ~1t˛9ıÁÓÆ*ÓΩqVΩÒWbÆÆ*Í◊uqVªb≠ı≈Z˝x´±WUæ€Ù≈]\U›qWbÆÆ*ÏUÿ™‡{~ºU’≠|UøßÂäÆZ}8™¥0˙Ñ∞¢¢éß¯xúU<≤∞öe§√˚∏Œ¸Ó ˝Y òP}ûÁzv√jﬂj˚x`W F«∞ﬂ$ÖÎ»l>éÁ"R◊Rc∞∆ïzûß¸»¡H\†•hzbï‹{nOoÈÖ.;Rõ!äØMóU„¸¸r)dIÚVø˘ÉØ«ÂÔ.B‚û≠Ì‰µ÷vı°öfÚ®¯úÏ3[⁄=£áCÑÂ vË:»˜∆Õ¯0K4∏b˚è»>D–?.¸øóÙ,¨D⁄é°(YΩπ•≤ë–àÉdÁ<#¥˚K7hf9rÍ«§Gp˝%Î`é«˚YM+ö∞◊ç%∫¯`¢´IÌíB∆4ËqU&a‘‡*¢Ô‚p™I:ÔO ©)^•®Cen˜ö"Ù^Ï«¢èû[qkëßíy∑ÕpX[‹k:úúc@"ı'ˆ#Os˝πø—ËÂñB¸y∏ô2ã/ñº’ÊãÔ1jÚ_\w20ƒ¡c`∞Íöp¿F<æ˜üÕîÃ⁄r@˝ÆÏJ¯vÕ»ÄqâM ã·‚¿Uèj
+‰ÈB…Â-^ ïSEQ˚LzS∞KÔ/»!∑ê?/--Æ◊é∑≠0’uE˛Fï ä?ˆ)J˚úÆ›ÌŒj•!Ù«”pÎÒ/W§√·√ÕÍsBÊ™©¶@Ö]SÄo	U€‰iZÎí‰ÜÒW`KÜ≠‡V∆w\
+Ó˘ ≠‰U¢p´x¢v†¬¥–≈.;ıÌÑ-∏l2$´G¶ø≥Íœ›˙±Wb≠wˆ≈\qWWv*›qV´ﬂvÿ´±WbÆ≈]∂*ÏU∫◊¯bÆˇ ow|UµbÜ™hH ücä∏˝±Wt≈[Íz◊\*é*®â…áa]èZüÔÅYùåpë)≤ˇ v≠˚5Ói˚_´Tnˇ Z·V˙lEymL(\†Tn7Ø|[5Æ›0éJ∫ïÔJ}˘Vπm‘◊øˆaV˜Ë;oÅ+Ä≠OZÙ8™ÓUÌ˝0´lÿl}Üÿm]”‚Ô“∏
+≤O#˘#_¸¬Û^]ÚÏc◊+Î^ﬂJ’¨ÌÅ£M1r(›Œ√5ù£⁄8tN\ß‹:»˜”‹ﬂÉ≥KÜ?ÿ˚á»æDÚˇ ÂﬁÅóºªÀ	Øı	Ä˙ÕÌÕ(eòèàÉdÁ<'¥ªK7hfÒ2üÍ«§Gp˝'´◊‡¡1·ã(.ô¨r ¶F–ﬁ%+kç™∆o£QfÎíJãΩ·ä®I Î_£#VãKo/b∑âÊï¬DÇÆﬂ√Áñﬁ√õ^eÊ3C¬}B˛Qmß⁄©aÃÏà;˚ªxfÎK¶îàåEí‚Œ}KÂﬂ>y‚ÎÃ∑ﬁ¢ÜK(™∂Ω¬ûÆﬁ,›Û‘{3≥cÇ}K¢‘g2,f÷ÿ†3IÒJ˚≥É€:HÄ$lw©AÕ*=JoEËvÒ6$'◊≥Z»øV”Â/k±2”âzn*‚ïƒ®Lˇ ú|¸∏wÛÃWöî\¸π°{x§Ude?∫è˝õ∏„=ßÌ?ÀÈ¸8üVMæ]ûáÏÚπ».≈òn€ê3«C”/Uß≈Wb≠‰9%v6≠‡[≈\AWt˘‡µoß∂*·ä∑äªµﬂ¯‰∫!’Ò¿±âW~8´±V∞ïq8BÆ@≤kÆø´Oû}B˘˚t®ØlU¨U¨Uø◊ä∫æ´[‚ÆÆ*Í˝ÿ´}qWo”wÀlUﬂÁ\Uÿ´{}8´_´n∏´_N*ﬂ∞≈[˙Æ*·SLUxÿu≈Ubà»j‡¥‰ *w€Ô8´!∞≥6—V_∑^K«ÅÒ?ÂbÑX5º2In¥?O„äv4€$´Ä;WcÌë)]‘í;¯xdPπN›z}4≈[Ô^Ä¯bÆÊqJÌàßS˜bÜÍkN√|=pÈ„Ì”Y'ëºçØ~a˘Ç?/˘z1Í %øøî´Y[VÜià˚ëƒÁaöŒ“Ì,:'.SÓd{áÈ=`ñip≈˜ë¸çÂˇ À›?/˘v"$K}{(YΩ∏Üiò¬ ¯Pl3¬;G¥≥kÛπO∏tàÓ§ız¸#Ü<1˛÷J£∞˙sZ’ ¿J[˜»⁄¥[ı„J±õ«æITYˆ…(<Çï√ÕPœ&ÿj‘îÂÏVÒ<Û?–Uòˆˇ o∂J1$–k&ûkÊè4B!öˆ˙ak•⁄Çıs∞ßFjucÿfÁM•î§#r.4ÁµûOòº˚ÁÎØ3›z1ÉJÖÎmjOƒÕ”‘íùXˆ≥ûùŸùóŒÚ<œËè>†»–‰ƒma%ΩY>&=ˇ Üt—à	*Ú9„¬1˝ô4«F—ÂΩîQÓÓv¸r`0%ò€˘sÙ’Ã>áe5Œµ1k≤óë…?∂l≈’j1‡∆g2"<QîÂAˆﬂÂÂ¸πÚl:E¬'ÈÀ∆˙ﬁ∞Òê√÷"ãa‘Fªmµkû⁄˝°˘›Aò˙F—˜~◊Æ”a·]YË≥NÂÆ
+ª|
+ﬁ7Ô·Çí∫∏)]Ú¡Jﬁ¯›1KGCc∫”li]Z‡Wdï««"ó~¨(q#˙‚∫∏iÈÅ-dÇÎë)wœ ó„}DÒ≈]äªw|Uﬁÿ´øèlU›1V˙‚≠Vò´∑8´}qWoLU±æ*◊˘”v*›I≈]äªl√¶*∏ˆÒUh°i*zÙ{ ;ì·ä≤+_AT∫Ä¬•#dÂ‘◊ªxúï!Iÿ˜Ò@BÒæ˝˙ìÔÅì@ì◊ßNæ8∫õÔ€JÓˇ «\<*w€∂@â•NCæˇ Ï¿≠˜˜±JÒ≤¸˙(]Zt˚∞+$Ú'ë<¡˘áÆ«†y~0
+®óP‘%Í÷Vƒ–À1œÏ ¯úÏ<sY⁄]•áAáƒ }√¨èp˝'£ëÉ≥KÜ?ÿ˚ì»˛I–/ÙºπÂÿà∑Kyy Xºπ"ç4ƒu'ˆW¢ÜxOivÜm~có)ﬂ†È‹?_WØ¡Ç8c√Jf¨πÄÔç+y≠≠X∆Éı‰Ç©…*ÑèL1BI0≠†/.„Ç'ñWà*Ã{≤1‚4…ßô˘´ÕPà%ΩΩòZÈñ¿±.v±4Í«ˆFn¥∫S2#d∏”ù/òºıÁªø5]˙Q÷&≠≠≠~&#˝Ÿ'ã√ˆs”ª3≥#ßè|è3˙ì£œúÃ˘18ab∆I]Û£åi¡E hTQñ°3”4ñπëY¡≠ﬂ	zgëºçØyÁSïÌÄÜ.&˜Qí´mk?jGÒ=în{f£µ;_ÉÃ˙è(ı-˙}4≥üa˛^˛[˘sÚﬂN˙ÆåüX’&Z_Î3(·zéø≤>öÁãvóiÊ◊d‚»vÈÅÍ¥˙h‚™¯xf©À]N¯°æòÏ*ÿ¿Ü˝+x∞0%º
+÷u1W|≤A[Èâ*Ï[≈]π¿R’0Ñd–ÏU«"Z…höñDM·ëE?ÎL˙Å‡≈[≈]äªÁäªq≈]äª¯bÆ˝x´b∏´∫‚Æ≈]äª¶ÿ´±Wm_U±˙˙‚≠‚≠”˝ºU^(Y˜£®_ÑV¨w
+=Œ*üŸ⁄õpØ'€‚ΩBrÍÓ|NH"áZπ$.5ªdJ[ˇ W«•µµ=F.Ø_l!+Ä~*∏ˆÒV…¯Å•GJú(wŸç«„SÅ[ Z–u˙p*AÌ·ä≤o!y_¸∆◊”@–(å	uJPMΩùµiÍHGRz"‹˝'5]ß⁄xtN\ß˙±Î#‹?IË‰‡”À4∏c˝è∏ºó‰ù»_áÀæ]à≠™VÓÍZ}bÓ‰ä4”0ÍOE^à6·}°⁄9µ˘é\ß~É§Gp¸nıÿ0Cxb…f∏π
+Çùr(u~úâKUÆﬁqZ≠6Ôë*¢Ã>Y ™O ∆êÑíJÂäR˚À»†âÂï¯BÇ¨Á†˛‹1ö	yüö|◊√5ıÏ¢◊Kµ…}æí;±Ïπ∫“i%9ƒ\ãã9Ä,æaÛ◊ûÓ¸”xQCC§¿ﬂË÷ï‹ì˛Ïì≈èáÏÁ©vge«O˘gÙEü9ôÆåR]˛96nµŒä1ßîbßÏéŸe0%5∞”ÃÑ3
+/z˛ºò-Íˇ ññ:øÊ.†÷ñÿ˘~Õîj∫ª-V0wÙ„µ+ä>glÁ;k∑1ˆ|+Í»~ò˛ì‰ÊÈtíÃ|üe˘kÀZîtx4.ZM6»Î$≤Syf~ÆÁ«ËgãjuYuLßäGÒ∑ì’„≈
+àNTwÔÔòÕ™ ()ÅWWlÆ≈¶KcBÏä∂2$•’˚´uƒkPÏ.Q˛ﬁUºä”´æH!≥àWï¿R’~Ïê-
+û∏IW(wπ8U›1Uªv€¥W$øﬁôÙ˚¿5äªv*ﬁ*÷*ﬁ*Ó¯´ª‚Æ≈[v*Ô|Us»ÚqÊ’‚°WŸGAäµäµLU±ä∂:‚≠“ÇΩé*≠RH*êO@≠[≠æ*»--M∫)ê"É≈GEÂ÷ûÁπ˚≤@!’Îÿí∑ΩiJ”«√67 t»îÆsS”°»•p€ÿ‚Ü¿¢Ω1Kcb{˛¨6≠è¿‡U€æ¸*∏ G∑∂CDˆ±VS‰!kﬂò˛`MB@ãÍZîÄõ{+biÍHGV=#ånÁ⁄ß5=©⁄ò{?ãì¸ÿıë¸s.NüO,“·èƒ˜>‰Ú_íºø‰/.˘rñà}[´©(n.Ó£M3¨ez(ÿgÑk˚C6ø1ÀîÔ–tàÓçﬁø‚èY
+ÇzÊrßLRÏP∂ª˚`VòÌÌàRgÒ8i*,Ùp*Y ﬂÔà›	}’⁄EÀ#Ñç]œ@2¡vûgÊœ6@êKyy0¥“ÌAr_€`HÓ«ˆ@ÕŒìG)HF"‰\y‰ Y‰˘èŒ˛wºÛeŸXÙòX˝R“Ω[ß9<X˛≥‘ª/≤·¶è|è3˙ºù£Q∆|ò§6ƒπfﬁ¶øNtë£]vô0ÇöXÿ™‰ Éπ€%Mvıü Ø çOÛQ¢≤Ú≈õ©j¥Æ˝}k≥Hﬂrı9ÀˆÁn√CæC»~íÏ4öCîÔ…ˆnâ¢i^\“≠t-
+’l¥õ5„π©›ù€´;Ÿè\Ò|˘Úg»rd<RóW©ÑÕ ÈL•±PUpÒ≈Wo∂%[Ëp+´˜·V˝∞R∏`Kè\ ¶ùÔﬂ;z·•]ëMª]LêAw˘”èá„ÑwÀ≠˚cJ÷Ÿ$8ı…%¨höu≈-Ù˚d
+øÎüO<±WbÆ≈]ä∑äµäªoÂäªv*ÏU±◊wÍ≈]ﬂlb≠ä{◊µ<qV∆Áﬂ√æ*≠)hOA’èaÔäßˆñâl9æ±^5QEQ‡+„‹‰¿B$u©Îﬂ$ÖÀQøˆdJWÄœ|ç´áP>åôBˆeil{ˇ f)o∑æ(wÀË'|Rÿ¶¯UpØSM∂¿Æk‹˜≈YOê<ÉÊÃ}}4-	DhÄI©ÍrÇm¨m…°íJuc˛Îån«⁄ß5=©⁄ò{?âì¸ÿıëÓ˝e…”ÈÂöUâ}œ‰ø&y»z\Ú‹;(è©qq%≈›¡iÁa’õ∞Ë£aû⁄¸⁄Ï«.Sπ‰:DwÆ√Ü8£√@0r)ä∂V*¥”Ó∆ˆUåh+ë•Iõcñ Öjoﬂ∂[C…%»U≠•◊óë¡À#ç]é‘l!–5HºÀÕ~m∑X%ªºòZÈV£ô-∑»ë›èÏå›È4íúÑb.E«û@óÃûvÛµÁönv¨\,~ßlMN˚szus¯g®ˆgfGO˘gı:˘Ã˝Ãvv<˛¡n˛›|s¢å pI¥bD‰’hz#ﬂ√,bòZXó´Unzú!K÷ø*?)µÃKÔQ˘X˘R—Ä‘uªª˝+≥H{ûä7>ÀvÁn√CÔêÚﬁeœ“hŒSgÈ}ô§ifÉ¶€h∫-™Yivk¬⁄÷>ä;íz≥1›òÓNx∆l”Õ39õëÊ^¶·NRÿΩGé%W‚´ÜFïº![øF4ÜÚ4Æ¬≠‚ÆÆ¯Mè√ ómÖmƒäap¸0´´øƒ§7 É#V≠ç“_C_NI[€˚r
+—4ÿu…Ä≠≤E]ﬂ
+ªﬂæ@™”◊$Æπ°¯…üO<±WbÆ≈]ä∑äªhb≠‚ÆÆ*Ô√qÎä∑Û≈\Oé*Íb≠‚´Ä⁄øE;‚™∞¬“H™£Ì íOÜ*»,ÌŸ>*4¬£í˝ïØ¯˜90â≠Gç:S•0´áÍÔÌÖî¯üã∞5#"R∏WÓÈÚÆ‹÷£Ö√q„ﬂï¿Û≈\}Î”ﬂ\|U∞A˘vßÒ…+®@°ﬂ«"ñU‰Àˇ 0~dk£C–PG<d’59A6÷V‰˝∑#´ûë∆7cÌSöû‘ÌL=üáƒ…π?Lz»˛ÆÚ‰ÈÙÚÕ.Ò=œπ<ô‰›»~_ÉÀ~\Ñ«eı..d°∏∫π"ç<Ï:πÏ:(ÿgÑˆÜø6ª1ÀîÔ–tàÓ]áqGÜ,âEÒÕ{r0+âÔÜ’¢p“V3Ìç!DøΩ|2J£$ò	T,í˚„Jóﬁ^«m$Æ4fnÉ,ål”Y4Û?6˘∂› öÓÓam•€Uo⁄=™;±˝ïÕ÷ìI)HF"‰\iÃeÛû<Ò{Êã¬±iëmmÌ”õ¯±¸;g®ˆgfGOÈe—gŒf|òÕºA®Ï*iùb‡íòƒè1Tˆﬂ∏ÀZ”´K0Sjl:tÿmíC÷?)(µÃ+—yv^« vé˙Ù
+<å7Ù Æ∆B:∑Eı€9>›Ìÿha¡ÚCªÃª-&êÂ6~óŸ^ôßË˙}∂ë§€%ûófÇ+[X«¿ä?«´1‹úÒ¨πgñfs7#ÃΩL`"(#ïz{eL’ €∂:·VÒU√€∂7˛ CÜ∑S–úi[ÆE‚≠∏¶€†»ê≠úz+D”ßO!4◊Í… Ü˙‰JC∫bñ˚abﬁFïÿ⁄¥M Âä[Æ(wLmZ?é
+B”◊ÂÖ]”∂TY„&}@≈]äªv*ÏUºU¨U∫U√p¸*ÏUÿ´bù1V∆√lû™&⁄’ÓÍTön¿„€Om¨ñ’”î¨8Úa‹ÖˆÒ=Ú`!Ì◊¯·BÂ#â Ó7«æµÿ~ŸÖÖHÍÿ•µA¶ﬂ~´îTé¿v»%@i˝∏´bÑSÓ1C`WØnÄ·U€ëÛ€√∑π˚±K.¸ª¸∫◊ˇ 2µ·£Ëˇ Ëˆv·e’µyh,‡c‘è⁄ëø›qıoïsM⁄Ω≠á≥¯ô7'ÈèY’ﬁ\ù>ûY•CóR˚á…ﬁN–<ã†¡Âø-€òl">§ÛIF∏∫ùÖi‹}ßoπF√lΩ~ø6∑)ÀîŸ<áHé‡ıÿp«xb»ˆ˚Û€óÅM≠Éäñâ˚Œ(ScAÔì¥©3+ä°‰ò¿,îùÚAñ›ﬁ≈o$Æ5f= …∆$∞&ûgÊÔ7€√m-ÂÏﬂV”-˜£}¶=ç;±˝ëõÕíRêåE»∏π& ≤˘ãŒæxæÛE·˚QiÒ1˙≠®;Ú‹éÆÙ˛ÕÏ»‡èôÊ@Útyıg…ã«Hf©s„ùãÑåÅ	π]ˇ ±ÅN¨-MöÄ6 w˜9&/f¸°¸£æ¸¬∏Ö¯í«…ˆè∆ÊÙ
+IpÎ÷+‘ü⁄~âÛ€9.ﬁÌËhc¡VS»wyóg£—¶ÂÙ˝Ô∞ÙÌ:«K±∑”4ªd¥”l–Ekk¢"÷ORN‰Ôû5ì,Ú»Œf‰yó®åDEH’\É%‡w≈+±C{‚´Ä˙bÆ≈[on¯´´LUæŸÆ©≈˝x´∫	l0˘`!4∂Ωhv¬ÌáÀ$≠ÉL®´∫uÀùr%≈*
+d—©4ÆÆ˘d’’≈®˙q•kuO|
+∑©ÆW-íåŸÙ˚¿;v*ÏUÿ´±WbÆ≈]ä∑Ú≈]J|ÒWUæò´∂˛∏´∫˝™µºm)‡7ÈEX¯
+»Ï≠RÕIRv¯Y∂4S˚+ìD¨ç–ı$9ŸH®#∏‹‚ï£©?´ı‚Ö‘ﬁµ˘SÆ)]±
+÷ù∞ZÆ ÛﬂªvﬂË€¶Jæû=:d‡k∑áé/ ÙÈAM∞%æø@Æÿ´/¸∏¸π◊ø35·§iË˙}ø÷5â∞⁄BﬂÒ)[˝◊Î‘Ìön÷Ìl=ùáé{»˝1Î#˙ªÀï¶”K<®rÍ_ryS zít+.yj€Í⁄lõ≥Sœ3
+4ÛøWëøÇÉ<#[ÆÕ¨ÃrÊ7#Ú∏y=v,Q≈çì’Q€l¬m\
+§Æ?v ´O˚Yg$)≥mækJlﬂFiT$ìÆjÖíN‰Ù…ïﬁ^•ºo+∏H‘UòÙ-åI4÷dÛ7˘¬⁄⁄÷k˚˘˛≠¶[˝î˝¶n¬ù‹ˆΩ—Ë•9ƒ\ãç<Ç"ÀÊ:˘ﬂPÛ]ˆıãOàü™⁄Pµ˝£‚«πœOÏﬁÃÜû>}K¢œúÃ±∏¢"ÆÁë=AÒßét(•Vv
+6˘dÈçßV Ó˝EéKí	∑µ˛N~N‹˘˙Âu]]d≥Úm§îûQ…y"ıÜ·¸Ô—~y«v˜o«G˘O˚2ÏÙz3ê‹π>√±≤≥”ÏÌ¥˝:›-4ÎD⁄Z¬8«k–˙œSû=írúå§nGôzxÄZèø+,ï ˜»´éH*Ó€}ÿU±Ìä∑˙+c˝¨*ÏUæ∏´æY8)u0!±ä]€Öß|Y;
+∫æ8´}©ëWÛU∞hzu≈≤|:¯bÖΩˆÈä[ø·äí
+◊l*ÏBªµﬂÁä≠'Ωi„î…!¯œüP<±WbÆ≈]äªv*ÏUºUÿ´ªoäª∂*ﬁ€bÆ≈Ub∑íF^+P«à'Æ*ûYŸ90ÄﬁÄˆy!èQ‡zSﬂæI[†Æ˝O|Æ° Vü!·Ñ!∞∑∂_»≥µ?^
+KÜ‚£mÈäÆ~=ª`UA∑Oß)u:◊«∂•zdêªb=≤)føñﬂñöÔÊv¥tÌ/˝Iµ*˙∆µ"ì¨m∏U˛yòÇ?§–fè∂;cgb„ûÚ?LzüŸﬁ\Ω6öYÂCóR˚É ﬁV–¸õ°€ysÀv¢◊Kµ‹ÒK4ßÌM3˛‹ézü†mû¨÷Ê÷e9rõë˘!‹ª8„èy'aiòçãÈ˜a•n¥˘`!*j^Ä±´¥ÈÜï≤ië&’Eòï*Ñíu¶ Ñë∆˛›≤VãK/o£∑â§ë˝8ìwsÿe∞â&∫µJO/ÛèúmlÌ%‘uåt·›ùª ?ièoﬁh¥S…!ãëq≤d_.˘√Œ7˛h‘”N“2VŒ–5R4=œãÌûßŸ›ù<(sÍ]lÊeè«Õè≈€7¢."5!Ê¿/NÇªõõZŸq_U¿·ZSπ ¯d¿bˆˇ …ü…{ø<‹GÊy^”…P6‘<%øëÒƒ{ ˝∑˙˘≈vˇ ¥“Éã˘O˚⁄ÌtZ#êÒKìÏ;;[X,,`K[d€[B8«k—Tvœ#úÂ9HŸ/K@
+µÈïñAxo”Wç+c]MΩÒV¿≈[¶*›0Z∑~òRÔñv*ÍxoÖ[»;v6êÂÚ$≤qÇÖß√∑\íWˆ"⁄®¬≠˚ûù±v˝≤E.Ì¸r,[≈Z¬ñâ˛π%vh¯·Uø´µpZkë§€Òß>úxbÆ≈]äªv*ÏUÿ´x´X´±Uﬂ<Uÿ™ΩΩªÃ ìÀÏ˚”ıU>∂∑Kt‡ªΩ>6ÈZvßaÌì§+¶’aMœÀ≠‘W¬õé€aBÒø≈€jd'˜ßÅ ÇÿR*6≠+„LU›XRû„æTí	˚] ˆ»•v‰Ú?kßŒò-ˆ†#ál)·˛{bñÈQ\6Üs˘a˘aÆ~gk-g`ﬂR—, ∂±¨∫ÚKumƒqéè3è≤ù∫∂Ÿ†ÌûŸ≈Ÿÿ∏•Íúæò˜˘ûËπ∫m,≥ Ü√©}øÂü-hûP–Ì|πÂÀQi§Z≈	Â$í7€ögÍÚ?VcÚgÖk5ôuôé\¶‰~œ!‹∑(„èF…»1õÖÔ„€%Inªt≈VìÇ–∞µ:}8™ì>¯R¢ÚRª˝˘ ‰ìÆ˚¯PRª˚Ë≠¢i¶pê®©c¸3';k&û[Á?:ZY⁄æ°®»a”‚4Ü jÚ?`v?ÜoÙZÂóûßπ≈…êDY|—Êﬂ4Í^i‘ÃÌ¬“:ãke5H◊øÕèsû°Ÿ˝ù4(˙óCõ9ôcÎm∆Æ€Wß}˙ÊÓ1ßîDaAE#j¯Âù7¥±1˛ıÅ#ÔØÀ$…∑∏˛L~IMÁwÉÃﬁhçÌºùVﬁﬂtóPdÏáˆbØ€~˝qøÌ“Éá	ºùOÛk∂—Ë∏˝RÂ˜æΩ∂Çx"∂∂â-Ì`Eäﬁﬁ%	q†¢™®ÿ 3»…$íMíÙë*Ω∆™ﬂW\Uu;ˆ≈[∂=∫*ﬂ_·Ö\zÙ¿ÆÌ◊∂O◊âVÈë¥;ı`-d–ﬂÎ¿UŸ≠‘`§¥èLHV˙åäVûπ0ÆÔ¸2HØ›Ç“\qb·◊oø	K´æ’†¡Hkﬂ∂ób≠Vø,*—Ò¬´OÎ¡J÷D°¯”üMº±WbÆ≈]äªv*ÏUÿ´x´X´x™.“—Æm◊ÏØèâ> b©‰0§	≈E[ˆü•i··ìê´ÀsQΩz·B‡œ∂6ñ∆ƒWß@{WÆßJ}öˆ9ñ©ZwÖw¬
+Å–ùé˚ä∂µ;ﬁÄS∑œ
+Øw w»•pjù∫¯‡U€∑”¸qbÍmæ,ôÔÂgÂf≥˘ü¨4Ã÷^]≤u˝3¨ï®à˝(AŸÁaˆGEg=€}∑ã≥qYıdó”ˇ 3›ΩÃ“Èeû[rÀÌﬂ.˘wEÚ¶çiÂÔ.Z-éëf)*y33}©dsª»Ávc˙≥√5Z¨∫¨á.S≈)~(w≠«é8„√I∏ÿf0ã¿Ø|íÆ¬ï¨iæSfﬂ)3{Ù¬°$õ*ÑñNΩ∞1%,ææä⁄)%ï¬∆Ç¨OL∂24JO(ÛØù≠lm$ø‘$Ù¨#$[€ÉÒÀ'`v?pŒèC†ñIp@o‘˜8y2ã/úº≈ÊMGÃ◊bˆËÖ@Y ∑SDïË=œsû°Ÿ˙i„√âtYÛîï"]≈B}≥xÑQë€Tä¸@∂•⁄…R}8†ıhÉ•p-Ω”ÚgÚQ¸ﬂ$hÛ\/î·5≥≤5éMA‘˝aÌ7Ìt9√vˇ ¥#N&Á‘ˇ 7ˆ˝ŒﬂE¢‚ıœóﬁ˙ câ#Ü÷+xïcÜ(‘$hà(™™6 É<¶DíIÊÙ@"r∂Jä;˜≈u0¢€éAwÀ[≈[˝XU√Ò≈[˜Ævp†¿BÆÆ@Ökıv¬·¯aVœ›·ä∏ô√JÏäµ◊RÿÏ;`Ê≠w¬Æ#ßÜI!±∑^ôj]ì§;¿áW
+Z=øV6ÆØLUØU£Úˇ ?(kÂø·Ö-Œ¯°i»I_ˇŸ

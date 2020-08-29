@@ -1,0 +1,79 @@
+                              </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_idle_timeout.html" class="nav-link ">
+                                        <span class="title">User Idle Timeout</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_modals.html" class="nav-link ">
+                                        <span class="title">Modals</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_extended_modals.html" class="nav-link ">
+                                        <span class="title">Extended Modals</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_tiles.html" class="nav-link ">
+                                        <span class="title">Tiles</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_datepaginator.html" class="nav-link ">
+                                        <span class="title">Date Paginator</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_nestable.html" class="nav-link ">
+                                        <span class="title">Nestable List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-puzzle"></i>
+                                <span class="title">Components</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="components_date_time_pickers.html" class="nav-link ">
+                                        <span class="title">Date & Time Pickers</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_color_pickers.html" class="nav-link ">
+                                        <span class="title">Color Pickers</span>
+                                        <span class="badge badge-danger">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_select2.html" class="nav-link ">
+                                        <span class="title">Select2 Dropdowns</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_select.html" class="nav-link ">
+                                        <span class="title">Bootstrap Select</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_multi_select.html" class="nav-link ">
+                                        <span class="title">Multi Select</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_select_splitter.html" class="nav-link ">
+                                        <span class="title">Select Splitter</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_typeahead.html" class="nav-link ">
+                                        <span class="title">Typeahead Autocomplete</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="c

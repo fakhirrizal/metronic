@@ -1,0 +1,11 @@
+                           <!-- Indicates caution should be taken with this action -->
+                                                                        <button type="button" class="btn btn-circle btn-warning">Warning</button>
+                                                                        <!-- Indicates a dangerous or potentially negative action -->
+                                                                        <button type="button" class="btn btn-circle btn-danger">Danger</button>
+                                                                        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                                                                        <button type="button" class="btn btn-circle btn-link">Link</button>
+                                                                    </div>
+                                                                    <div class="clearfix">
+                                                                        <h4 class="block">Metronic Custom Buttons</h4>
+                                                                        <p>
+                                                                            <button type="button" class="btn btn-circle def

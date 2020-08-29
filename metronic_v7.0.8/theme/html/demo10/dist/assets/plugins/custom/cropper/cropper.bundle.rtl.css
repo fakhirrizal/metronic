@@ -1,0 +1,127 @@
+', {
+                      'class': 'md-editor',
+                      click: function() {
+                        instance.focus();
+                      }
+                    });
+
+      // Prepare the editor
+      if (this.$editor === null) {
+        // Create the panel
+        var editorHeader = $('<div/>', {
+                            'class': 'md-header btn-toolbar'
+                            });
+
+        // Merge the main & additional button groups together
+        var allBtnGroups = [];
+        if (options.buttons.length > 0) allBtnGroups = allBtnGroups.concat(options.buttons[0]);
+        if (options.additionalButtons.length > 0) {
+          // iterate the additional button groups
+          $.each(options.additionalButtons[0], function(idx, buttonGroup){
+            
+            // see if the group name of the addional group matches an existing group
+            var matchingGroups = $.grep(allBtnGroups, function(allButtonGroup, allIdx){
+              return allButtonGroup.name === buttonGroup.name;
+            });
+
+            // if it matches add the addional buttons to that group, if not just add it to the all buttons group
+            if(matchingGroups.length > 0) {
+              matchingGroups[0].data = matchingGroups[0].data.concat(buttonGroup.data);
+            } else {              
+              allBtnGroups.push(options.additionalButtons[0][idx]);
+            }
+
+          });
+        } 
+
+        // Reduce and/or reorder the button groups
+        if (options.reorderButtonGroups.length > 0) {
+          allBtnGroups = allBtnGroups
+              .filter(function(btnGroup) {
+                return options.reorderButtonGroups.indexOf(btnGroup.name) > -1;
+              })
+              .sort(function(a, b) {
+                if (options.reorderButtonGroups.indexOf(a.name) < options.reorderButtonGroups.indexOf(b.name)) return -1;
+                if (options.reorderButtonGroups.indexOf(a.name) > options.reorderButtonGroups.indexOf(b.name)) return 1;
+                return 0;
+              });
+        }
+
+        // Build the buttons
+        if (allBtnGroups.length > 0) {
+          editorHeader = this.__buildButtons([allBtnGroups], editorHeader);
+        }
+
+        if (options.fullscreen.enable) {
+          editorHeader.append('<div class="md-controls"><a class="md-control md-control-fullscreen" href="#"><span class="'+this.__getIcon(options.fullscreen.icons.fullscreenOn)+'"></span></a></div>').on('click', '.md-control-fullscreen', function(e) {
+              e.preventDefault();
+              instance.setFullscreen(true);
+          });
+        }
+
+        editor.append(editorHeader);
+
+        // Wrap the textarea
+        if (container.is('textarea')) {
+          container.before(editor);
+          textarea = container;
+          textarea.addClass('md-input');
+          editor.append(textarea);
+        } else {
+          var rawContent = (typeof toMarkdown == 'function') ? toMarkdown(container.html()) : container.html(),
+              currentContent = $.trim(rawContent);
+
+          // This is some arbitrary content that could be edited
+          textarea = $('<textarea/>', {
+                       'class': 'md-input',
+                       'val' : currentContent
+                      });
+
+          editor.append(textarea);
+
+          // Save the editable
+          editable.el = container;
+          editable.type = container.prop('tagName').toLowerCase();
+          editable.content = container.html();
+
+          $(container[0].attributes).each(function(){
+            editable.attrKeys.push(this.nodeName);
+            editable.attrValues.push(this.nodeValue);
+          });
+
+          // Set editor to blocked the original container
+          container.replaceWith(editor);
+        }
+
+        var editorFooter = $('<div/>', {
+                           'class': 'md-footer'
+                         }),
+            createFooter = false,
+            footer = '';
+        // Create the footer if savable
+        if (options.savable) {
+          createFooter = true;
+          var saveHandler = 'cmdSave';
+
+          // Register h3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC"); }
+
+.cropper-hide {
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0; }
+
+.cropper-hidden {
+  display: none !important; }
+
+.cropper-move {
+  cursor: move; }
+
+.cropper-crop {
+  cursor: crosshair; }
+
+.cropper-disabled .cropper-drag-box,
+.cropper-disabled .cropper-face,
+.cropper-disabled .cropper-line,
+.cropper-disabled .cropper-point {
+  cursor: not-allowed; }

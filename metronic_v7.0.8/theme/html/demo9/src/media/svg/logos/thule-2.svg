@@ -1,0 +1,27 @@
+                                                     </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-action">
+                                                    <div class="mt-action-img">
+                                                        <img src="../assets/pages/media/users/avatar2.jpg" /> </div>
+                                                    <div class="mt-action-body">
+                                                        <div class="mt-action-row">
+                                                            <div class="mt-action-info ">
+                                                                <div class="mt-action-icon ">
+                                                                    <i class="icon-call-in"></i>
+                                                                </div>
+                                                                <div class="mt-action-details ">
+                                                                    <span class="mt-action-author">Diana Berri</span>
+                                                                    <p class="mt-action-desc">Lorem Ipsum is simply dummy text</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-action-datetime ">
+                                                                <span class="mt-action-date">3 jun</span>
+                                                                <span class="mt-action-dot bg-green"></span>
+                                                                <span class="mt=action-time">9:30-13:00</span>
+                                                            </div>
+                                                            <div class="mt-action-buttons ">
+                                                                <div class="btn-group btn-group-circle">
+                                                                    <button type="button" class="btn

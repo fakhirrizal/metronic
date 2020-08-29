@@ -1,0 +1,137 @@
+ (doc._wysihtml5_identifier = DOCUMENT_IDENTIFIER++);
+  }
+  
+  return function(doc, tagName) {
+    var key         = _getDocumentIdentifier(doc) + ":" + tagName,
+        cacheEntry  = LIVE_CACHE[key];
+    if (!cacheEntry) {
+      cacheEntry = LIVE_CACHE[key] = doc.getElementsByTagName(tagName);
+    }
+    
+    return cacheEntry.length > 0;
+  };
+})();/**
+ * High performant way to check whether an element with a specific class name is in the given document
+ * Optimized for being heavily executed
+ * Unleashes the power of live node lists
+ *
+ * @param {Object} doc The document object of the context where to check
+ * @param {String} tagName Upper cased tag name
+ * @example
+ *    wysihtml5.dom.hasElementWithClassName(document, "foobar");
+ */
+(function(wysihtml5) {
+  var LIVE_CACHE          = {},
+      DOCUMENT_IDENTIFIER = 1;
+
+  function _getDocumentIdentifier(doc) {
+    return doc._wysihtml5_identifier || (doc._wysihtml5_identifier = DOCUMENT_IDENTIFIER++);
+  }
+  
+  wysihtml5.dom.hasElementWithClassName = function(doc, className) {
+    // getElementsByClassName is not supported by IE<9
+    // but is sometimes mocked via library code (which then doesn't return live node lists)
+    if (!wysihtml5.browser.supportsNativeGetElementsByClassName()) {
+      return !!doc.querySelector("." + className);
+    }
+
+    var key         = _getDocumentIdentifier(doc) + ":" + className,
+        cacheEntry  = LIVE_CACHE[key];
+    if (!cacheEntry) {
+      cacheEntry = LIVE_CACHE[key] = doc.getElementsByClassName(className);
+    }
+
+    return cacheEntry.length > 0;
+  };
+})(wysihtml5);
+wysihtml5.dom.insert = function(elementToInsert) {
+  return {
+    after: function(element) {
+      element.parentNode.insertBefore(elementToInsert, element.nextSibling);
+    },
+    
+    before: function(element) {
+      element.parentNode.insertBefore(elementToInsert, element);
+    },
+    
+    into: function(element) {
+      element.appendChild(elementToInsert);
+    }
+  };
+};wysihtml5.dom.insertCSS = function(rules) {
+  rules = rules.join("\n");
+  
+  return {
+    into: function(doc) {
+      var head         = doc.head || doc.getElementsByTagName("head")[0],
+          styleElement = doc.createElement("style");
+
+      styleElement.type = "text/css";
+
+      if (styleElement.styleSheet) {
+        styleElement.styleSheet.cssText = rules;
+      } else {
+        styleElement.appendChild(doc.createTextNode(rules));
+      }
+
+      if (head) {
+        head.appendChild(styleElement);
+      }
+    }
+  };
+};/**
+ * Method to set dom events
+ *
+ * @example
+ *    wysihtml5.dom.observe(iframe.contentWindow.document.body, ["focus", "blur"], function() { ... });
+ */
+wysihtml5.dom.observe = function(element, eventNames, handler) {
+  eventNames = typeof(eventNames) === "string" ? [eventNames] : eventNames;
+  
+  var handlerWrapper,
+      eventName,
+      i       = 0,
+      length  = eventNames.length;
+  
+  for (; i<length; i++) {
+    eventName = eventNames[i];
+    if (element.addEventListener) {
+      element.addEventListener(eventName, handler, false);
+    } else {
+      handlerWrapper = function(event) {
+        if (!("target" in event)) {
+          event.target = event.srcElement;
+        }
+        event.preventDefault = event.preventDefault || function() {
+          this.returnValue = false;
+        };
+        event.stopPropagation = event.stopPropagation || function() {
+          this.cancelBubble = true;
+        };
+        handler.call(element, event);
+      };
+      element.attachEvent("on" + eventName, handlerWrapper);
+    }
+  }
+  
+  return {
+    stop: function() {
+      var eventName,
+          i       = 0,
+          length  = eventNames.length;
+      for (; i<length; i++) {
+        eventName = eventNames[i];
+        if (element.removeEventListener) {
+          element.removeEventListener(eventName, handler, false);
+        } else {
+          element.detachEvent("on" + eventName, handlerWrapper);
+        }
+      }
+    }
+  };
+};
+/**
+ * HTML Sanitizer
+ * Rewrites the HTML based on given rules
+ *
+ * @param {Element|String} elementOrHtml HTML String to be sanitized OR element whose contar[key])}}toolbar.find("a[data-wysihtml5-command='formatBlock']").click(function(e){var target=e.target||e.srcElement;var el=$(target);self.toolbar.find(".current-font").text(el.html())});toolbar.find("a[data-wysihtml5-command='foreColor']").click(function(e){var target=e.target||e.srcElement;var el=$(target);self.toolbar.find(".current-color").text(el.html())});this.el.before(toolbar);return toolbar},initHtml:function(toolbar){var changeViewSelector="a[data-wysihtml5-action='change_view']";toolbar.find(changeViewSelector).click(function(e){toolbar.find("a.btn").not(changeViewSelector).toggleClass("disabled")})},initInsertImage:function(toolbar){var self=this;var insertImageModal=toolbar.find(".bootstrap-wysihtml5-insert-image-modal");var urlInput=insertImageModal.find(".bootstrap-wysihtml5-insert-image-url");var insertButton=insertImageModal.find("a.btn-primary");var initialValue=urlInput.val();var caretBookmark;var insertImage=function(){var url=urlInput.val();urlInput.val(initialValue);self.editor.currentView.element.focus();if(caretBookmark){self.editor.composer.selection.setBookmark(caretBookmark);caretBookmark=null}self.editor.composer.commands.exec("insertImage",url)};urlInput.keypress(function(e){if(e.which==13){insertImage();insertImageModal.modal("hide")}});insertButton.click(insertImage);insertImageModal.on("shown",function(){urlInput.focus()});insertImageModal.on("hide",function(){self.editor.currentView.element.focus()});toolbar.find("a[data-wysihtml5-command=insertImage]").click(function(){var activeButton=$(this).hasClass("wysihtml5-command-active");if(!activeButton){self.editor.currentView.element.focus(false);caretBookmark=self.editor.composer.selection.getBookmark();insertImageModal.appendTo("body").modal("show");insertImageModal.on("click.dismiss.modal",'[data-dismiss="modal"]',function(e){e.stopPropagation()});return false}else{return true}})},initInsertLink:function(toolbar){var self=this;var insertLinkModal=toolbar.find(".bootstrap-wysihtml5-insert-link-modal");var urlInput=insertLinkModal.find(".bootstrap-wysihtml5-insert-link-url");var insertButton=insertLinkModal.find("a.btn-primary");var initialValue=urlInput.val();var caretBookmark;var insertLink=function(){var url=urlInput.val();urlInput.val(initialValue);self.editor.currentView.element.focus();if(caretBookmark){self.editor.composer.selection.setBookmark(caretBookmark);caretBookmark=null}self.editor.composer.commands.exec("createLink",{href:url,target:"_blank",rel:"nofollow"})};var pressedEnter=false;urlInput.keypress(function(e){if(e.which==13){insertLink();insertLinkModal.modal("hide")}});insertButton.click(insertLink);insertLinkModal.on("shown",function(){urlInput.focus()});insertLinkModal.on("hide",function(){self.editor.currentView.element.focus()});toolbar.find("a[data-wysihtml5-command=createLink]").click(function(){var activeButton=$(this).hasClass("wysihtml5-command-active");if(!activeButton){self.editor.currentView.element.focus(false);caretBookmark=self.editor.composer.selection.getBookmark();insertLinkModal.appendTo("body").modal("show");insertLinkModal.on("click.dismiss.modal",'[data-dismiss="modal"]',function(e){e.stopPropagation()});return false}else{return true}})}};var methods={resetDefaults:function(){$.fn.wysihtml5.defaultOptions=$.extend(true,{},$.fn.wysihtml5.defaultOptionsCache)},bypassDefaults:function(options){return this.each(function(){var $this=$(this);$this.data("wysihtml5",new Wysihtml5($this,options))})},shallowExtend:function(options){var settings=$.extend({},$.fn.wysihtml5.defaultOptions,options||{});var that=this;return methods.bypassDefaults.apply(that,[settings])},deepExtend:function(options){var settings=$.extend(true,{},$.fn.wysihtml5.defaultOptions,options||{});var that=this;return methods.bypassDefaults.apply(that,[settings])},init:function(options){var that=this;return methods.shallowExtend.apply(that,[options])}};$.fn.wysihtml5=function(method){if(methods[method]){return methods[method].apply(this,Array.prototype.slice.call(arguments,1))}else if(typeof method==="object"||!method){return methods.init.apply(this,arguments)}else{$.error("Method "+method+" does not exist on jQuery.wysihtml5")}};$.fn.wysihtml5.Constructor=Wysihtml5;var defaultOptions=$.fn.wysihtml5.defaultOptions={"font-styles":true,color:false,emphasis:true,lists:true,html:false,link:true,image:true,events:{},parserRules:{classes:{"wysiwyg-color-silver":1,"wysiwyg-color-gray":1,"wysiwyg-color-white":1,"wysiwyg-color-maroon":1,"wysiwyg-color-red":1,"wysiwyg-color-purple":1,"wysiwyg-color-fuchsia":1,"wysiwyg-color-green":1,"wysiwyg-color-lime":1,"wysiwyg-color-olive":1,"wysiwyg-color-yellow":1,"wysiwyg-color-navy":1,"wysiwyg-color-blue":1,"wysiwyg-color-teal":1,"wysiwyg-color-aqua":1,"wysiwyg-color-orange":1},tags:{b:{},i:{},br:{},ol:{},ul:{},li:{},h1:{},h2:{},h3:{},blockquote:{},u:1,img:{check_attributes:{width:"numbers",alt:"alt",src:"url",height:"numbers"}},a:{set_attributes:{target:"_blank",rel:"nofollow"},check_attributes:{href:"url"}},span:1,div:1,code:1,pre:1}},stylesheets:["./lib/css/wysiwyg-color.css"],locale:"en"};if(typeof $.fn.wysihtml5.defaultOptionsCache==="undefined"){$.fn.wysihtml5.defaultOptionsCache=$.extend(true,{},$.fn.wys

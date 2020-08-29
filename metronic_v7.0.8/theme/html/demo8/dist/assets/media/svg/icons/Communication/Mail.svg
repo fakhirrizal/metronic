@@ -1,0 +1,13 @@
+                                                       </button>
+                                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
+                                                                        <li>
+                                                                            <a href="javascript:;"> Dropdown link </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:;"> Dropdown link </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <button type="button" class="btn btn-default">Button</button>
+                                                                <div class="btn-group">
+                                                                    <button id="btnGroupVerticalDrop4" type="button" class="btn 

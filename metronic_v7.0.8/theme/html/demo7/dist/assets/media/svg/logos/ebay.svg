@@ -1,0 +1,40 @@
+/custom display method
+                        display.call(element, value, this.sourceData, response); 
+                    } else {
+                        this.value2htmlFinal(value, element);
+                    }
+                    deferred.resolve();
+               };
+            
+            //for null value just call success without loading source
+            if(value === null) {
+               success.call(this);   
+            } else {
+               this.onSourceReady(success, function () { deferred.resolve(); });
+            }
+
+            return deferred.promise();
+        },  
+
+        // ------------- additional functions ------------
+
+        onSourceReady: function (success, error) {
+            //run source if it function
+            var source;
+            if ($.isFunction(this.options.source)) {
+                source = this.options.source.call(this.options.scope);
+                this.sourceData = null;
+                //note: if function returns the same source as URL - sourceData will be taken from cahce and no extra request performed
+            } else {
+                source = this.options.source;
+            }            
+            
+            //if allready loaded just call success
+            if(this.options.sourceCache && $.isArray(this.sourceData)) {
+                success.call(this);
+                return; 
+            }
+
+            //try parse json in single quotes (for double quotes jquery does automatically)
+            try {
+                source = $.

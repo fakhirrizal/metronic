@@ -1,0 +1,1018 @@
+="nav-item  ">
+                                    <a href="components_multi_select.html" class="nav-link ">
+                                        <span class="title">Multi Select</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_select_splitter.html" class="nav-link ">
+                                        <span class="title">Select Splitter</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_typeahead.html" class="nav-link ">
+                                        <span class="title">Typeahead Autocomplete</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_tagsinput.html" class="nav-link ">
+                                        <span class="title">Bootstrap Tagsinput</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_switch.html" class="nav-link ">
+                                        <span class="title">Bootstrap Switch</span>
+                                        <span class="badge badge-success">6</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_maxlength.html" class="nav-link ">
+                                        <span class="title">Bootstrap Maxlength</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_fileinput.html" class="nav-link ">
+                                        <span class="title">Bootstrap File Input</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_touchspin.html" class="nav-link ">
+                                        <span class="title">Bootstrap Touchspin</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_form_tools.html" class="nav-link ">
+                                        <span class="title">Form Widgets & Tools</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_context_menu.html" class="nav-link ">
+                                        <span class="title">Context Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_editors.html" class="nav-link ">
+                                        <span class="title">Markdown & WYSIWYG Editors</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_code_editors.html" class="nav-link ">
+                                        <span class="title">Code Editors</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_ion_sliders.html" class="nav-link ">
+                                        <span class="title">Ion Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_noui_sliders.html" class="nav-link ">
+                                        <span class="title">NoUI Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_knob_dials.html" class="nav-link ">
+                                        <span class="title">Knob Circle Dials</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">Form Stuff</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="form_controls.html" class="nav-link ">
+                                        <span class="title">Bootstrap Form
+                                            <br>Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_controls_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation.html" class="nav-link ">
+                                        <span class="title">Form Validation</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation_states_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Validation States</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Validation</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_layouts.html" class="nav-link ">
+                                        <span class="title">Form Layouts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_input_mask.html" class="nav-link ">
+                                        <span class="title">Form Input Mask</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_editable.html" class="nav-link ">
+                                        <span class="title">Form X-editable</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_wizard.html" class="nav-link ">
+                                        <span class="title">Form Wizard</span>
+                          ±ﬁá∂#öµÛcv…ƒÉ◊_$4)JvØO|#û…lìÄï[Û<}äØ◊√çlÖ¥Î◊Æ(%£Oë¬E§5‘˚ÙøΩ-û›œÜ5æÍ∞˛º,Çõ„OËΩcÚÔ æ`Â4ã;„˛Ì∑§OS‚üdÁ∞N3èP|'∑>ª|√Ã|¡˘KØi≈‰≥E‘†5àpûûËzÁ?´ˆ~2ﬁ<˛EÏ4>”»Pô˘Ó>|ÿ+⁄^Y;[Ø$#fµù(+ÔÌ˜f™95∫3¬õ/«‹Ó2·ÏÓ–RèèÒGo¥mÛ›3^æ“ã)•”Î˝‰+˚ÎGˇ ^≠+Ì\Õáii5e˛œüGG©Ï^V"3GÂ/«∏ßßR—5∏Jk⁄jƒ¨7ø”«≠o_Ñ¸I˛ƒ˝≤¸∂@/„ã™é¥∆\9%±˘˛¥æÁ»ì˙-yÂ{‰Ω≤]ÃjL»=äˇ y“3QõIßÀÃpKøÒ±z=/k‰Ö‚“˝éŒ◊-√S∑kSZ	~‹$ˇ ¨:}9¶œŸ±ãèÆ=·È∞v¶õIÓ?≠QJ∏Ê§;Ü£ÔÕ1Mákk©Ω0 ãnõbvW
+Ì^òÓ´Ω˙„”>l[^û¯≈K`üøÁÔC´ø„âŸ[Îæ±]^ü´=»u=∂˛ò=„euE ?ÜNˆWv˘u¡∫µ”"ï≈¡?ﬂj7|óV4‚ =jΩΩÚ$|ï’Ò˚∞s›WÄ˜…éHnøGÄÒ¿á ?Æ )]“æŸ"ÜÎAÌ˜A§7˝0˘´GÔÆ…Z€†ﬂÁ”˜%’3Ä⁄¥=ªw˘‰T∑Z˛ëí+t mÛ◊$7JÔ‹~8ÉhlºHu{W+c≠{‚Üàßøzdy%mOÖ?‡$ÙK™{l;·&ÇZ€ß‡1˜´B£~˝ÜGöW>èø	b‡+ﬂ mıÎÙ¯‰àV∑Æ«sÇ…*—˝^•‘∆’›)NﬂÅ»ÙVé€üß	Kb¥Ò«t5ø^ïÔâK™:ÙéGelê6¸;aCT5æ˘%≥ZmJúë(PtØ\ç–K∂mÎâ4ÆÔFÌ€5w_£©∆π!€’…[•m6Ò9ˆ%√ß]∞ÇÆ?´¶&é ◊o~õ· ™Ímπ˛∏9°iß~∏ihı=˝ù“—?ÌdO….4¶ÿO%X~T¡T»)ûî'¶=7fR“ß√=D›>àéÍhˆ'‘A˚/ø‹zåæ9•±iñ8ü$.©°˘oÃq˙Z•™e‰aÚëw˚Û/∆≈êpÃ1ÑÛa7Ú˝O=◊ø&Ê@”hWhÈU∂π?Òﬂ~kıèè.„Ì˝oC£ˆÉ&3øŸ˙ûi©yT–Ó8]¡6üqÿµB∑…∆ƒg7.Œ‘hÂxdaÂÃ~ß´èhÈ5–·ÕœÔ§|Ò^›⁄ ∑9óÏﬁ[F_Ωv9t{Vá´J<æ_©◊Âˆ|e§…—óÎ˝a<áÃ¬ı}-b÷=V2(”%-Ô ÈÒ
+p§f~<Qê‚”‰Ú˝còtô2f”Ò0˜ÔÅ˝E˛S—µGi|´~aª;õ')~F&<[Êá0Û¬û˝!˙›∂ì¥gèËñ›‹„˚;À][Ië¢’-ã≥O
+í?Ÿ!¯á„ö|Ωéxx∞»Lwuz|Ø	P»8|˘Ö±MÈŒ”ª)ØﬂöLêîHQÛwQîd,
+¥=)Ùe| &›JÌ€∏ø
+‚’†$öåïê≠÷øNÿ*–Í–TÔøœ‰≠7⁄∏ç¬Z¸∞^Í’iÛ8lR∂|1Wµ≠|1Í≠{~8y•ΩÈ‡1›Ïá∂lu€ø|4ÜÎLê(\)JéΩP,\?∞|∞ãU›ˆ{~°Ø«$[ﬂ¯‚M4Nı==˙}’)πÿv¡—[Ì_«ö∫Ä∫}Ÿ Æ⁄Üü!Ö˘ıÆeäwHﬂ5n£¯Äá€Ø–0p⁄€DuÒ¡Iˇ 3˜a,ù‹–‡∞≠¥¶∫∏wÈàJÓÉ€ÆL[˚æúBµBz
+ﬂi[È◊Á\*¥˚Ì˙∞B“›G^û8IÂ…Ô∑^ÿ:Ï´HﬁÉ˝ºxY6iM∞—C_!∂íÔß	
+Ì˙åè5p˚ÚB–„Má~›Ò;´[WØMŒÊñ˜ﬁá†Æ4J∫£˝Æ∏B∏V¥ßLh+Uˇ o+$ÇÆÈ∑CíÆıjïÈ˜A¥¥O”_ª	ﬂupÈ_ø ÓJ‡Àﬂ@ﬂì®OÀ¯‡ÿÚK[˙y%™}√{rUµ=˛ÏLñö|˛Xi!M≈~cÆÿRÌ˝æŸÍ∆ªπæ‚|;dd6∞öjßß\Ä™“º3KÒπQ›zØ“_	òémSÄó0©p÷:å-m©⁄§ê∂ÕÜS˛ƒˇ Àé¢˛ÆM>¢n'ÒÔa:œÂ.è~o/‹˝JsSÈo$$˚©‹e94X2ã«GißÌ|ÿO´ˆ¸ﬁ]Ø˘_–âmGOw∂S˛ˆZèR1Ó@‹g5®ÏI@ô¬‚{‚ˆ:^ﬂ«ö<©“_ä,:Œ[Àôe_YgEf{rE%TW‚(√}ªeŸµπ0F$<MΩDsu∏ª/ß&O
+~K“:2[6j∂ ∂∫åi™Ÿ.¬ù•Q”˜rèãı¸±≈˘}Mú3·ów#Ú˝N>|≠˝‰OÛ£∏¯˛–™˙Oîº¡'©¶\6ó™∑Ÿ∂∏"ØÇ»>ÕCá.√á<xásvõ^E˜r>Ò˝©M˛çÊ¯ﬁ€õòE{Òíû%zˆ'4˘ªx%~EÈÙ›≥{e…≈Ω»>ãÇ√fC≥/ÕN„9Ï∏'Ñ‘„N˜hda[à#*∂¥Ø–?ïl»èJ€‚<ï €Ì˜mÖHlÌL …[ÌæHhı©˘åâ6R›6Ø·Ñ ≠VÉÆÊÆˇ 1Äﬂ5lSÈ¬Ë.˝Xh´u€√ZE.‹ˇ µíŸ®VïÎ˛{·¯Óénæ˛
+ﬂø—Ñp†€√¶j]±•z¯dΩÍ—≠M~üÏ¿ñ∫öˆ¡œu\§«\E ª~òU±ˆq¥7Nî¬Ü«∑QíRﬁÁ˙‡ÿî;Á_|U£S∏È„ëHXIÎ¯dzU2¶Å¶„È¿
+\AÁ¯`
+ÍWaæH^Ω6Í1∞ƒª®ß›í*◊—æF’›ˇ !Z€Ø‡0rK©Z7·ë∫
+Ô·€6vWV≠
+äüº·ÆÙ∫Ωé<ï∞Gˆ˚`Æ®Z≠Abyˇ fF®2ªwJ·∫CçOùpµ+ªm˜>ıoıdá=’¬£~Ÿ+Gnø~DÌÕ]µFﬂÌd˙⁄µ◊©˚±Êi.È€lGπ]Jèê’°‘”È…≈-Çh>˝GaHhÓ~}pVÈhˇ ∑â™Ÿ!Õ‹æ8ë”™ÖµÔÓ1d≠;–SÁÜŸ,&ï¶¯,˘≤®∆˘ÍæOÖ∏‘üÍ«»!Æø√"w%züø,ÊX›>XN ÍêARA¡ﬂÑLwéTLábÌSÁñC<£Ê”,@ÚŸãkñûK◊Ê{∏ v¨ı˝¸∫bX‘’G¿’;ûôfH·Œ}\€jÛÈˆ«Á˚^qÊÀO0h∆FçJ≈w3B)*èÚóØÎÕØ±D∑ˇ ´±zÌ¥@ö˜Ó\÷aâàéT€—òPè‚>¸◊√6´M∑˜±Óó7?.ãE™ı·Oæ<øW‹ã±÷µ})¨S	¨˚È˜¿À˚ÍøÜ_⁄mN¿¯SÓ;k©œ°’È}U‚G˘—ÁÒ⁄àô<ØØ2≠“TËÜbLﬂ‰NΩ?ŸeŸ±Â∆8g8˛:~§iµ‡õâ£Â±¯Ñ£†k∫5”Î∂m∫HGb¨>ÕN^Ã√ó|'Ñ˜∆œK¶Ìc ~°ﬁ?HK·∫Üv1©)0˚P»
+H>É¸3EõMì	©áá><¢‡m\Æ›vÈòÙﬂk
+ıNGì+jÜ¥ßÃˆ…y&⁄,EOé5¶πü´Ñ“˙è··ì◊õWÒ¿Æ TÌÚÆ5Ω+bî#±¸2TáRΩEiÄn´∫Ôáû»wjˆ…RÆı=ˇ éGÆÃK`–Ù‹a<’æõ÷£±…QC∂Íz›va<’¢Q‡zS€$/Uß}èèÀ#πÁ…í‡Gz{b	C∂Òﬂ«™øj¯¸Ú[1lm∑o 7]èlv≤∏çÎ¯‡*’7Ø|í∞“ïÆd—˚á·Éñ Íw˚UÓóa¬∂)¯ˆ≈ı“Ä·æ‰5Ïzd@	häıÔ∂#róMˇ ÿ|’ø◊ëÊáv;ÌÜ’«∆îˆÎÇ<ï£πﬂ©¬óTà
+ÍˆÔâ‰≠7ÎLÖq;Sı‰I€∑oø˝…wo|O5wááAøÇ”o√ﬂ:´t;ˇ LF ’6˛ü«	èrµZ‡$•ﬁ‡˚}8I*Ó’•r™€epÆﬁ›ÈìÏÆ•é$ks¸+êK^›≤t’Ó2'ï™””z¸ü&MØlO$Ö&ﬁ£∑ûH∂aı}è”û™·tÿ Ù¸1<ˆCÄíΩ|N,©ΩpíÆ≠ZcV≠ÉÌZ‰:-:ä~YH›^+©‚j$è˘∏ıt3òÚ-R«‰R›c ˛XÛ &˛Ÿa∫='J#◊˝`(Ÿ∫R≈îT√fF|I±¯ËÛçÚüZ”ÅõIq©YıÙò0√£±9¨‘ˆDrO¨yÛ¯£—vÅ˚>L{9-›Ì¶ç°u$=ºÎµ~Dfû?ô“öâ±¸…˛ÇÔr‚“kG≈K˘˝*ˆó:ûç˙¥ﬂWµ}≈≠√$∂Øﬂdf$±Ã¸|öÙr˚?”ü‘aûí[déH˚Í_/‘Ø:˘s\5[q¶^TùI{bﬁ+ ¯ìÒÂ«¥«}€≥”Î¡;?"ñ_˘w[“ öÖãoT#¸ôÕÙÊó7gbÀæ#¬{∫~∑™”v§Ü”CÀö
+“Êﬁ‚S¿ÿ€»8IøÄÔÙfèQ•ÀÑ˙ÖyÙwxı0».’û4Zí¡Mwo◊ò¿ÔÕ…ï'âQˆÑé∆ù0ﬂF—Œ‘Î∑Í>Ÿ|ôÆ„\òÔE.oÛÈën∆õ¥ﬂoóT6µ#ë€«MÖ.#Oí·•n†ä¬ı˘‚N‘Ö€S~›p ä∂Æ {–ªz‘
+{∏@›€†€˙c√‹´™;ù¸}ÚD°™Pëﬂßà»PKD`7ih‘ü£aÄ™·µ;ÿi◊˚v∆äuˇ :‰Ü˛‰8ºO˘Ù¬nÉˆ∂∏Û˜∆ä°;·ÛVõoólrê¥‘mMˇ 
+ÅÕ+i]˚û¯)ìà⁄ßæH+cm8m€)\:LMuk∑_√ÍUø.ô^‰∑ÚÈíVº0%o‰>X*èöª¸ˆ…uWt˛π»´]z◊ËÎèªπ‹S$UÆî‹ê=Èp58˜QWwﬂ¶6~
+ﬁ∆õ}$8ëSCL$ÙÍÆÈ”Â\@µu=˜˜ÌÉuo~µˇ 1Ç˚ï™ásÑï‘ˆ»í9+æFûÿJ¥:èπø>Iv˚∑∂Hw´Gc·åπ•Æ˚m·é…wjﬁ>˘
+ÔUæ&ª·´J÷È‚0PÍê¶’ÈíÆÊaıÍ9Ív¯[àﬂﬂ+{éªˇ LëWVÉ€ı`¥SuÌÄ
+‰´è±˘ù°¿É◊∑lárØé„«ø%nµÎê1ÓCc"FˆÖHßöH⁄ã◊â›~Ï≤9%Eå°sCÍöVÅÊ}-^—y˛Ã‘°&ÃØL[sÀÑ‹Õ¸«˘7:∏—;˚Ry%¥Ù.?‘~Ñ˝«(ñàèV|∆.‘√òpj#o0Ω“5-v∑"KYkÒ⁄])
+~Då§jÃ6ÀL˚(HqiÁƒ;èÎ]e≠^ÈéV"÷|øºâá´jıÒCQÙåg¶≈úXp∆ß.	pÃGË)î“˘{]U]NauZ«qZﬁ!á≈ÃêÀãiz‚Ô4˙¯œ{£¯˘®]Ÿ˘´GQ=µ„jVÓ≤Ï≤7¸í¿ˇ ≤…‚ÀéUQÚ!ñm7à	ÑÂå˘_˛§öÛQ¥Ω‘ÆZ’›^FxÌe_NDC€èO¯„ªCÜYâ6;üBÏ¸¢Xb∏§ øz⁄íi\÷ÛÊÏ)€v˜À‹êÓÉﬂö∂c^ÄRø>ﬂ<@ÖU Ä+ølòSÍØ*jk∑∂Óı]‘Tnr†‘v«Üπ ∏M˜>›0p™‡(_sà!¡@˚˙‚^KkÖGœ˙‰®Ü."û˝∞TÆ†ﬂƒx`¢≠SÓ»“]◊°¬≠äxm◊B‡6ÈÑ¿
+¸[”$Gz-æ>8ëlm∫SË»⁄Z éŸ†∂±Öz˝9Ae7‹c]Ï≠æÿÅhu˚|±KÜﬁÿÉA[¸<1C@xoLéˆ´z¸Ω∞˚Ÿ[é„√˚0+@”"RÔ◊·áÈCçzu≈.ÒË¡{ZªÂ”√Uﬁ√æ≠ oñFØö∫Ω]+G|< ∑\"¬∂@#«›\*áœÍÓõT·π!™Ä7Îê›-Ù,$É∫Ñ•∞ßáèÙƒö6Üöî9°°ZÿG$ªnæ8÷Í’)ﬂ	KΩ˙‰πVè∑Üod≠$ı¡Ω•i¶ˇ «…MÖvﬂ	»‘tœT|-€
+¯j∫´c#≤J|¸0ê∂ÿØÀÜ ÿÒÌ€!p•7È˜ú,]N„¶DnóT„TÜÎﬂz˚‰U’Ïw∆ç´{di„ñHâ1±ZıT¸∆ÃéLeyµg£Î∞]j—%ZP;@{ÉˆóË9ò5ò·»-Æ&#≈åºÎÃìÏÆ<∑r$Ö∑w˘+ˇ \∆ñÑ8eE›bÌq1¡û6_©ËWzE√[jÚÈ”˜W∆€ˆÏsÛ91mñ?”Ÿÿ≤é-<ˇ Õ?ã
+vóö¶ê∆KIi∫ynˇ Î)≠2G€Éªã‚Ê”ò1˚æh´©<πÆèT∑˝xﬂfQV∂,{Ü~Ø|√Àã&+q˜~éÆ„O⁄ëÁGÌJu=Y—à }rÕ∑å‘+‚≤ÖÜh≤ˆ~,ª‚<'ª£÷È{V@z˝Cºs¯ÑQÃJ
+âÌD„ãèéi≤‡û√0Cø≈üQp6ØZ”µw˘|≤òÛ‰›MÌ∑jw…XBÙ~;Áø|∂'zbE¥∆Üù´Ω1•ïˆ≠;{˚bA<–Bı=™<€¬ òêæß∑ŒΩÒÿ”cp;{dNÍ∏√¯‰«‹≈p˙É·ÌàC_®üßl`ñ¸Oﬁ Rû¢ù}Ω≤$Ÿ+ç«oç8vﬂßliJ‡<~ÏòW >öı8z¢◊u>Ø"E°ﬂ√¥Gæ˝Ú!6µáΩ2$wlê∂Ü¥ÆEì];cJ◊ÀØ|i-SûDÆ~‘Ò;‰HVé›{˝58⁄Vü√ö\w?@€€-Z')lt#°≠Z=x`;ÏÆÒ≤@ÔJ„Ä“ªßéÆJÍéÁÁÄ´XO*KCcÌç\+JÙˆÌ\H∞ÜÍ €cﬂ%“–Óø◊∂D›⁄∏Û˜ƒwî∫î†Èá‹áß« ¬]˙œ\j–ÍS¯dæ’jø~Gö]Jï¬(+[SØÀmZ‹ )∂C….°˛ò@
+∂üè\< V∂˝wƒ”!≤õÌ»≥®Îﬂﬂ=\s|.ù“µ¸0´}øáOª#Hl™z„JÓ˚„JÿßáÃ„…uwÿ7‹älwÓ=Ú4áw˜…jÍü≤'eu‹‡ËÆÈ◊È¶t≠ÉÌÚ9 Í‘Ô∏»ùï|rIÁ=6ÈÙéô(»«ìDä˚§”uXû±k–∞•y&˝ËwÏNf„’	zf,5œ‚Åy˜ò'†ëÛÀ>âm˛≠+rÑ˚+ıÏ≥'g¬Gè·.ÁlöÛGà<∑^—ı}.ÚQ´¡%≠‹î‰Œú†ìà¥tW4˘£O"oü0wâ˝OIèÚzºb& àä;N?Ø‚Ç≥øª“Ë∞Àı{vﬂ—ñ≥YHﬁ’›	˙2C.ƒqg¿˛Ç‚OG®”‹±ªÎ¯˛´NÓ&Ú∆ΩVzΩäÈÀ¥7ë’¢z¯H:ß/…≈√í"qÔq¥˙´ëî&AÓJ5?'ÎZ\Xµe‘t˛´*ê^ù®F«ÈÕV^ ≈ò`ïy®”v‰·QÃ/ÃsI‰1êRE˚H„ãåÁÛi≤a<3ı5ÛãÅU\–m„ï‡ﬁW´T|=	€ÁÔó≈≥Q–$ûCßl'¢·-6;j¶ -W§†ØÅËOèÀÙÓE/WûªPÅ„ë!p'pƒ
+~8@'f+√ÉB=™rH•’ÍÕæ›ãL¬ÄΩw¿RUØÍ»e4ÍöSØé*πHˇ >ò˘1*†éßØ\∞y∞+ÜÁnæ'(ojxÁ°¿AË≈™ﬂÁÚ¿ÕìT˚ª¯‰+ΩZ;ı˙r	HﬁΩ1Ê…‘ß›Çè%µß¸∆6óvÎ_|z+tCEH®¶‡ÔÇèT⁄“›∆;•a˚ÜCõ&ø_Ä«Ã%‘ˆÔë°^JÔß%v≠o˜„»lÆ˙0\íÌ˛~¯$HŸ[≠ií= ◊zb9’´Ω∞≤ªı~8y+bù˜˜¿MrB„J˚aÿ˚ê·◊#ÔWTí€¢“⁄É∞?~7—-◊ﬂnÿÛ!ﬁ˝Ò1uk~ÿìIw^áo|j˜
+’S”◊M˜®Îä∏”È˜¬≠x˜˜»É[•a•=ºpU—íõ˜Ø·éˆÃ>£(+C◊=T>ﬁÙ˛8m–|«é Æé ¸’‘Ìí¥.ﬁª‚h°ﬂé6≠Ów¸p°øë˘ÌÅ\vdysV™)∏˘Oö∑◊ß”„ÇE]∂Ÿuq•q;„Ã´ucê1B§R…sâä7∑ò¿&bl0îD∂*◊)¶Í∂Ìg™€G,.(¡‘4gﬁùA˘f¬†EOì@åÒõÅ˝o8Û'‰ÏGùÁïÓ=.{˝Nc ˆWﬁü&Ãl›üè(ºgü…ﬂi;nQ5êrÍ6/)ø“5O.\µ•‰XHIÂ©ÍZ…˛«ΩjxsÈvªéÒ¯w=éó\8§._Œé“¯Ù?÷Zƒ⁄k)ÜV”ùœÿcÎXH|˝üß-pÂ;˛Ó};æı∏—j0a˚Ë≤¯˛§Œ˚¸=ÆÒã_≥˝rˇ ›Í„ùª1ÔÓ>c2≤qWA≈O©\X•RÓ‰Rc Óâﬁ¿WS“ü˚´ªr£˝aµ}çi≥ˆ<dx±Úzù/oëËÃ7˚~I7k-Q>⁄T¥leÍú—‰¡<GÜCÖÈÒÁÜQ≈ƒBu‚jhh
+◊Â”~πŒ÷ª–Ñs÷ù´–W!]Ï≠ ÊÉó@z®…PEïOTûµ†£Ôëæ}ïƒî¯tÔøª +–Ò©°•z{x‰œzÚ‹‘û∏)\Øà»ÙZpnî‹xÙ˘”"õ=k€∂	E[S]È”¿ ™O|òÿ0•¿é˝{¸±ê›AÎ◊SdèüÜ˘vZu|••Ö)·ﬂi°B^A.'æÔCDwŸ.°˛ﬁ¯ŸWS˝æ¯î4F€˝›Ú&¬Ö¨≠4ÌÄ≈ê*mZÔ∑cê¶anﬂv«∂…wo·ë7J„JP}%Và°ßsà)w∂∫∏◊Ø·Äí£øπƒÓU’ß—€éJﬂ]éj—ﬂÆ˝∞
+WVòê´Ë6ßˆ”√%]Bº|0rËÜÕ;nO\TÜ©_£Æ7ÚKDÒ'dµÓ?Æ•on£|ñ‹’£∑Ù¿m\…‹dâVâ⁄õ}8‹Aˆ=Fÿ¶⁄oÛß_ßﬂe@€nΩ±!-7ø_ë,Çõo”Ë¬s0˙ãc‘}ŸÍèÖ∂<z{‡⁄–ﬂﬁp˘+áÍÔë’√Æpˆ˚∆ÿAJÒOj<˚òµÌL+bætÆ@˜†∑Ú˚≤\˜WVæÿ≈]⁄¥Æ%Z'o|=BÜÍ~^ﬁ8•q˜Æ˝∫bÆMq;+`ûøÜDÑ/}ÿ)ç*E,êí—5Ì«ÊLƒÏXJ\◊^A§Î6∆”Vµç‚}àëyGÛ◊Ê38jÖLl’ì∏÷Û?3~MÁwÂâ¿WÎe1Ÿ_ß–Ÿãõ≥aí7å’ÙËÙN‹ê5ìòÎ’Â7öv≥ÂŸ§≥í&≤íøï ñ∂ık∫¸◊l‘^m7ßßq‹|G°ît⁄·≈/´˘—⁄_’võØ]irü®Ã˙]ƒªIk)YMÏ+ü◊ôpÕã)€—.„˙"ÎshÛ‡∂lc®Ê=„òL/#ÚﬂôÿG´¬4-` ´y"ŸœbH›?V]ñDä ,0”f·<Xdo∫˜¯w§ZÁî<«Â¿óPÕ9≈mÔ`’î˜~€√ÓÕN~Ã±≈àÌ›˙ûìG€ëô‡…œøıÑö;•òßê^ä:Ô„Zoú˛Lrâ£≥”„…ã—K"Ù†≠ˆˆ ËÛ-ñﬂ}∫íjz˝Ù√Ê≠£≤@vËpõËÖ@˚÷µ4ÿx·[WW≠9œ_Ø…í˛@tÈ€÷ÆÂZ”ßèjdHËﬂ-º<	˛*ölã¯c’ç*©4 Ô^∏n√ºn7†ﬂz‰ÉW±ÈÇ’‹à¿v›i‹≤øziÆ_~J÷ú	=z‰7
+ÿ5ﬂıE671§7⁄ª{·VÈ∂ﬁ`B””nŸ¥©ì–u=©ë=Ã¬⁄˛œQ÷ù2ô5◊qÙÜáD∏zœLåâØ5jáøÙ¡e]¯W ›V˛# ﬁﬂ?«%z¥^&ï£æK™+Ó:‰IŸ\qÙFÙUw~¥Æ›ﬁÜˆÆﬁ8/$6N‘¶ÿI(l·ªZsPoMø^DRÜè„„à6óTm_øß\ïP•j†˙˝Ÿ¥’‹å+MS∏Èëºí·∏ˆ8kíµ˛FJ≠\M:vÔ”ËƒsVèJç±rJ“6ˆ¡[$)∑OlK0˙áıû„=L>ÿ4ˆ¿Uø}æX,ﬁÃ[Øﬂè5hÓrV≠ÄzajWVÇï¶,\>_GlMZ∫ªäPdUæ˝1ého‰∑æ Ôëﬂ†:VøÃ‡<Ó’‘‹”©˙r;ïwµ6ˆ…A[•v≠|Ã‰	!\≠|{c“’±@vÎÄ°p'æG‹Ü√æQJœ$˜mƒ¥ßu?FN31          </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_icheck.html" class="nav-link ">
+                                        <span class="title">iCheck Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_image_crop.html" class="nav-link ">
+                                        <span class="title">Image Cropping</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_fileupload.html" class="nav-link ">
+                                        <span class="title">Multiple File Upload</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_dropzone.html" class="nav-link ">
+                                        <span class="title">Dropzone File Upload</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-bulb"></i>
+                                <span class="title">Elements</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="elements_steps.html" class="nav-link ">
+                                        <span class="title">Steps</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="elements_lists.html" class="nav-link ">
+                                        <span class="title">Lists</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="elements_ribbons.html" class="nav-link ">
+                                        <span class="title">Ribbons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="elements_overlay.html" class="nav-link ">
+                                        <span class="title">Overlays</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="elements_cards.html" class="nav-link ">
+                                        <span class="title">User Cards</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-briefcase"></i>
+                                <span class="title">Tables</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="table_static_basic.html" class="nav-link ">
+                                        <span class="title">Basic Tables</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="table_static_responsive.html" class="nav-link ">
+                                        <span class="title">Responsive Tables</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="table_bootstrap.html" class="nav-link ">
+                                        <span class="title">Bootstrap Tables</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <span class="title">Datatables</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_managed.html" class="nav-link "> Managed Datatables </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_buttons.html" class="nav-link "> Buttons Extension </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_colreorder.html" class="nav-link "> Colreorder Extension </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_rowreorder.html" class="nav-link "> Rowreorder Extension </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_scroller.html" class="nav-link "> Scroller Extension </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_fixedheader.html" class="nav-link "> FixedHeader Extension </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_responsive.html" class="nav-link "> Responsive Extension </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_editable.html" class="nav-link "> Editable Datatables </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_ajax.html" class="nav-link "> Ajax Datatables </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="?p=" class="nav-link nav-toggle">
+                                <i class="icon-wallet"></i>
+                                <span class="title">Portlets</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="portlet_boxed.html" class="nav-link ">
+                                        <span class="title">Boxed Portlets</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="portlet_light.html" class="nav-link ">
+                                        <span class="title">Light Portlets</span>
+           <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                        <li class="sidebar-toggler-wrapper hide">
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                            <div class="sidebar-toggler">
+                                <span></span>
+                            </div>
+                            <!-- END SIDEBAR TOGGLER BUTTON -->
+                        </li>
+                        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                        <li class="sidebar-search-wrapper">
+                            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                            <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+                            <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+                            <form class="sidebar-search  " action="page_general_search_3.html" method="POST">
+                                <a href="javascript:;" class="remove">
+                                    <i class="icon-close"></i>
+                                </a>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn submit">
+                                            <i class="icon-magnifier"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                        </li>
+                        <li class="nav-item start ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">Dashboard</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item start ">
+                                    <a href="index.html" class="nav-link ">
+                                        <i class="icon-bar-chart"></i>
+                                        <span class="title">Dashboard 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="dashboard_2.html" class="nav-link ">
+                                        <i class="icon-bulb"></i>
+                                        <span class="title">Dashboard 2</span>
+                                        <span class="badge badge-success">1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="dashboard_3.html" class="nav-link ">
+                                        <i class="icon-graph"></i>
+                                        <span class="title">Dashboard 3</span>
+                                        <span class="badge badge-danger">5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">Features</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-diamond"></i>
+                                <span class="title">UI Features</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">Color Library</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">General Components</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_buttons.html" class="nav-link ">
+                                        <span class="title">Buttons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_buttons_spinner.html" class="nav-link ">
+                                        <span class="title">Spinner Buttons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_confirmations.html" class="nav-link ">
+                                        <span class="title">Popover Confirmations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_icons.html" class="nav-link ">
+                                        <span class="title">Font Icons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_socicons.html" class="nav-link ">
+                                        <span class="title">Social Icons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_typography.html" class="nav-link ">
+                                        <span class="title">Typography</span>
+                                    </a>
+                                </li>
+                          <a href="app_inbox.html">view all</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Lisa Wong </span>
+                                                    <span class="time">Just Now </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Richard Doe </span>
+                                                    <span class="time">16 mins </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="../assets/layouts/layout3/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Bob Nilson </span>
+                                                    <span class="time">2 hrs </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Lisa Wong </span>
+                                                    <span class="time">40 mins </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Richard Doe </span>
+                                                    <span class="time">46 mins </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END INBOX DROPDOWN -->
+                        <!-- BEGIN TODO DROPDOWN -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-calendar"></i>
+                                <span class="badge badge-default"> 3 </span>
+                            </a>
+                            <ul class="dropdown-menu extended tasks">
+                                <li class="external">
+                                    <h3>You have
+                                        <span class="bold">12 pending</span> tasks</h3>
+                                    <a href="app_todo.html">view all</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="task">
+                                                    <span class="desc">New release v1.2 </span>
+                                                    <span class="percent">30%</span>
+                                                </span>
+                                                <span class="progress">
+                                                    <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="task">
+                                                    <span class="desc">Application deployment</span>
+                                                    <span class="percent">65%</span>
+                                                </span>
+                                                <span class="progress">
+                                                    <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">65% Complete</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="task">
+                                                    <span class="desc">Mobile app release</span>
+                                                    <span class="percent">98%</span>
+                       $currentRow = ($this->contiguousRow == -1) ? $sheet->getHighestRow(): $this->contiguousRow;
+        }
+
+        // Loop through each line of the file in turn
+        while (($rowData = fgetcsv($fileHandle, 0, $this->delimiter, $this->enclosure)) !== false) {
+            $columnLetter = 'A';
+            foreach ($rowData as $rowDatum) {
+                if ($rowDatum != '' && $this->readFilter->readCell($columnLetter, $currentRow)) {
+                    // Unescape enclosures
+                    $rowDatum = str_replace($escapeEnclosures, $this->enclosure, $rowDatum);
+
+                    // Convert encoding if necessary
+                    if ($this->inputEncoding !== 'UTF-8') {
+                        $rowDatum = PHPExcel_Shared_String::ConvertEncoding($rowDatum, 'UTF-8', $this->inputEncoding);
+                    }
+
+                    // Set cell value
+                    $sheet->getCell($columnLetter . $currentRow)->setValue($rowDatum);
+                }
+                ++$columnLetter;
+            }
+            ++$currentRow;
+        }
+
+        // Close file
+        fclose($fileHandle);
+
+        if ($this->contiguous) {
+            $this->contiguousRow = $currentRow;
+        }
+
+        ini_set('auto_detect_line_endings', $lineEnding);
+
+        // Return
+        return $objPHPExcel;
+    }
+
+    /**
+     * Get delimiter
+     *
+     * @return string
+     */
+    public function getDelimiter()
+    {
+        return $this->delimiter;
+    }
+
+    /**
+     * Set delimiter
+     *
+     * @param    string    $pValue        Delimiter, defaults to ,
+     * @return    PHPExcel_Reader_CSV
+     */
+    public function setDelimiter($pValue = ',')
+    {
+        $this->delimiter = $pValue;
+        return $this;
+    }
+
+    /**
+     * Get enclosure
+     *
+     * @return string
+     */
+    public function getEnclosure()
+    {
+        return $this->enclosure;
+    }
+
+    /**
+     * Set enclosure
+     *
+     * @param    string    $pValue        Enclosure, defaults to "
+     * @return PHPExcel_Reader_CSV
+     */
+    public function setEnclosure($pValue = '"')
+    {
+        if ($pValue == '') {
+            $pValue = '"';
+        }
+        $this->enclosure = $pValue;
+        return $this;
+    }
+
+    /**
+     * Get sheet index
+     *
+     * @return integer
+     */
+    public function getSheetIndex()
+    {
+        return $this->sheetIndex;
+    }
+
+    /**
+     * Set sheet index
+     *
+     * @param    integer        $pValue        Sheet index
+     * @return PHPExcel_Reader_CSV
+     */
+    public function setSheetIndex($pValue = 0)
+    {
+        $this->sheetIndex = $pValue;
+        return $this;
+    }
+
+    /**
+     * Set Contiguous
+     *
+     * @param boolean $contiguous
+     */
+    public function setContiguous($contiguous = false)
+    {
+        $this->contiguous = (bool) $contiguous;
+        if (!$contiguous) {
+            $this->contiguousRow = -1;
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get Contiguous
+     *
+     * @return boolean
+     */
+    public function getContiguous()
+    {
+        return $this->contiguous;
+    }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 4.5.6
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" dir="rtl">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Metronic | Portfolio 3</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="../assets/global/plugins/cubeportfolio/css/cubeportfolio.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="../assets/global/css/components-rounded-rtl.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/plugins-rtl.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN PAGE LEVEL STYLES -->
+        <link href="../assets/pages/css/portfolio-rtl.min.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="../assets/layouts/layout/css/layout-rtl.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/themes/darkblue-rtl.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout/css/custom-rtl.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+                <!-- END R      <div class="cont-col2">
+                                                    <div class="desc"> Web server hardware needs to be upgraded.
+                                                        <span class="label label-sm label-warning"> Overdue </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 2 hours </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-default">
+                                                            <i class="fa fa-briefcase"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="list-heading">System</h3>
+                                <ul class="feeds list-items">
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-info">
+                                                        <i class="fa fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 4 pending tasks.
+                                                        <span class="label label-sm label-warning "> Take action
+                                                            <i class="fa fa-share"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> Just now </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-danger">
+                                                            <i class="fa fa-bar-chart-o"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> Finance Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-default">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 24 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-info">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> New order received with
+                                                        <span class="label label-sm label-success"> Reference Number: DR23923 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 30 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-success">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 24 mins </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col1">
+                                            <div class="cont">
+                                                <div class="cont-col1">
+                                                    <div class="label label-sm label-warning">
+                                                        <i class="fa fa-bell-o"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cont-col2">
+                                                    <div class="desc"> Web server hardware needs to be upgraded.
+                                                        <span class="label label-sm label-default "> Overdue </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="date"> 2 hours </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="col1">
+                                                <div class="cont">
+                                                    <div class="cont-col1">
+                                                        <div class="label label-sm label-info">
+                                                            <i class="fa fa-briefcase"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cont-col2">
+                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="date"> 20 mins </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane page-quick-sidebar-settings" id="quick_sidebar_tab_3">
+                            <div class="page-quick-sidebar-settings-list">
+                                <h3 class="list-heading">General Settings</h3>
+                                <ul class="list-items borderless">
+                                    <li> Enable Notifications
+                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="success" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                    <li> Allow Tracking
+                                        <input type="checkbox" class="make-switch" data-size="small" data-on-color="info" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                    <li> Log Errors
+                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="danger" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                    <li> Auto Sumbit Issues
+                                        <input type="checkbox" class="make-switch" data-size="small" data-on-color="warning" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                    <li> Enable SMS Alerts
+                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="success" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                </ul>
+                                <h3 class="list-heading">System Settings</h3>
+                                <ul class="list-items borderless">
+                                    <li> Security Level
+                                        <select class="form-control input-inline input-sm input-small">
+                                            <option value="1">Normal</option>
+                                            <option value="2" selected>Medium</option>
+                                            <option value="e">High</option>
+                                        </select>
+                                    </li>
+                                    <li> Failed Email Attempts
+                                        <input class="form-control input-inline input-sm input-small" value="5" /> </li>
+                                    <li> Secondary SMTP Port
+                                        <input class="form-control input-inline input-sm input-small" value="3560" /> </li>
+                                    <li> Notify On System Error
+                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="danger" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                    <li> Notify On SMTP Error
+                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="warning" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
+                                </ul>
+                                <div class="inner-content">
+                                    <button class="btn btn-success">
+                                        <i class="icon-settings"></i> Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2014 &copy; Metronic by keenthemes.
+                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="../assets/global/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javaê›i∞ÈàUøÌúNÍ—˚DSñ˙Œ „¯¯b
+∏ÚV~MÉ˝ií‰KÖ@È·Û¿@Ê:°Îˇ ï^jﬂ·ã◊˝˝≤ñ∞v€ú#™|”ı|≥“=ñÌKèÂ≤«”˙ü:ˆì≥x%˘à•ıyˇ èﬁò~ah<’5ÎU˝‰tK∞jùæéá€6ùª¢∏¯∞Ê9∏]â¨ÁÜ\è/“5˘ﬂC˙Ö«≠nÑBOm«©äøºéæ1ù«∂rº^ Â˝Øwß…–Û–U|∑Áº©Ê?Û
+Ωúú4ø7@ü∑ˇ wqOUÒ«#§Õ‡Lü£ˆ4ktCSà·ÎıCı>≥_™›√›ª˙ëH¢H]O%tp0>È∂ê∞˘ù $ƒ©O)är†¸r;∂B=Í>ß1…æ◊Jev[xi}öÇHyf%Í~~(À®«õïá	»|ªÿÂ›ÕÕÙû¨Ê•M#Nä£ÿfûyÕì˚Œ,q∆( Óo-Ï≠ßæøô-¨mî…4Ú(™;±9Æçßo{√¸„˘â®yﬁcÂﬂ*	ÌÙ[ÉÈz–©Wƒö)∫GÌ‘˜€/Ü=ËÜB	%Ëüóì÷æ_Íö“E=‰h8⁄±}∫∑fo¿fﬂœ?«'UüW≈Èé√ÔzƒZl1Òh‚Xë˜,·Üﬁ›~å»êŸ¿‚L2¬Ö	"§)v=»8êz5q≥œÓC…o/5Y9<+_M+UΩ[√€+ê#‡€ä€bÜë‘qåù–R£°ÔïKπæ#´íáë,n€‘˚bR”ª≥2?nUﬂ§ ±ÜMdÜøΩr∞7djî‰¯áÍ	˚D‡ “<“…Øí‹4q˝AP∂˛'1ß®ìï&[îñ‚‚F?æ<òÏº{}ÑI%œà"¥8È=ƒ¸Å,®ªt|ú7 ~çæ˝;e’≥ÑBŸ†I„*~ÉÔï "Ct¬f%Æ¨`ó˚—ˆ[˘ÜOCÙm”à"«$G*Ä›≥$Ó”KËOL'os´JMq¶óXnw˘‡bWE(j<{a±ÕÌªl1‹n≠>AZÌàJ”ÔÄAn<í—$„à¢ñÅÏMkç≠"ÌdYWÍ≤üxèÃú9:,k‘>,#œ˛V˝!o˙B—i®[@:…Íø1óg√‚√Ã9∫=G®˝%ÂVw˜∫-˝ÆµßHa∫∑p¿èÚN‡è~á1ÙzôbêóÒcº9:úÙMCCûnmÙF˛◊m˚‡≤ºúz +¸0Äï‹T i∑ÜDy"◊≠:m”
+‡ªöu…êãr≠j_ˆ«Ö∫É±ßÜ€Çç©∑b
+(∂ÿw;ˆ€ˆ°jé‰u˝xQ*=v¿ç◊-PÚSƒääÑxeë&;Ñ⁄x√(xâ™˝∏ˇ óÂ‚0Jº~?±"Th≠˜Æﬁ›ÜU{•ƒß¸Îè5µˇ øLçÙc≥CØàﬂπ~÷H©TØZùÜWÕÉ´Zˇ ôƒﬂEjüÁ·Ñ€´€€*ÍáÆ◊5wœlM]´b¶û>Ÿ
+¢Ü€ø‚0Öv;ıßl;•«√'U∫µÚÈÇ∂Vç>˛ßÈlÆﬂN¯⁄-v˚Ì”ø|7≤
+◊}ÚqB&ŒÚÁO∫Ü˙Õ˝;ªfDﬁÎÿ˚á.≈íX‰%™;Üåÿ£ñﬁ2ÿæé—µ+?3ËP_*Ü∑Ωäíƒ{1¯]»‘g∂hµ0÷ÈÑˇ ú7˜ı|kUßûèP`y¿Ï~‚Òo;y^He∏“)Yco¨i≤7BGŸŸ≈Q≥Ü’‡:|∆ë¸˜∫-XÕé9~ÎÄ[izî∂7»NÉ™∆—OÍ±;Qá˙–øƒ3<(q˝Ø@.ccÍé„ÒÊ’˘ÊÎõk[ﬂÀmrNZßóâm6RkÎÈŒj•O~ˇ Å#6⁄-O+π„{sB8∆xr…œ OZífêQ(zêG⁄Ã‡xÉœ∆ sJuR;Z€[7©xﬂi∫§‘˚f]@Ä·ó?úœ’-£˜§ù‹ºç J¸DÊ∂¯çÛv‘ °…,Ûòtè+ÈØ™k7u⁄5î≤Ω6H”´1ˇ o Ú^o‘55~nk∞È6–˙??R⁄«ëÙ°oZÂófos∞ÌôX1Jfáƒ∂»«x•˝Ø†ºï˘k•y6î ∫’Yi.†Í)B7èŸ_~ß78Ò«†Ë≥jeò˜ÊyvØÔ–IÑÇE·ñ:Ó‡ì)};,$1qÒIπUfù®2´ÔÊÃmÙÚRπPÏ≠Àb~–ÌÿÂs¢[1öí÷†ê⁄Ω1l∏Cô™ñ%íª◊Ï∑ﬂÌè¡@Ó4†x»Xƒ‘ﬂ‚R;˚¨Ô…¥XÊ±÷Ub8çÀwßÜ&˘2J2*â]∏"˛—˝†<<rUøF¿	4õùIß¨QéíwËƒ¬…úÚúÏx ‹ÛKŸò∞≠
+ˆﬂ¶bÄkg!Ö˘ﬂÛAÚZ≠Ω‰ü\◊Â ¡•€PÀ¡∂ı%ˇ }†ÎæÁ∞ÀDxÉ$ﬂÚ€[:÷ô%˚H%h8Ö‚Äﬁôl1ê,∏˘O™∫≥§u…”èk÷πÔf%N‚UjªHª° Â w3«>‰£¨’Gï~–=æ]ã-Ïyè≈∂N5∏‰Æ¶üv\d‘CdVüÜHrCu5˘aU¿Å‘¸Ú7Bÿñœ∑OE’‘Èà;°™·)k€¨>1Í…ÆΩ2>I[˙˚‰πÑ¥	çèPGé;ÇHÊeªÄøIóg~úÿa…|‹C]«|ÌÂ·¶ﬁ5Ù	«Nªn3-6äS˚CÿÊ6´?o¶ 2G¬öCPXöÓ7ßÀ<€ÆÔ¢Ø7‹ı˙H°z®ÎÌ∂¯8v`KªäûùÜÿU’*+µ<Æ6QMÄ?Ÿxˇ  ±∑w5ßè”â ◊}™O\kfKA€≠1)]µ8ööbIlqÒ éßì‹≈∞Ì_ûÙl≤Ù$m–a‰i“í77a∏“e ä©A+zT∆õ)>+¸FNPÒ>ùèwπ¨∫ä÷ùzf)ÊÿWÌ_Ç ⁄;Ù=œæu+–Ózb|í⁄O˘◊	Ÿp$ûü,Ö√«LZ=hi_|è4∫ª ›N6W
+Ív˝Y
+∫∏H€ù+]w≠=RÓßnΩÚQÚCG≠√…-‰Uæ›Ú[ÚlRµ'ol;!q•+ÿı!‹Ü«èsí·YÔÂáöDÍGCºzi˙É÷=#π;S‰ˇ Ø:øg{PÈÛxs>â˝Ö‰Ω¢ÏﬂçÍá?8˛œπËæx–ˇ JiÜÍ›k{eYÉvO⁄_‚3ºÌ}Õé«8ºodj¸º'Èóﬁ˘ØŒ∫÷õ‘ÅBµ€†Ïı‚Oî ?‡Üq0ıé{èΩÙ,3‡ˇ 7˝œÏ˚òùÆ∑®iÀ¶˘œLÎæSuK»ˇ j}-€ç«ÜÒüˆ9èàúy@~˛ø±»œä9#,r˙rn<§˙^5⁄kZe∂°°;+Ëñeπmò´äê<)–úÃÀ©'”û;å∆_ºÊ: „,∆ùzˆ'øœ0ˇ [úXßùˇ 04è$YÉr>π≠L•≠4¥4vûS˚èß∂X IE[Ã<ªÂO9~nkc[’¶)g“›2£¡ˇ u[ßsÌ◊ªŒ√¶3ﬁË}ÏsgÜ :ûÔ÷˙W ^F–<ß`ö~èh"jVyü˚ŸXçÀˇ .É6àèìœf‘Jf…di|A⁄®ﬂ'P Ô^£‹w∏ÊG£mÖ!ú2(®4‹üé&îh~‰“PË7˘nzev.€nU…d—√N<à#≠6»HYeIk(º@„Mà⁄∏I2jRAÄi∂¿å¶M±Zi"—Vç]´“Ω0É≤y“ŸÓ~¨è`Ú©›ˇ âf,Úàl7.d1ÒËìÕ;›KÎJ’ÓE∞0L•-‹¯¿DPPûX‚ı%ò™BÄóv!QPnYâ† {‡ª›üGèy√Ûj{…üC¸ø,åﬁî∫ﬂ@⁄ñ®Gƒ‚¬)·ñB˙òíJ#»ˇ í“;˛ôÛ[/Æî€J≈ﬁV;Ú∏sSÀ¸ú⁄c¡µÀ‡‡d’W¶?‘˜(Ù{ë"∑ÖaÙ’i
+˙e)±^ŸîN‘‡Än—~îê,}DrvÒá,Cß…æ3æmäPS|ƒ;Ÿ;ØNπî5Ã√’AIWò HÍ9∑cüC…ln$^J(G⁄_À«êLYÁ’2çVSRw€-¶≤ª{„$8ˆÚ<ëNjõ©√kK∂Î€HkÂﬂñé>‰Ü®)Ä•i=0•aÈø\èFA£∂˝N¬WC1Öƒã€Ì·ìå∏M±ú8Ö(kz}∂£k"HºÌßZ˛}∆l‡D£øW$ƒﬂP‡√È≠iÿS<ûﬂ^•¸€®Í||FKzE*,+Z˜8Ò0™^ê+∏…q[%∂Ë0YËÖ„zïw∞+»≠ ﬁªo€	@+ﬂ#Çô-µ4ß|y≤+¿€Á„ãàÍz/∑lJmÆ Pç€Ø—„ä€M¶›””$⁄FxÇM	‹˙±–dﬂƒ ¸@÷Ω)èò]ï+ıÇÃOä◊≤„˛jÀxFOÎ}ˇ µØÈ˜}ﬂ±LqÓ:Ìæbùõ7uGqÙül16†v‰	ˆ˘`¥“Âﬂ¯å%ân´∞Í;‡≠÷ó˛~åârb◊CCÙa*ﬂ wÔÅm° ¥=1 %’≠wﬂ∂\’«µz◊jc@Z∏Ö°\~ıjû!ÊÆÿéõåGí∂)–ˇ n]ﬂß«r‰;}#∞…K…i∞v•@€"≠Ü˜ÆZ Ü¡&ÖIVeŸÅ†É⁄ò«d=˜Úˇ Õ+ÊMbπo˜)dWJMK (≤≤|ıœgªOÛx8%ı¿oÊ;ﬂ%ÌæŒ¸¶{è—=„˙æ/¸‘“‡–Ø%Üpc“µ"$µôG˜3r®#›ñk5˙èQq‰]˜gÎ¯	ÂèüˆáéÍAÙùJs—exd¥’≠WÏ˙¨8Œü'R$è5:ú|q∞køﬂﬁÙxd$æ'Àˆr,£ÚóWN©˘u7≠j+}†K˛¸Å˛"ãÙT˘Ê,AîlÏ\=t,£›/z?ÛÛ>ﬂIi<øÂ∑a˚2›(ohi“Ω_Úz/|î!b˚ùtAI-?*5è9]øòºﬁ”>FıﬁKä˝nÈè]œŸènøvm∞ÈoÍÂ›˙‹MF∞bÙ«s˜>ï”tÎ+Kk=:›-·ÄéË´(Í<}Îõ É°úâ$À˚SÆD‚¸£t?-¥€l<@é≠2Åm€î+2™KE ˆ'È»»˘¢&Ü·¥Y>8ôj@%k“ü<ﬁ§çàBsBX2ˇ ±#o†å¨ü'"äúèU- W©˛9!”õ8éı	*Iˇ d;dm∞(ENl~ÓM(<r≥ 7m£tï]j∆U0ÿû1TÚπ#‚a˛HÌL¡…®‚⁄yπÿ¥’º˘˜%L`|Dó;T‘ë‹úƒ≤=Óy	?ò¸—¢˘F¿\Î3qi[˜6—éS À—Q:üô€,çﬁ‹ÿsxÌ’Ôùˇ 7uß€¿÷z8"≈	ÙBéèq/˚∞ˇ í6~\fáÕÑÊ .OeÚoÂÜïÂàñHGØ™q§∑r )‚N ?€C`6ÊÍ≤ÁñO Œ‡Ö-√F’,úKuÍ{ólj’üÎ˙<"yY»YdP U˛cR)Oë6ÿEF\)1ÀRµ´2ı˘W∞êB⁄ºº§T˛e4 ¸ª‰á+lv¥-~ÿ¯Gq∏˚Û‚ X›ºoÌn2íE⁄y ßâ¢oZ.ˇ mœ∂Q c.(π0êê¢πdW◊ßq‹ÕéQ!aââ+Vø¬πg6'ø|ä≠~]∞l¥’xç∞Û]RpÉ|ÿ≠Ô˙∞ﬂT∏Ù®¿~‘≠$i+wÎçlïáÆ,ö>ÿ”%X%Z%˛Ì˙W≥fFú&ãVH^·‡†–‘Tø<‘˙π›æFõˆ…äUG‰{ÌçÿbE*)€√$¿ÆØ”N›ÒΩò”`”ÿç˝ÚE/‰M{ÇΩli’•ﬁ2Jÿ°‹ÌàC`˜„∑}Îç"ñöÄ	ÈﬂÏú<G~ÿoulqïÎ€Æ;©Î∑Zx·*æÉ®4˛jä·¶+ ÿ˚
+`;2\HOÔ∫ŸΩæy"8∆¸ˇ —uÓR©©VeÍéQGël¶Å©”æ
+‰ÿ¬7Ca∑®t¿ÑSkΩ|p“
+Ê®Ôø|ØÑÑÅ#¶‡˜…lUqÄúâ;!™·KÄ>Ø\“∂?∞`ªCU_¥—ìÂIq€ßŒ∏B¥Ó>Ïé›UukÛÓrUCÕ©c_««#`ÏìÖ@«'πVŒ«¿¸∞ìJÿ;Pmçò˚–ù˘KÃÂ≠vﬂR$˝UøsxÉ°ÖŒ‰˚Ø⁄≤Ï≠wÂ5-Ì»˚ã´Ì=’ÈŒ?‚ÁÌ‰ˆœ9ykNÛüóe±ùD¡◊÷µëOÌR†É‡F{ÆQÉäÌ`æQ£Œt˘}\πH~;ü;yèÀñˆZC€êˇ R0≠≠€æÔ◊Í◊ÏOÓﬂ¸ìú&,ñeÛÎ˙ﬂB«È1˜«Ù«„Ã<∞…r˙|:Ö©e’¥FgFF!⁄Ÿè#P¸5?AÃ/¢_o8	X<ß˜ΩwÚoÚèÀ∑vVûrΩ∏[ª{í“Èñ`ñÖxµO‹∏=T˜ÕÓõO©‚µ∫ô„'G>ˇ ÉËtäTéå±ô¬~ájfuÏÛ¸B˙´C
+»√ãù∏ÅR¿{`ÆmsïÏ±bÖπrJ@7WΩç2 É3)ª®íeŸ¯§@û∑†•(|â6ŸUÀr≥Î(»©$Ï<6»	”/à†Áı~“ÍTtßzd&‰¬∫®≠TÉ»r∞Óßy{úuïπŒ~ÃK‘¸˚îfœsÊÀ)d;rÔcó7S^∞iË±çƒk≤
+x¯ú‘œ)ô≤Ó1‚é1∑5%;™F+‘ﬂÊ0E∞˘ºÔŒ_öV:<”iû^T‘uÑ¯sΩ•±Qà˚n?ëvÒ9hâ;˛gf?ÂèÀwŒ7Ò˘õÕ∑3z¸\‰πò^(ßdè‰>Y∞≈¶€óÎq≤Íc£ºæ«ºhû_≥“-R⁄¬›-Ïb©ÙTt˜=…=ÎõQ:πH»Ÿ;ßq«E+@Íc#r~C€ n´õ[ä
+èﬁƒ˝ûµ¸∫cﬁ≤ür‡Å¬∆xùó∑5{"Îv•pá‚Ï)±˛\â4òã‰∞Ñº∑'Ïùèµ6»◊V^KΩKtå¢çúT©‹‘v˘eñ»·ë6ÑX‘Çc;÷Ü>¿{≈ñ>!}[∏äŸîïa∏ÿå∆úMô∆@ÓÈê€IÍ >ìâs˛Ïÿ‰ÊDÒä<’£`V™jßu9±X‰Z»›zµM&$6GÅ˘‰wC`É◊VªÙÈíU’=2p≠ìà4aÒ˝y4≠'æD2Zw˘`¥ÖÑê6∆FŸ)±Ø\xõ xiq^¶øÜyˇ πıp öìÚ≤AUvﬂ®Ï|â
+™ööÚ=+ìk+ˆ;–äbBV;w_ÎÑæΩ˛ö‚vbÌÖ	ﬂµ}∞ÄÜ˘
+¯ü Ï¥ÿcŸv√ÕŸ©˜=U°BhvÌéˆ™úiÒ§˜…Yam#`w=q§€à#¶ﬁ5¡…Bﬁ;ä◊€ﬂ#VY[\A≠:ç©€%Kk¯á®≠f=	˝ØcÔìΩ∫±∫˜)ë‘òmæ€Â±dI?3ë)p$_ª ;™‰;Å◊ΩqAm˜€«ﬂí‘'ßR;aªdU+^ùq˜∞S©Ø]è∂MÜ'Ø_liHrìæ˘rA‘t;W®Ò…ïuA®ˇ k#Õ\(¶ ÷ÍÍSÏöN ÿ≠7˚æy#ÕƒÙ†°ÌèÈW1#·ÌÛ≈C@ÔøLö™
+V†WÒ¿F˛ˆ/j¸´ÛÈ-2]Â´yßt	›≠ò¸'˝â¯~Ïıeı˛&#Ü_T9UÛ?i4Qñ?NN÷ÎÛÊó~`˘v(Ó$∏·˛„ı5xÆt‚áÔ˚Cﬂ!€_'ã±Ê›Ÿ:Ø>®Q£ı>c‘ÙÎè/_zÖyïÌnTÙ2®˝R∆sGó·∞ˆò≤å†é˝«„»ΩÚÃ…£Î˜æ@∏í∫v•]S@f˛r+,#›Ä≠<AÃù·/?€ökàŒ9ÚóÎ}1#Deg¯JìJSıfÙ»nC√DK%Ù˝NU>®•⁄
+`TH∂Q∫Æäc‘ef¢◊~Ü˘åà6mû’Hy]ñOÑv¶√®Ó›kt8*∆¥‹ö–Ï:Â|€H+YÀ`j™h<(:ö‰n˜d$◊z®Öë´Ùíb*£˝QöÏ˙¡ ?7cèM{œ‰î‘n∆ÆFÏÕπbz◊5˚Û.¬∫%∫∂Øc¢ŸK®j˜)ga⁄öCOí®≥¿oé‰≥∞7≠˘ÎÃû}º>]ÚÖ¨ˆ⁄\ﬂÓÍ∑∑*v%Ÿ∫å¯Væ'2·å›gÓbh)rz?ÂﬂÂù†∫ﬁk•ÂÚÄ…n~(!Â›j>&=3qáN!π‹˛9~∑WüU)
+é√Ôz“⁄Gsé†ÅBiU”.7nºnñg°wßpr'ÕoπﬁõnÅÉ)‹±GcÇ©o´|ˆ"CÃç’Å¯¿˘‚˚ÓVª∂S2ùù-BÙ'Ë ¯ôÙ*r ~ø
+üŸ=Í0êK(ö[7F$°úMZÉÆ˝kvQÓRíHè∆Ü•Ä{èaLCõ(É»™†ZòÄ{W'aà	.µÊKoPﬂ]«ˆ<Ocòô5Qö‚r∞È§GpEr Ê¥,%$tÃ#…ïR
+¶ŒZ5Mª◊¿¯‰!?U–π5‚4ehj§x◊3ƒ≠∆_∑ˆ„˜°Ø≤k_£	^mbwKÅ˙r*Í◊Âäµ]ˆÿ·ªJ√ë⁄“ì€FJd‰¨3SlxMÿfi∑Cÿ¯güVÔ®[jl6˜=0ÇÇ™î˘˚x‰òï`iˆ∂=ÎèõQ‘T∑∑C˙ÈÑﬂ0ÜÍ6 Ó√UUÈ¸pÜ≤—›à√5ujP}¿B⁄•péHÜÉøM˝∞Ö-ö˚˝ˇ ~¥.Ë7ßl4Jü£ÈÑπ´–öTm„àÄ„∏Ú5«…-„JwƒÓ°¢ª÷ï'õoÉLxl&˝íO⁄ˆ?◊$øÔÚEàÔ—Hä∞¯¡‹{å§
+>mÖ€V¥˙p{’µŸˆ˛9KùC
+ıÆ7Hñ’RÄ˝£ÑUßr∏1Ô·±ˆ»“)y"Ä˜Ò¿NÂäû«|AË…¿Ô˙∞{´®ÈâM¥y∏k™ÆÎ–Tèò›ùøç˜†∂øN∏*ç´G¸∆ó˜=∞ä |´◊&ï˝	èlm	∑ñ5s†Î÷:´∞∆¸.x˜Öˆoù:˝üŸ˙©iµ1…–˝Œª¥tøô”œR6˜éO°uKmsKíŸàhÁ@—H7©Uaû—üu8vÂ!≥‰|“”ÂÍÔô?0<øÒ<ì°OTãøù	6Ú˝ˇ ˆ9¿c8‰˙N,ñ£˝a˛¯|∑y3O®ÿΩæ©bLÓÉ8Ω¥+±&¢ßë9áR«?s∑1éXê~ôá⁄~TÛóú¸∑¶˘öÃè©ﬂ¬≤ºk≥$√·t'¸ñgG	DèñÍ0ÀOñXœ1˜&“4hÂY˝µÿÒ˜ÚDƒtià$X*HP˙à‹îçÄÎN€egΩ∂1Ωäπ$û5øæA»C\›¡lº¶nﬂf1ˆõ(…û1∑c«)ö	›ı≈‚˙r∫Ó"M™ =ÛWó<≤ˆŒ”„‹n{–ÑäÄ:x∆≠úÄ√|Á˘ç£˘Lõ_“ı]6˚4Õ—∑⁄ˆÀcåûª o…ÁZ7ñ<È˘©™çc[î≈¶∆¸Rfm"C˚Fz∑˘]|Nl0‡$◊ √.XbÁπÓ}Â$Ë˛U≥Èà"v⁄IeöS‚Õ·‡:f÷:lπ•ê‹ôp¯VõVµ]∫ÆFÿW‡ŒKA˝Àx§§‰¸«&´cÕ≤G£Eê5Q]¸>ÏjÇˇ Ö"¥•ƒ~û‘Îïü6›‹√’#4é§ÇNÙÏ0ïnTàD ï¯EA¶ˇ q»Úl‹¨vP8‘Ω>…ÔLÉ ‹Ê¢–#u]…Æeñ»9.“ﬂëêÓ6P§r?FW<ëÄ‹ÓﬂÏõÀ˚©h±H¡|k∫ÆkÚÊî∂‰Ãx#ŒÂ!çQàUj¥” öìV0â≥n]”:‘s0®∫XñX ∑~á¿·êR∆F%Ø˝^]Ä˚ﬂ√Ü'Ç_‰ "Cà#Å©ÃÀßá1Hƒê°h;m◊©¶™›=[≠=±%V¢ø~öZƒ§Öá€"Ã,'´ òˇ µàdÒ
+ûùÜp'~o®R„◊¬ô+ÚBÂjâ
+Åª∞®¶‘…∆ó)'fÿéû’ƒ1-ÇGZ‘õJ“¨gø—à-r]CBI¯∫‚Ü6⁄–˛Œ‘⁄ü«Â…J™Ö ¥Ô]±e≠∫7O∏‰íÿ”jvÕπA°°©ƒÑÑµcﬂ-ó$Ú;7æÿ€jç∑J§‰Tótÿ÷ø´0´zSπÆ«âq©a^û€Ïp+ä	ÍI„(ÿÊˆ>˛˘:‚Ú?zﬂπFØ»äP
+ÏzÂ€v¶¯ìÚÍpWz-≤HiøcÄärw#‰q•≤1†U†h|Å¿Uq„‘‡´C^Èê%[˜Ó;b;–ﬂO˘”ÍõjÇ¥ÈÌí4í∫Ño6´´\@°Ô‘tÆZøN πMG^á,Ë•yÂM∂∆≈˘±uAzé¯<ïÌ_ï>b˝#§6çrıº”h±‘Ó÷Ìˆ˚≥˜g¶˚/⁄xºsè/sÊ~“Ë<,ﬁ,Gß'˚Æø>hÃœ.Cpœ;'˙§Üí?fJ|-ÛÔÙd˚gNqœƒè"Ÿÿ∫Æ(x}c∏˜>`◊mn4˝C◊ü‚∏,÷˜hﬁº[WÂ"oöçDx‡$>/Wßò≥ú√—øÁ|ﬂ˙Z‘|Öp‹¨u0uπ¯}@?{˜aÒ|¡ÀtyLE                                <li class="media">
+                                        <img class="media-object" src="../assets/layouts/layout/img/avatar10.jpg" alt="...">
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Irina Savikova</h4>
+                                            <div class="media-heading-sub"> CEO, Tizda Motors Inc </div>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-status">
+                                            <span class="badge badge-danger">4</span>
+                                        </div>
+                                        <img class="media-object" src="../assets/layouts/layout/img/avatar11.jpg" alt="...">
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Maria Gomez</h4>
+                                            <div class="media-heading-sub"> Manager, Infomatic Inc </div>
+                                            <div class="media-heading-small"> Last seen 03:10 AM </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page-quick-sidebar-item">
+                                <div class="page-quick-sidebar-chat-user">
+                                    <div class="page-quick-sidebar-nav">
+                                        <a href="javascript:;" class="page-quick-sidebar-back-to

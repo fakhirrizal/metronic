@@ -1,0 +1,33 @@
+       break; // inline string
+                case 'b': p.v = parsexmlbool(p.v); break;
+                case 'd':
+                    if(!opts.cellDates) { p.v = datenum(p.v); p.t = 'n'; }
+                    break;
+                /* error string in .v, number in .v */
+                case 'e': p.w = p.v; p.v = RBErr[p.v]; break;
+            }
+            /* formatting */
+            fmtid = fillid = 0;
+            if(do_format && tag.s !== undefined) {
+                cf = styles.CellXf[tag.s];
+                if(cf != null) {
+                    if(cf.numFmtId != null) fmtid = cf.numFmtId;
+                    if(opts.cellStyles && cf.fillId != null) fillid = cf.fillId;
+                }
+            }
+            safe_format(p, fmtid, fillid, opts);
+            s[tag.r] = p;
+        }
+    }
+}; })();
+
+function write_ws_xml_data(ws, opts, idx, wb) {
+    var o = [], r = [], range = safe_decode_range(ws['!ref']), cell, ref, rr = "", cols = [], R, C;
+    for(C = range.s.c; C <= range.e.c; ++C) cols[C] = encode_col(C);
+    for(R = range.s.r; R <= range.e.r; ++R) {
+        r = [];
+        rr = encode_row(R);
+        for(C = range.s.c; C <= range.e.c; ++C) {
+            ref = cols[C] + rr;
+            if(ws[ref] === undefined) continue;
+            if((cell = write_ws_xml_cell(ws[ref], ref, ws, opts, idx

@@ -1,0 +1,387 @@
+ this.parent.observe("blur:composer", function() {
+      dom.copyStyles(boxFormattingStyles) .from(that.blurStylesHost).to(that.iframe);
+      dom.copyStyles(TEXT_FORMATTING)     .from(that.blurStylesHost).to(that.element);
+    });
+  
+    return this;
+  };
+})(wysihtml5);/**
+ * Taking care of events
+ *  - Simulating 'change' event on contentEditable element
+ *  - Handling drag & drop logic
+ *  - Catch paste events
+ *  - Dispatch proprietary newword:composer event
+ *  - Keyboard shortcuts
+ */
+(function(wysihtml5) {
+  var dom       = wysihtml5.dom,
+      browser   = wysihtml5.browser,
+      /**
+       * Map keyCodes to query commands
+       */
+      shortcuts = {
+        "66": "bold",     // B
+        "73": "italic",   // I
+        "85": "underline" // U
+      };
+  
+  wysihtml5.views.Composer.prototype.observe = function() {
+    var that                = this,
+        state               = this.getValue(),
+        iframe              = this.sandbox.getIframe(),
+        element             = this.element,
+        focusBlurElement    = browser.supportsEventsInIframeCorrectly() ? element : this.sandbox.getWindow(),
+        // Firefox < 3.5 doesn't support the drop event, instead it supports a so called "dragdrop" event which behaves almost the same
+        pasteEvents         = browser.supportsEvent("drop") ? ["drop", "paste"] : ["dragdrop", "paste"];
+
+    // --------- destroy:composer event ---------
+    dom.observe(iframe, "DOMNodeRemoved", function() {
+      clearInterval(domNodeRemovedInterval);
+      that.parent.fire("destroy:composer");
+    });
+
+    // DOMNodeRemoved event is not supported in IE 8
+    var domNodeRemovedInterval = setInterval(function() {
+      if (!dom.contains(document.documentElement, iframe)) {
+        clearInterval(domNodeRemovedInterval);
+        that.parent.fire("destroy:composer");
+      }
+    }, 250);
+
+
+    // --------- Focus & blur logic ---------
+    dom.observe(focusBlurElement, "focus", function() {
+      that.parent.fire("focus").fire("focus:composer");
+
+      // Delay storing of state until all focus handler are fired
+      // especially the one which resets the placeholder
+      setTimeout(function() { state = that.getValue(); }, 0);
+    });
+
+    dom.observe(focusBlurElement, "blur", function() {
+      if (state !== that.getValue()) {
+        that.parent.fire("change").fire("change:composer");
+      }
+      that.parent.fire("blur").fire("blur:composer");
+    });
+    
+    if (wysihtml5.browser.isIos()) {
+      // When on iPad/iPhone/IPod after clicking outside of editor, the editor loses focus
+      // but the UI still acts as if the editor has focus (blinking caret and onscreen keyboard visible)
+      // We prevent that by focusing a temporary input element which immediately loses focus
+      dom.observe(element, "blur", function() {
+        var input = element.ownerDocument.createElement("input"),
+            originalScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+            originalScrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+        try {
+          that.selection.insertNode(input);
+        } catch(e) {
+          element.appendChild(input);
+        }
+        input.focus();
+        input.parentNode.removeChild(input);
+        
+        window.scrollTo(originalScrollLeft, originalScrollTop);
+      });
+    }
+
+    // --------- Drag & Drop logic ---------
+    dom.observe(element, "dragenter", function() {
+      that.parent.fire("unset_placeholder");
+    });
+
+    if (browser.firesOnDropOnlyWhenOnDragOverIsCancelled()) {
+      dom.observe(element, ["dragover", "dragenter"], function(event) {
+        event.preventDefault();
+      });
+    }
+
+    dom.observe(element, pasteEvents, function(event) {
+      var dataTransfer = event.dataTransfer,
+          data;
+
+      if (dataTransfer && browser.supportsDataTransfer()) {
+        data = dataTransfer.getData("text/html") || dataTransfer.getData("text/plain");
+      }
+      if (data) {
+        element.focus();
+        that.commands.exec("insertHTML", data);
+        that.parent.fire("paste").fire("paste:composer");
+        event.stopPropagation();
+        event.preventDefault();
+      } else {
+        setTimeout(function() {
+          that.parent.fire("paste").fire("paste:composer");
+        }, 0);
+      }
+    });
+
+    // --------- neword event ---------
+    dom.observe(element, "keyup", function(event) {
+      var keyCode = event.keyCode;
+      if (keyCode === wysihtml5.SPACE_KEY || keyCode === wysihtml5.ENTER_KEY) {
+        that.parent.fire("newword:composer");
+      }
+    });
+
+    this.parent.observe("paste:composer", function() {
+      setTimeout(function() { that.parent.fire("newword:composer"); }, 0);
+    });
+
+    // --------- Make sure that images are selected when clicking on them ---------
+    if (!browser.canSelectImagesInContentEditable()) {
+      dom.observe(element, "mousedown", function(event) {
+        var target = event.target;
+        if (target.nodeName === "IMG") {
+          that.selection.selectNode(target);
+          event.preventDefault();
+        }
+      });
+    }
+    
+    // --------- Shortcut logic ---------
+    dom.observe(element, "keydown", function(event) {
+      var keyCode  = event.keyCode,
+          command  = shortcuts[keyCode];
+      if ((event.ctrlKey || event.metaKey) && !event.altKey && command) {
+        that.commands.exec(command);
+        event.preventDefault();
+      }
+    });
+
+    // --------- Make sure that when pressing backspace/delete on selected images deletes the image and it's anchor ---------
+    dom.observe(element, "keydown", function(event) {
+      var target  = that.selection.getSelectedNode(true),
+          keyCode = event.keyCode,
+          parent;
+      if (target && target.nodeName === "IMG" && (keyCode === wysihtml5.BACKSPACE_KEY || keyCode === wysihtml5.DELETE_KEY)) { // 8 => backspace, 46 => delete
+        parent = target.parentNode;
+        // delete the <img>
+        parent.removeChild(target);
+        // and it's parent <a> too if it hasn't got any other child nodes
+        if (parent.nodeName === "A" && !parent.firstChild) {
+          parent.parentNode.removeChild(parent);
+        }
+
+        setTimeout(function() { wysihtml5.quirks.redraw(element); }, 0);
+        event.preventDefault();
+      }
+    });
+
+    // --------- Show url in tooltip when hovering links or images ---------
+    var titlePrefixes = {
+      IMG: "Image: ",
+      A:   "Link: "
+    };
+    
+    dom.observe(element, "mouseover", function(event) {
+      var target   = event.target,
+          nodeName = target.nodeName,
+          title;
+      if (nodeName !== "A" && nodeName !== "IMG") {
+        return;
+      }
+      var hasTitle = target.hasAttribute("title");
+      if(!hasTitle){
+        title = titlePrefixes[nodeName] + (target.getAttribute("href") || target.getAttribute("src"));
+        target.setAttribute("title", title);
+      }
+    });
+  };
+})(wysihtml5);/**
+ * Class that takes care that the value of the composer and the textarea is always in sync
+ */
+(function(wysihtml5) {
+  var INTERVAL = 400;
+  
+  wysihtml5.views.Synchronizer = Base.extend(
+    /** @scope wysihtml5.views.Synchronizer.prototype */ {
+
+    constructor: function(editor, textarea, composer) {
+      this.editor   = editor;
+      this.textarea = textarea;
+      this.composer = composer;
+
+      this._observe();
+    },
+
+    /**
+     * Sync html from composer to textarea
+     * Takes care of placeholders
+     * @param {Boolean} shouldParseHtml Whether the html should be sanitized before inserting it into the textarea
+     */
+    fromComposerToTextarea: function(shouldParseHtml) {
+      this.textarea.setValue(wysihtml5.lang.string(this.composer.getValue()).trim(), shouldParseHtml);
+    },
+
+    /**
+     * Sync value of textarea to composer
+     * Takes care of placeholders
+     * @param {Boolean} shouldParseHtml Whether the html should be sanitized before inserting it into the composer
+     */
+    fromTextareaToComposer: function(shouldParseHtml) {
+      var textareaValue = this.textarea.getValue();
+      if (textareaValue) {
+        this.composer.setValue(textareaValue, shouldParseHtml);
+      } else {
+        this.composer.clear();
+        this.editor.fire("set_placeholder");
+      }
+    },
+
+    /**
+     * Invoke syncing based on view state
+     * @param {Boolean} shouldParseHtml Whether the html should be sanitized before inserting it into the composer/textarea
+     */
+    sync: function(shouldParseHtml) {
+      if (this.editor.currentView.name === "textarea") {
+        this.fromTextareaToComposer(shouldParseHtml);
+      } else {
+        this.fromComposerToTextarea(shouldParseHtml);
+      }
+    },
+
+    /**
+     * Initializes interval-based syncing
+     * also makes sure that on-submit the composer's content is synced with the textarea
+     * immediately when the form gets submitted
+     */
+    _observe: function() {
+      var interval,
+          that          = this,
+          form          = this.textarea.element.form,
+          startInterval = function() {
+            interval = setInterval(function() { that.fromComposerToTextarea(); }, INTERVAL);
+          },
+          stopInterval  = function() {
+            clearInterval(interval);
+            interval = null;
+          };
+
+      startInterval();
+
+      if (form) {
+        // If the textarea is in a form make sure that after onreset and onsubmit the composer
+        // has the correct state
+        wysihtml5.dom.observe(form, "submit", function() {
+          that.sync(true);
+        });
+        wysihtml5.dom.observe(form, "reset", function() {
+          setTimeout(function() { that.fromTextareaToComposer(); }, 0);
+        });
+      }
+
+      this.editor.observe("change_view", function(view) {
+        if (view === "composer" && !interval) {
+          that.fromTextareaToComposer(true);
+          startInterval();
+        } else if (view === "textarea") {
+          that.fromComposerToTextarea(true);
+          stopInterval();
+        }
+      });
+
+      this.editor.observe("destroy:composer", stopInterval);
+    }
+  });
+})(wysihtml5);
+wysihtml5.views.Textarea = wysihtml5.views.View.extend(
+  /** @scope wysihtml5.views.Textarea.prototype */ {
+  name: "textarea",
+  
+  constructor: function(parent, textareaElement, config) {
+    this.base(parent, textareaElement, config);
+    
+    this._observe();
+  },
+  
+  clear: function() {
+    this.element.value = "";
+  },
+  
+  getValue: function(parse) {
+    var value = this.isEmpty() ? "" : this.element.value;
+    if (parse) {
+      value = this.parent.parse(value);
+    }
+    return value;
+  },
+  
+  setValue: function(html, parse) {
+    if (parse) {
+      html = this.parent.parse(html);
+    }
+    this.element.value = html;
+  },
+  
+  hasPlaceholderSet: function() {
+    var supportsPlaceholder = wysihtml5.browser.supportsPlaceholderAttributeOn(this.element),
+        placeholderText     = this.element.getAttribute("placeholder") || null,
+        value               = this.element.value,
+        isEmpty             = !value;
+    return (supportsPlaceholder && isEmpty) || (value === placeholderText);
+  },
+  
+  isEmpty: function() {
+    return !wysihtml5.lang.string(this.element.value).trim() || this.hasPlaceholderSet();
+  },
+  
+  _observe: function() {
+    var element = this.element,
+        parent  = this.parent,
+        eventMapping = {
+          focusin:  "focus",
+          focusout: "blur"
+        },
+        /**
+         * Calling focus() or blur() on an element doesn't synchronously trigger the attached focus/blur events
+         * This is the case for focusin and focusout, so let's use them whenever possible, kkthxbai
+         */
+        events = wysihtml5.browser.supportsEvent("focusin") ? ["focusin", "focusout", "change"] : ["focus", "blur", "change"];
+    
+    parent.observe("beforeload", function() {
+      wysihtml5.dom.observe(element, events, function(event) {
+        var eventName = eventMapping[event.type] || event.type;
+        parent.fire(eventName).fire(eventName + ":textarea");
+      });
+      
+      wysihtml5.dom.observe(element, ["paste", "drop"], function() {
+        setTimeout(function() { parent.fire("paste").fire("paste:textarea"); }, 0);
+      });
+    });
+  }
+});/**
+ * Toolbar Dialog
+ *
+ * @param {Element} link The toolbar link which causes the dialog to show up
+ * @param {Element} container The dialog container
+ *
+ * @example
+ *    <!-- Toolbar link -->
+ *    <a data-wysihtml5-command="insertImage">insert an image</a>
+ *
+ *    <!-- Dialog -->
+ *    <div data-wysihtml5-dialog="insertImage" style="display: none;">
+ *      <label>
+ *        URL: <input data-wysihtml5-dialog-field="src" value="http://">
+ *      </label>
+ *      <label>
+ *        Alternative text: <input data-wysihtml5-dialog-field="alt" value="">
+ *      </label>
+ *    </div>
+ *
+ *    <script>
+ *      var dialog = new wysihtml5.toolbar.Dialog(
+ *        document.querySelector("[data-wysihtml5-command='insertImage']"),
+ *        document.querySelector("[data-wysihtml5-dialog='insertImage']")
+ *      );
+ *      dialog.observe("save", function(attributes) {
+ *        // do something
+ *      });
+ *    </script>
+ */
+(function(wysihtml5) {
+  var dom                     = wysihtml5.dom,
+      CLASS_NAME_OPENED       = "wysihtml5-command-dialog-opened",
+      SELECTOR_FORM_ELEMENTS  = "input, select, textarea",
+      SELECTOR_FIELDS         = "[data-wy

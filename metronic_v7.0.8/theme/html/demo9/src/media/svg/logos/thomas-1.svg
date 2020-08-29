@@ -1,0 +1,24 @@
+i class="icon-magnet"></i>
+                                                                </div>
+                                                                <div class="mt-action-details ">
+                                                                    <span class="mt-action-author">Natasha Kim</span>
+                                                                    <p class="mt-action-desc">Dummy text of the printing</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-action-datetime ">
+                                                                <span class="mt-action-date">3 jun</span>
+                                                                <span class="mt-action-dot bg-green"></span>
+                                                                <span class="mt=action-time">9:30-13:00</span>
+                                                            </div>
+                                                            <div class="mt-action-buttons ">
+                                                                <div class="btn-group btn-group-circle">
+                                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-action">
+                                                    <div class="mt-action-img">
+      

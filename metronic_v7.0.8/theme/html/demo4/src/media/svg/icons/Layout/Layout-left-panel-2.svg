@@ -1,0 +1,16 @@
+                                                                   <div class="col-xs-6">
+                                                                        <a class="task-trash" href="javascript:;">
+                                                                            <i class="fa fa-trash"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6">
+                                                                        <a class="task-add" href="javascript:;">
+                                                                            <i class="fa fa-plus"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li cla

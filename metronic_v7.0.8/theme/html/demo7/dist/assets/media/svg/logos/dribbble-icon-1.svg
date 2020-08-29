@@ -1,0 +1,21 @@
+this.options.name || this.$element.attr('id');
+             
+            //create input of specified type. Input needed already here to convert value for initial display (e.g. show text by id for select)
+            //also we set scope option to have access to element inside input specific callbacks (e. g. source as function)
+            this.options.scope = this.$element[0]; 
+            this.input = $.fn.editableutils.createInput(this.options);
+            if(!this.input) {
+                return; 
+            }            
+
+            //set value from settings or by element's text
+            if (this.options.value === undefined || this.options.value === null) {
+                this.value = this.input.html2value($.trim(this.$element.html()));
+                isValueByText = true;
+            } else {
+                /*
+                  value can be string when received from 'data-value' attribute
+                  for complext objects value can be set as json string in data-value attribute, 
+                  e.g. data-value="{city: 'Moscow', street: 'Lenina'}"
+                */
+        

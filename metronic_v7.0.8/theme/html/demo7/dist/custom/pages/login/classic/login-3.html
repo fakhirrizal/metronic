@@ -1,0 +1,282 @@
+   from: function(elementToCopyFrom) {
+      return {
+        to: function(elementToCopyTo) {
+          var attribute,
+              i         = 0,
+              length    = attributesToCopy.length;
+          for (; i<length; i++) {
+            attribute = attributesToCopy[i];
+            if (typeof(elementToCopyFrom[attribute]) !== "undefined" && elementToCopyFrom[attribute] !== "") {
+              elementToCopyTo[attribute] = elementToCopyFrom[attribute];
+            }
+          }
+          return { andTo: arguments.callee };
+        }
+      };
+    }
+  };
+};/**
+ * Copy a set of styles from one element to another
+ * Please note that this only works properly across browsers when the element from which to copy the styles
+ * is in the dom
+ *
+ * Interesting article on how to copy styles
+ *
+ * @param {Array} stylesToCopy List of styles which should be copied
+ * @return {Object} Returns an object which offers the "from" method which can be invoked with the element where to
+ *    copy the styles from., this again returns an object which provides a method named "to" which can be invoked 
+ *    with the element where to copy the styles to (see example)
+ *
+ * @example
+ *    var textarea    = document.querySelector("textarea"),
+ *        div         = document.querySelector("div[contenteditable=true]"),
+ *        anotherDiv  = document.querySelector("div.preview");
+ *    wysihtml5.dom.copyStyles(["overflow-y", "width", "height"]).from(textarea).to(div).andTo(anotherDiv);
+ *
+ */
+(function(dom) {
+  
+  /**
+   * Mozilla, WebKit and Opera recalculate the computed width when box-sizing: boder-box; is set
+   * So if an element has "width: 200px; -moz-box-sizing: border-box; border: 1px;" then 
+   * its computed css width will be 198px
+   */
+  var BOX_SIZING_PROPERTIES = ["-webkit-box-sizing", "-moz-box-sizing", "-ms-box-sizing", "box-sizing"];
+  
+  var shouldIgnoreBoxSizingBorderBox = function(element) {
+    if (hasBoxSizingBorderBox(element)) {
+       return parseInt(dom.getStyle("width").from(element), 10) < element.offsetWidth;
+    }
+    return false;
+  };
+  
+  var hasBoxSizingBorderBox = function(element) {
+    var i       = 0,
+        length  = BOX_SIZING_PROPERTIES.length;
+    for (; i<length; i++) {
+      if (dom.getStyle(BOX_SIZING_PROPERTIES[i]).from(element) === "border-box") {
+        return BOX_SIZING_PROPERTIES[i];
+      }
+    }
+  };
+  
+  dom.copyStyles = function(stylesToCopy) {
+    return {
+      from: function(element) {
+        if (shouldIgnoreBoxSizingBorderBox(element)) {
+          stylesToCopy = wysihtml5.lang.array(stylesToCopy).without(BOX_SIZING_PROPERTIES);
+        }
+        
+        var cssText = "",
+            length  = stylesToCopy.length,
+            i       = 0,
+            property;
+        for (; i<length; i++) {
+          property = stylesToCopy[i];
+          cssText += property + ":" + dom.getStyle(property).from(element) + ";";
+        }
+        
+        return {
+          to: function(element) {
+            dom.setStyles(cssText).on(element);
+            return { andTo: arguments.callee };
+          }
+        };
+      }
+    };
+  };
+})(wysihtml5.dom);/**
+ * Event Delegation
+ *
+ * @example
+ *    wysihtml5.dom.delegate(document.body, "a", "click", function() {
+ *      // foo
+ *    });
+ */
+(function(wysihtml5) {
+  
+  wysihtml5.dom.delegate = function(container, selector, eventName, handler) {
+    return wysihtml5.dom.observe(container, eventName, function(event) {
+      var target    = event.target,
+          match     = wysihtml5.lang.array(container.querySelectorAll(selector));
+      
+      while (target && target !== container) {
+        if (match.contains(target)) {
+          handler.call(target, event);
+          break;
+        }
+        target = target.parentNode;
+      }
+    });
+  };
+  
+})(wysihtml5);/**
+ * Returns the given html wrapped in a div element
+ *
+ * Fixing IE's inability to treat unknown elements (HTML5 section, article, ...) correctly
+ * when inserted via innerHTML
+ * 
+ * @param {String} html The html which should be wrapped in a dom element
+ * @param {Obejct} [context] Document object of the context the html belongs to
+ *
+ * @example
+ *    wysihtml5.dom.getAsDom("<article>foo</article>");
+ */
+wysihtml5.dom.getAsDom = (function() {
+  
+  var _innerHTMLShiv = function(html, context) {
+    var tempElement = context.createElement("div");
+    tempElement.style.display = "none";
+    context.body.appendChild(tempElement);
+    // IE throws an exception when trying to insert <frameset></frameset> via innerHTML
+    try { tempElement.innerHTML = html; } catch(e) {}
+    context.body.removeChild(tempElement);
+    return tempElement;
+  };
+  
+  /**
+   * Make sure IE supports HTML5 tags, which is accomplished by simply creating one instance of each element
+   */
+  var _ensureHTML5Compatibility = function(context) {
+    if (context._wysihtml5_supportsHTML5Tags) {
+      return;
+    }
+    for (var i=0, length=HTML5_ELEMENTS.length; i<length; i++) {
+      context.createElement(HTML5_ELEMENTS[i]);
+    }
+    context._wysihtml5_supportsHTML5Tags = true;
+  };
+  
+  
+  /**
+   * List of html5 tags
+   * taken from http://simon.html5.org/html5-elements
+   */
+  var HTML5_ELEMENTS = [
+    "abbr", "article", "aside", "audio", "bdi", "canvas", "command", "datalist", "details", "figcaption",
+    "figure", "footer", "header", "hgroup", "keygen", "mark", "meter", "nav", "output", "progress",
+    "rp", "rt", "ruby", "svg", "section", "source", "summary", "time", "track", "video", "wbr"
+  ];
+  
+  return function(html, context) {
+    context = context || document;
+    var tempElement;
+    if (typeof(html) === "object" && html.nodeType) {
+      tempElement = context.createElement("div");
+      tempElement.appendChild(html);
+    } else if (wysihtml5.browser.supportsHTML5Tags(context)) {
+      tempElement = context.createElement("div");
+      tempElement.innerHTML = html;
+    } else {
+      _ensureHTML5Compatibility(context);
+      tempElement = _innerHTMLShiv(html, context);
+    }
+    return tempElement;
+  };
+})();/**
+ * Walks the dom tree from the given node up until it finds a match
+ * Designed for optimal performance.
+ *
+ * @param {Element} node The from which to check the parent nodes
+ * @param {Object} matchingSet Object to match against (possible properties: nodeName, className, classRegExp)
+ * @param {Number} [levels] How many parents should the function check up from the current node (defaults to 50)
+ * @return {null|Element} Returns the first element that matched the desiredNodeName(s)
+ * @example
+ *    var listElement = wysihtml5.dom.getParentElement(document.querySelector("li"), { nodeName: ["MENU", "UL", "OL"] });
+ *    // ... or ...
+ *    var unorderedListElement = wysihtml5.dom.getParentElement(document.querySelector("li"), { nodeName: "UL" });
+ *    // ... or ...
+ *    var coloredElement = wysihtml5.dom.getParentElement(myTextNode, { nodeName: "SPAN", className: "wysiwyg-color-red", classRegExp: /wysiwyg-color-[a-z]/g });
+ */
+wysihtml5.dom.getParentElement = (function() {
+  
+  function _isSameNodeName(nodeName, desiredNodeNames) {
+    if (!desiredNodeNames || !desiredNodeNames.length) {
+      return true;
+    }
+    
+    if (typeof(desiredNodeNames) === "string") {
+      return nodeName === desiredNodeNames;
+    } else {
+      return wysihtml5.lang.array(desiredNodeNames).contains(nodeName);
+    }
+  }
+  
+  function _isElement(node) {
+    return node.nodeType === wysihtml5.ELEMENT_NODE;
+  }
+  
+  function _hasClassName(element, className, classRegExp) {
+    var classNames = (element.className || "").match(classRegExp) || [];
+    if (!className) {
+      return !!classNames.length;
+    }
+    return classNames[classNames.length - 1] === className;
+  }
+  
+  function _getParentElementWithNodeName(node, nodeName, levels) {
+    while (levels-- && node && node.nodeName !== "BODY") {
+      if (_isSameNodeName(node.nodeName, nodeName)) {
+        return node;
+      }
+      node = node.parentNode;
+    }
+    return null;
+  }
+  
+  function _getParentElementWithNodeNameAndClassName(node, nodeName, className, classRegExp, levels) {
+    while (levels-- && node && node.nodeName !== "BODY") {
+      if (_isElement(node) &&
+          _isSameNodeName(node.nodeName, nodeName) &&
+          _hasClassName(node, className, classRegExp)) {
+        return node;
+      }
+      node = node.parentNode;
+    }
+    return null;
+  }
+  
+  return function(node, matchingSet, levels) {
+    levels = levels || 50; // Go max 50 nodes upwards from current node
+    if (matchingSet.className || matchingSet.classRegExp) {
+      return _getParentElementWithNodeNameAndClassName(
+        node, matchingSet.nodeName, matchingSet.className, matchingSet.classRegExp, levels
+      );
+    } else {
+      return _getParentElementWithNodeName(
+        node, matchingSet.nodeName, levels
+      );
+    }
+  };
+})();
+/**
+ * Get element's style for a specific css property
+ *
+ * @param {Element} element The element on which to retrieve the style
+ * @param {String} property The CSS property to retrieve ("float", "display", "text-align", ...)
+ *
+ * @example
+ *    wysihtml5.dom.getStyle("display").from(document.body);
+ *    // => "block"
+ */
+wysihtml5.dom.getStyle = (function() {
+  var stylePropertyMapping = {
+        "float": ("styleFloat" in document.createElement("div").style) ? "styleFloat" : "cssFloat"
+      },
+      REG_EXP_CAMELIZE = /\-[a-z]/g;
+  
+  function camelize(str) {
+    return str.replace(REG_EXP_CAMELIZE, function(match) {
+      return match.charAt(1).toUpperCase();
+    });
+  }
+  
+  return function(property) {
+    return {
+      from: function(element) {
+        if (element.nodeType !== wysihtml5.ELEMENT_NODE) {
+          return;
+        }
+        
+        var doc               = element.ownerDocument,
+            camelizedProperty = stylePropertyM

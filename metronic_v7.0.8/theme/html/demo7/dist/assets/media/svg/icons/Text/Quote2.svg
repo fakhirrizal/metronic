@@ -1,0 +1,16 @@
+div>
+                                </li>
+                                <li>
+                                    <div class="col1">
+                                        <div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-info">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc"> New order received with
+                                                    <span class="label label-sm label-success"> Reference Number: DR23923 </span>
+                                                </div>
+                                            </div>
+                                        </div>
