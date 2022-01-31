@@ -6517,1486 +6517,2499 @@ window.tinymce.Resource.add("tinymce.plugins.emoticons", {
     category: "symbols"
   },
   cyclone: {
-    keywords: [ "weather", "swirl", "blue", "cloud", "vortex", "spiral", "whirlpool", "spin", "tornado", "hurricantBeginPivotCacheID", f:parsenoop },
-    0x0183: { n:"BrtEndPivotCacheID", f:parsenoop },
-    0x0184: { n:"BrtBeginISXVIs", f:parsenoop },
-    0x0185: { n:"BrtEndISXVIs", f:parsenoop },
-    0x0186: { n:"BrtBeginColInfos", f:parsenoop },
-    0x0187: { n:"BrtEndColInfos", f:parsenoop },
-    0x0188: { n:"BrtBeginRwBrk", f:parsenoop },
-    0x0189: { n:"BrtEndRwBrk", f:parsenoop },
-    0x018A: { n:"BrtBeginColBrk", f:parsenoop },
-    0x018B: { n:"BrtEndColBrk", f:parsenoop },
-    0x018C: { n:"BrtBrk", f:parsenoop },
-    0x018D: { n:"BrtUserBookView", f:parsenoop },
-    0x018E: { n:"BrtInfo", f:parsenoop },
-    0x018F: { n:"BrtCUsr", f:parsenoop },
-    0x0190: { n:"BrtUsr", f:parsenoop },
-    0x0191: { n:"BrtBeginUsers", f:parsenoop },
-    0x0193: { n:"BrtEOF", f:parsenoop },
-    0x0194: { n:"BrtUCR", f:parsenoop },
-    0x0195: { n:"BrtRRInsDel", f:parsenoop },
-    0x0196: { n:"BrtRREndInsDel", f:parsenoop },
-    0x0197: { n:"BrtRRMove", f:parsenoop },
-    0x0198: { n:"BrtRREndMove", f:parsenoop },
-    0x0199: { n:"BrtRRChgCell", f:parsenoop },
-    0x019A: { n:"BrtRREndChgCell", f:parsenoop },
-    0x019B: { n:"BrtRRHeader", f:parsenoop },
-    0x019C: { n:"BrtRRUserView", f:parsenoop },
-    0x019D: { n:"BrtRRRenSheet", f:parsenoop },
-    0x019E: { n:"BrtRRInsertSh", f:parsenoop },
-    0x019F: { n:"BrtRRDefName", f:parsenoop },
-    0x01A0: { n:"BrtRRNote", f:parsenoop },
-    0x01A1: { n:"BrtRRConflict", f:parsenoop },
-    0x01A2: { n:"BrtRRTQSIF", f:parsenoop },
-    0x01A3: { n:"BrtRRFormat", f:parsenoop },
-    0x01A4: { n:"BrtRREndFormat", f:parsenoop },
-    0x01A5: { n:"BrtRRAutoFmt", f:parsenoop },
-    0x01A6: { n:"BrtBeginUserShViews", f:parsenoop },
-    0x01A7: { n:"BrtBeginUserShView", f:parsenoop },
-    0x01A8: { n:"BrtEndUserShView", f:parsenoop },
-    0x01A9: { n:"BrtEndUserShViews", f:parsenoop },
-    0x01AA: { n:"BrtArrFmla", f:parsenoop },
-    0x01AB: { n:"BrtShrFmla", f:parsenoop },
-    0x01AC: { n:"BrtTable", f:parsenoop },
-    0x01AD: { n:"BrtBeginExtConnections", f:parsenoop },
-    0x01AE: { n:"BrtEndExtConnections", f:parsenoop },
-    0x01AF: { n:"BrtBeginPCDCalcMems", f:parsenoop },
-    0x01B0: { n:"BrtEndPCDCalcMems", f:parsenoop },
-    0x01B1: { n:"BrtBeginPCDCalcMem", f:parsenoop },
-    0x01B2: { n:"BrtEndPCDCalcMem", f:parsenoop },
-    0x01B3: { n:"BrtBeginPCDHGLevels", f:parsenoop },
-    0x01B4: { n:"BrtEndPCDHGLevels", f:parsenoop },
-    0x01B5: { n:"BrtBeginPCDHGLevel", f:parsenoop },
-    0x01B6: { n:"BrtEndPCDHGLevel", f:parsenoop },
-    0x01B7: { n:"BrtBeginPCDHGLGroups", f:parsenoop },
-    0x01B8: { n:"BrtEndPCDHGLGroups", f:parsenoop },
-    0x01B9: { n:"BrtBeginPCDHGLGroup", f:parsenoop },
-    0x01BA: { n:"BrtEndPCDHGLGroup", f:parsenoop },
-    0x01BB: { n:"BrtBeginPCDHGLGMembers", f:parsenoop },
-    0x01BC: { n:"BrtEndPCDHGLGMembers", f:parsenoop },
-    0x01BD: { n:"BrtBeginPCDHGLGMember", f:parsenoop },
-    0x01BE: { n:"BrtEndPCDHGLGMember", f:parsenoop },
-    0x01BF: { n:"BrtBeginQSI", f:parsenoop },
-    0x01C0: { n:"BrtEndQSI", f:parsenoop },
-    0x01C1: { n:"BrtBeginQSIR", f:parsenoop },
-    0x01C2: { n:"BrtEndQSIR", f:parsenoop },
-    0x01C3: { n:"BrtBeginDeletedNames", f:parsenoop },
-    0x01C4: { n:"BrtEndDeletedNames", f:parsenoop },
-    0x01C5: { n:"BrtBeginDeletedName", f:parsenoop },
-    0x01C6: { n:"BrtEndDeletedName", f:parsenoop },
-    0x01C7: { n:"BrtBeginQSIFs", f:parsenoop },
-    0x01C8: { n:"BrtEndQSIFs", f:parsenoop },
-    0x01C9: { n:"BrtBeginQSIF", f:parsenoop },
-    0x01CA: { n:"BrtEndQSIF", f:parsenoop },
-    0x01CB: { n:"BrtBeginAutoSortScope", f:parsenoop },
-    0x01CC: { n:"BrtEndAutoSortScope", f:parsenoop },
-    0x01CD: { n:"BrtBeginConditionalFormatting", f:parsenoop },
-    0x01CE: { n:"BrtEndConditionalFormatting", f:parsenoop },
-    0x01CF: { n:"BrtBeginCFRule", f:parsenoop },
-    0x01D0: { n:"BrtEndCFRule", f:parsenoop },
-    0x01D1: { n:"BrtBeginIconSet", f:parsenoop },
-    0x01D2: { n:"BrtEndIconSet", f:parsenoop },
-    0x01D3: { n:"BrtBeginDatabar", f:parsenoop },
-    0x01D4: { n:"BrtEndDatabar", f:parsenoop },
-    0x01D5: { n:"BrtBeginColorScale", f:parsenoop },
-    0x01D6: { n:"BrtEndColorScale", f:parsenoop },
-    0x01D7: { n:"BrtCFVO", f:parsenoop },
-    0x01D8: { n:"BrtExternValueMeta", f:parsenoop },
-    0x01D9: { n:"BrtBeginColorPalette", f:parsenoop },
-    0x01DA: { n:"BrtEndColorPalette", f:parsenoop },
-    0x01DB: { n:"BrtIndexedColor", f:parsenoop },
-    0x01DC: { n:"BrtMargins", f:parsenoop },
-    0x01DD: { n:"BrtPrintOptions", f:parsenoop },
-    0x01DE: { n:"BrtPageSetup", f:parsenoop },
-    0x01DF: { n:"BrtBeginHeaderFooter", f:parsenoop },
-    0x01E0: { n:"BrtEndHeaderFooter", f:parsenoop },
-    0x01E1: { n:"BrtBeginSXCrtFormat", f:parsenoop },
-    0x01E2: { n:"BrtEndSXCrtFormat", f:parsenoop },
-    0x01E3: { n:"BrtBeginSXCrtFormats", f:parsenoop },
-    0x01E4: { n:"BrtEndSXCrtFormats", f:parsenoop },
-    0x01E5: { n:"BrtWsFmtInfo", f:parsenoop },
-    0x01E6: { n:"BrtBeginMgs", f:parsenoop },
-    0x01E7: { n:"BrtEndMGs", f:parsenoop },
-    0x01E8: { n:"BrtBeginMGMaps", f:parsenoop },
-    0x01E9: { n:"BrtEndMGMaps", f:parsenoop },
-    0x01EA: { n:"BrtBeginMG", f:parsenoop },
-    0x01EB: { n:"BrtEndMG", f:parsenoop },
-    0x01EC: { n:"BrtBeginMap", f:parsenoop },
-    0x01ED: { n:"BrtEndMap", f:parsenoop },
-    0x01EE: { n:"BrtHLink", f:parse_BrtHLink },
-    0x01EF: { n:"BrtBeginDCon", f:parsenoop },
-    0x01F0: { n:"BrtEndDCon", f:parsenoop },
-    0x01F1: { n:"BrtBeginDRefs", f:parsenoop },
-    0x01F2: { n:"BrtEndDRefs", f:parsenoop },
-    0x01F3: { n:"BrtDRef", f:parsenoop },
-    0x01F4: { n:"BrtBeginScenMan", f:parsenoop },
-    0x01F5: { n:"BrtEndScenMan", f:parsenoop },
-    0x01F6: { n:"BrtBeginSct", f:parsenoop },
-    0x01F7: { n:"BrtEndSct", f:parsenoop },
-    0x01F8: { n:"BrtSlc", f:parsenoop },
-    0x01F9: { n:"BrtBeginDXFs", f:parsenoop },
-    0x01FA: { n:"BrtEndDXFs", f:parsenoop },
-    0x01FB: { n:"BrtDXF", f:parsenoop },
-    0x01FC: { n:"BrtBeginTableStyles", f:parsenoop },
-    0x01FD: { n:"BrtEndTableStyles", f:parsenoop },
-    0x01FE: { n:"BrtBeginTableStyle", f:parsenoop },
-    0x01FF: { n:"BrtEndTableStyle", f:parsenoop },
-    0x0200: { n:"BrtTableStyleElement", f:parsenoop },
-    0x0201: { n:"BrtTableStyleClient", f:parsenoop },
-    0x0202: { n:"BrtBeginVolDeps", f:parsenoop },
-    0x0203: { n:"BrtEndVolDeps", f:parsenoop },
-    0x0204: { n:"BrtBeginVolType", f:parsenoop },
-    0x0205: { n:"BrtEndVolType", f:parsenoop },
-    0x0206: { n:"BrtBeginVolMain", f:parsenoop },
-    0x0207: { n:"BrtEndVolMain", f:parsenoop },
-    0x0208: { n:"BrtBeginVolTopic", f:parsenoop },
-    0x0209: { n:"BrtEndVolTopic", f:parsenoop },
-    0x020A: { n:"BrtVolSubtopic", f:parsenoop },
-    0x020B: { n:"BrtVolRef", f:parsenoop },
-    0x020C: { n:"BrtVolNum", f:parsenoop },
-    0x020D: { n:"BrtVolErr", f:parsenoop },
-    0x020E: { n:"BrtVolStr", f:parsenoop },
-    0x020F: { n:"BrtVolBool", f:parsenoop },
-    0x0210: { n:"BrtBeginCalcChain$", f:parsenoop },
-    0x0211: { n:"BrtEndCalcChain$", f:parsenoop },
-    0x0212: { n:"BrtBeginSortState", f:parsenoop },
-    0x0213: { n:"BrtEndSortState", f:parsenoop },
-    0x0214: { n:"BrtBeginSortCond", f:parsenoop },
-    0x0215: { n:"BrtEndSortCond", f:parsenoop },
-    0x0216: { n:"BrtBookProtection", f:parsenoop },
-    0x0217: { n:"BrtSheetProtection", f:parsenoop },
-    0x0218: { n:"BrtRangeProtection", f:parsenoop },
-    0x0219: { n:"BrtPhoneticInfo", f:parsenoop },
-    0x021A: { n:"BrtBeginECTxtWiz", f:parsenoop },
-    0x021B: { n:"BrtEndECTxtWiz", f:parsenoop },
-    0x021C: { n:"BrtBeginECTWFldInfoLst", f:parsenoop },
-    0x021D: { n:"BrtEndECTWFldInfoLst", f:parsenoop },
-    0x021E: { n:"BrtBeginECTwFldInfo", f:parsenoop },
-    0x0224: { n:"BrtFileSharing", f:parsenoop },
-    0x0225: { n:"BrtOleSize", f:parsenoop },
-    0x0226: { n:"BrtDrawing", f:parsenoop },
-    0x0227: { n:"BrtLegacyDrawing", f:parsenoop },
-    0x0228: { n:"BrtLegacyDrawingHF", f:parsenoop },
-    0x0229: { n:"BrtWebOpt", f:parsenoop },
-    0x022A: { n:"BrtBeginWebPubItems", f:parsenoop },
-    0x022B: { n:"BrtEndWebPubItems", f:parsenoop },
-    0x022C: { n:"BrtBeginWebPubItem", f:parsenoop },
-    0x022D: { n:"BrtEndWebPubItem", f:parsenoop },
-    0x022E: { n:"BrtBeginSXCondFmt", f:parsenoop },
-    0x022F: { n:"BrtEndSXCondFmt", f:parsenoop },
-    0x0230: { n:"BrtBeginSXCondFmts", f:parsenoop },
-    0x0231: { n:"BrtEndSXCondFmts", f:parsenoop },
-    0x0232: { n:"BrtBkHim", f:parsenoop },
-    0x0234: { n:"BrtColor", f:parsenoop },
-    0x0235: { n:"BrtBeginIndexedColors", f:parsenoop },
-    0x0236: { n:"BrtEndIndexedColors", f:parsenoop },
-    0x0239: { n:"BrtBeginMRUColors", f:parsenoop },
-    0x023A: { n:"BrtEndMRUColors", f:parsenoop },
-    0x023C: { n:"BrtMRUColor", f:parsenoop },
-    0x023D: { n:"BrtBeginDVals", f:parsenoop },
-    0x023E: { n:"BrtEndDVals", f:parsenoop },
-    0x0241: { n:"BrtSupNameStart", f:parsenoop },
-    0x0242: { n:"BrtSupNameValueStart", f:parsenoop },
-    0x0243: { n:"BrtSupNameValueEnd", f:parsenoop },
-    0x0244: { n:"BrtSupNameNum", f:parsenoop },
-    0x0245: { n:"BrtSupNameErr", f:parsenoop },
-    0x0246: { n:"BrtSupNameSt", f:parsenoop },
-    0x0247: { n:"BrtSupNameNil", f:parsenoop },
-    0x0248: { n:"BrtSupNameBool", f:parsenoop },
-    0x0249: { n:"BrtSupNameFmla", f:parsenoop },
-    0x024A: { n:"BrtSupNameBits", f:parsenoop },
-    0x024B: { n:"BrtSupNameEnd", f:parsenoop },
-    0x024C: { n:"BrtEndSupBook", f:parsenoop },
-    0x024D: { n:"BrtCellSmartTagProperty", f:parsenoop },
-    0x024E: { n:"BrtBeginCellSmartTag", f:parsenoop },
-    0x024F: { n:"BrtEndCellSmartTag", f:parsenoop },
-    0x0250: { n:"BrtBeginCellSmartTags", f:parsenoop },
-    0x0251: { n:"BrtEndCellSmartTags", f:parsenoop },
-    0x0252: { n:"BrtBeginSmartTags", f:parsenoop },
-    0x0253: { n:"BrtEndSmartTags", f:parsenoop },
-    0x0254: { n:"BrtSmartTagType", f:parsenoop },
-    0x0255: { n:"BrtBeginSmartTagTypes", f:parsenoop },
-    0x0256: { n:"BrtEndSmartTagTypes", f:parsenoop },
-    0x0257: { n:"BrtBeginSXFilters", f:parsenoop },
-    0x0258: { n:"BrtEndSXFilters", f:parsenoop },
-    0x0259: { n:"BrtBeginSXFILTER", f:parsenoop },
-    0x025A: { n:"BrtEndSXFilter", f:parsenoop },
-    0x025B: { n:"BrtBeginFills", f:parsenoop },
-    0x025C: { n:"BrtEndFills", f:parsenoop },
-    0x025D: { n:"BrtBeginCellWatches", f:parsenoop },
-    0x025E: { n:"BrtEndCellWatches", f:parsenoop },
-    0x025F: { n:"BrtCellWatch", f:parsenoop },
-    0x0260: { n:"BrtBeginCRErrs", f:parsenoop },
-    0x0261: { n:"BrtEndCRErrs", f:parsenoop },
-    0x0262: { n:"BrtCrashRecErr", f:parsenoop },
-    0x0263: { n:"BrtBeginFonts", f:parsenoop },
-    0x0264: { n:"BrtEndFonts", f:parsenoop },
-    0x0265: { n:"BrtBeginBorders", f:parsenoop },
-    0x0266: { n:"BrtEndBorders", f:parsenoop },
-    0x0267: { n:"BrtBeginFmts", f:parsenoop },
-    0x0268: { n:"BrtEndFmts", f:parsenoop },
-    0x0269: { n:"BrtBeginCellXFs", f:parsenoop },
-    0x026A: { n:"BrtEndCellXFs", f:parsenoop },
-    0x026B: { n:"BrtBeginStyles", f:parsenoop },
-    0x026C: { n:"BrtEndStyles", f:parsenoop },
-    0x0271: { n:"BrtBigName", f:parsenoop },
-    0x0272: { n:"BrtBeginCellStyleXFs", f:parsenoop },
-    0x0273: { n:"BrtEndCellStyleXFs", f:parsenoop },
-    0x0274: { n:"BrtBeginComments", f:parsenoop },
-    0x0275: { n:"BrtEndComments", f:parsenoop },
-    0x0276: { n:"BrtBeginCommentAuthors", f:parsenoop },
-    0x0277: { n:"BrtEndCommentAuthors", f:parsenoop },
-    0x0278: { n:"BrtCommentAuthor", f:parse_BrtCommentAuthor },
-    0x0279: { n:"BrtBeginCommentList", f:parsenoop },
-    0x027A: { n:"BrtEndCommentList", f:parsenoop },
-    0x027B: { n:"BrtBeginComment", f:parse_BrtBeginComment},
-    0x027C: { n:"BrtEndComment", f:parsenoop },
-    0x027D: { n:"BrtCommentText", f:parse_BrtCommentText },
-    0x027E: { n:"BrtBeginOleObjects", f:parsenoop },
-    0x027F: { n:"BrtOleObject", f:parsenoop },
-    0x0280: { n:"BrtEndOleObjects", f:parsenoop },
-    0x0281: { n:"BrtBeginSxrules", f:parsenoop },
-    0x0282: { n:"BrtEndSxRules", f:parsenoop },
-    0x0283: { n:"BrtBeginActiveXControls", f:parsenoop },
-    0x0284: { n:"BrtActiveX", f:parsenoop },
-    0x0285: { n:"BrtEndActiveXControls", f:parsenoop },
-    0x0286: { n:"BrtBeginPCDSDTCEMembersSortBy", f:parsenoop },
-    0x0288: { n:"BrtBeginCellIgnoreECs", f:parsenoop },
-    0x0289: { n:"BrtCellIgnoreEC", f:parsenoop },
-    0x028A: { n:"BrtEndCellIgnoreECs", f:parsenoop },
-    0x028B: { n:"BrtCsProp", f:parsenoop },
-    0x028C: { n:"BrtCsPageSetup", f:parsenoop },
-    0x028D: { n:"BrtBeginUserCsViews", f:parsenoop },
-    0x028E: { n:"BrtEndUserCsViews", f:parsenoop },
-    0x028F: { n:"BrtBeginUserCsView", f:parsenoop },
-    0x0290: { n:"BrtEndUserCsView", f:parsenoop },
-    0x0291: { n:"BrtBeginPcdSFCIEntries", f:parsenoop },
-    0x0292: { n:"BrtEndPCDSFCIEntries", f:parsenoop },
-    0x0293: { n:"BrtPCDSFCIEntry", f:parsenoop },
-    0x0294: { n:"BrtBeginListParts", f:parsenoop },
-    0x0295: { n:"BrtListPart", f:parsenoop },
-    0x0296: { n:"BrtEndListParts", f:parsenoop },
-    0x0297: { n:"BrtSheetCalcProp", f:parsenoop },
-    0x0298: { n:"BrtBeginFnGroup", f:parsenoop },
-    0x0299: { n:"BrtFnGroup", f:parsenoop },
-    0x029A: { n:"BrtEndFnGroup", f:parsenoop },
-    0x029B: { n:"BrtSupAddin", f:parsenoop },
-    0x029C: { n:"BrtSXTDMPOrder", f:parsenoop },
-    0x029D: { n:"BrtCsProtection", f:parsenoop },
-    0x029F: { n:"BrtBeginWsSortMap", f:parsenoop },
-    0x02A0: { n:"BrtEndWsSortMap", f:parsenoop },
-    0x02A1: { n:"BrtBeginRRSort", f:parsenoop },
-    0x02A2: { n:"BrtEndRRSort", f:parsenoop },
-    0x02A3: { n:"BrtRRSortItem", f:parsenoop },
-    0x02A4: { n:"BrtFileSharingIso", f:parsenoop },
-    0x02A5: { n:"BrtBookProtectionIso", f:parsenoop },
-    0x02A6: { n:"BrtSheetProtectionIso", f:parsenoop },
-    0x02A7: { n:"BrtCsProtectionIso", f:parsenoop },
-    0x02A8: { n:"BrtRangeProtectionIso", f:parsenoop },
-    0x0400: { n:"BrtRwDescent", f:parsenoop },
-    0x0401: { n:"BrtKnownFonts", f:parsenoop },
-    0x0402: { n:"BrtBeginSXTupleSet", f:parsenoop },
-    0x0403: { n:"BrtEndSXTupleSet", f:parsenoop },
-    0x0404: { n:"BrtBeginSXTupleSetHeader", f:parsenoop },
-    0x0405: { n:"BrtEndSXTupleSetHeader", f:parsenoop },
-    0x0406: { n:"BrtSXTupleSetHeaderItem", f:parsenoop },
-    0x0407: { n:"BrtBeginSXTupleSetData", f:parsenoop },
-    0x0408: { n:"BrtEndSXTupleSetData", f:parsenoop },
-    0x0409: { n:"BrtBeginSXTupleSetRow", f:parsenoop },
-    0x040A: { n:"BrtEndSXTupleSetRow", f:parsenoop },
-    0x040B: { n:"BrtSXTupleSetRowItem", f:parsenoop },
-    0x040C: { n:"BrtNameExt", f:parsenoop },
-    0x040D: { n:"BrtPCDH14", f:parsenoop },
-    0x040E: { n:"BrtBeginPCDCalcMem14", f:parsenoop },
-    0x040F: { n:"BrtEndPCDCalcMem14", f:parsenoop },
-    0x0410: { n:"BrtSXTH14", f:parsenoop },
-    0x0411: { n:"BrtBeginSparklineGroup", f:parsenoop },
-    0x0412: { n:"BrtEndSparklineGroup", f:parsenoop },
-    0x0413: { n:"BrtSparkline", f:parsenoop },
-    0x0414: { n:"BrtSXDI14", f:parsenoop },
-    0x0415: { n:"BrtWsFmtInfoEx14", f:parsenoop },
-    0x0416: { n:"BrtBeginConditionalFormatting14", f:parsenoop },
-    0x0417: { n:"BrtEndConditionalFormatting14", f:parsenoop },
-    0x0418: { n:"BrtBeginCFRule14", f:parsenoop },
-    0x0419: { n:"BrtEndCFRule14", f:parsenoop },
-    0x041A: { n:"BrtCFVO14", f:parsenoop },
-    0x041B: { n:"BrtBeginDatabar14", f:parsenoop },
-    0x041C: { n:"BrtBeginIconSet14", f:parsenoop },
-    0x041D: { n:"BrtDVal14", f:parsenoop },
-    0x041E: { n:"BrtBeginDVals14", f:parsenoop },
-    0x041F: { n:"BrtColor14", f:parsenoop },
-    0x0420: { n:"BrtBeginSparklines", f:parsenoop },
-    0x0421: { n:"BrtEndSparklines", f:parsenoop },
-    0x0422: { n:"BrtBeginSparklineGroups", f:parsenoop },
-    0x0423: { n:"BrtEndSparklineGroups", f:parsenoop },
-    0x0425: { n:"BrtSXVD14", f:parsenoop },
-    0x0426: { n:"BrtBeginSxview14", f:parsenoop },
-    0x0427: { n:"BrtEndSxview14", f:parsenoop },
-    0x042A: { n:"BrtBeginPCD14", f:parsenoop },
-    0x042B: { n:"BrtEndPCD14", f:parsenoop },
-    0x042C: { n:"BrtBeginExtConn14", f:parsenoop },
-    0x042D: { n:"BrtEndExtConn14", f:parsenoop },
-    0x042E: { n:"BrtBeginSlicerCacheIDs", f:parsenoop },
-    0x042F: { n:"BrtEndSlicerCacheIDs", f:parsenoop },
-    0x0430: { n:"BrtBeginSlicerCacheID", f:parsenoop },
-    0x0431: { n:"BrtEndSlicerCacheID", f:parsenoop },
-    0x0433: { n:"BrtBeginSlicerCache", f:parsenoop },
-    0x0434: { n:"BrtEndSlicerCache", f:parsenoop },
-    0x0435: { n:"BrtBeginSlicerCacheDef", f:parsenoop },
-    0x0436: { n:"BrtEndSlicerCacheDef", f:parsenoop },
-    0x0437: { n:"BrtBeginSlicersEx", f:parsenoop },
-    0x0438: { n:"BrtEndSlicersEx", f:parsenoop },
-    0x0439: { n:"BrtBeginSlicerEx", f:parsenoop },
-    0x043A: { n:"BrtEndSlicerEx", f:parsenoop },
-    0x043B: { n:"BrtBeginSlicer", f:parsenoop },
-    0x043C: { n:"BrtEndSlicer", f:parsenoop },
-    0x043D: { n:"BrtSlicerCachePivotTables", f:parsenoop },
-    0x043E: { n:"BrtBeginSlicerCacheOlapImpl", f:parsenoop },
-    0x043F: { n:"BrtEndSlicerCacheOlapImpl", f:parsenoop },
-    0x0440: { n:"BrtBeginSlicerCacheLevelsData", f:parsenoop },
-    0x0441: { n:"BrtEndSlicerCacheLevelsData", f:parsenoop },
-    0x0442: { n:"BrtBeginSlicerCacheLevelData", f:parsenoop },
-    0x0443: { n:"BrtEndSlicerCacheLevelData", f:parsenoop },
-    0x0444: { n:"BrtBeginSlicerCacheSiRanges", f:parsenoop },
-    0x0445: { n:"BrtEndSlicerCacheSiRanges", f:parsenoop },
-    0x0446: { n:"BrtBeginSlicerCacheSiRange", f:parsenoop },
-    0x0447: { n:"BrtEndSlicerCacheSiRange", f:parsenoop },
-    0x0448: { n:"BrtSlicerCacheOlapItem", f:parsenoop },
-    0x0449: { n:"BrtBeginSlicerCacheSelections", f:parsenoop },
-    0x044A: { n:"BrtSlicerCacheSelection", f:parsenoop },
-    0x044B: { n:"BrtEndSlicerCacheSelections", f:parsenoop },
-    0x044C: { n:"BrtBeginSlicerCacheNative", f:parsenoop },
-    0x044D: { n:"BrtEndSlicerCacheNative", f:parsenoop },
-    0x044E: { n:"BrtSlicerCacheNativeItem", f:parsenoop },
-    0x044F: { n:"BrtRangeProtection14", f:parsenoop },
-    0x0450: { n:"BrtRangeProtectionIso14", f:parsenoop },
-    0x0451: { n:"BrtCellIgnoreEC14", f:parsenoop },
-    0x0457: { n:"BrtList14", f:parsenoop },
-    0x0458: { n:"BrtCFIcon", f:parsenoop },
-    0x0459: { n:"BrtBeginSlicerCachesPivotCacheIDs", f:parsenoop },
-    0x045A: { n:"BrtEndSlicerCachesPivotCacheIDs", f:parsenoop },
-    0x045B: { n:"BrtBeginSlicers", f:parsenoop },
-    0x045C: { n:"BrtEndSlicers", f:parsenoop },
-    0x045D: { n:"BrtWbProp14", f:parsenoop },
-    0x045E: { n:"BrtBeginSXEdit", f:parsenoop },
-    0x045F: { n:"BrtEndSXEdit", f:parsenoop },
-    0x0460: { n:"BrtBeginSXEdits", f:parsenoop },
-    0x0461: { n:"BrtEndSXEdits", f:parsenoop },
-    0x0462: { n:"BrtBeginSXChange", f:parsenoop },
-    0x0463: { n:"BrtEndSXChange", f:parsenoop },
-    0x0464: { n:"BrtBeginSXChanges", f:parsenoop },
-    0x0465: { n:"BrtEndSXChanges", f:parsenoop },
-    0x0466: { n:"BrtSXTupleItems", f:parsenoop },
-    0x0468: { n:"BrtBeginSlicerStyle", f:parsenoop },
-    0x0469: { n:"BrtEndSlicerStyle", f:parsenoop },
-    0x046A: { n:"BrtSlicerStyleElement", f:parsenoop },
-    0x046B: { n:"BrtBeginStyleSheetExt14", f:parsenoop },
-    0x046C: { n:"BrtEndStyleSheetExt14", f:parsenoop },
-    0x046D: { n:"BrtBeginSlicerCachesPivotCacheID", f:parsenoop },
-    0x046E: { n:"BrtEndSlicerCachesPivotCacheID", f:parsenoop },
-    0x046F: { n:"BrtBeginConditionalFormattings", f:parsenoop },
-    0x0470: { n:"BrtEndConditionalFormattings", f:parsenoop },
-    0x0471: { n:"BrtBeginPCDCalcMemExt", f:parsenoop },
-    0x0472: { n:"BrtEndPCDCalcMemExt", f:parsenoop },
-    0x0473: { n:"BrtBeginPCDCalcMemsExt", f:parsenoop },
-    0x0474: { n:"BrtEndPCDCalcMemsExt", f:parsenoop },
-    0x0475: { n:"BrtPCDField14", f:parsenoop },
-    0x0476: { n:"BrtBeginSlicerStyles", f:parsenoop },
-    0x0477: { n:"BrtEndSlicerStyles", f:parsenoop },
-    0x0478: { n:"BrtBeginSlicerStyleElements", f:parsenoop },
-    0x0479: { n:"BrtEndSlicerStyleElements", f:parsenoop },
-    0x047A: { n:"BrtCFRuleExt", f:parsenoop },
-    0x047B: { n:"BrtBeginSXCondFmt14", f:parsenoop },
-    0x047C: { n:"BrtEndSXCondFmt14", f:parsenoop },
-    0x047D: { n:"BrtBeginSXCondFmts14", f:parsenoop },
-    0x047E: { n:"BrtEndSXCondFmts14", f:parsenoop },
-    0x0480: { n:"BrtBeginSortCond14", f:parsenoop },
-    0x0481: { n:"BrtEndSortCond14", f:parsenoop },
-    0x0482: { n:"BrtEndDVals14", f:parsenoop },
-    0x0483: { n:"BrtEndIconSet14", f:parsenoop },
-    0x0484: { n:"BrtEndDatabar14", f:parsenoop },
-    0x0485: { n:"BrtBeginColorScale14", f:parsenoop },
-    0x0486: { n:"BrtEndColorScale14", f:parsenoop },
-    0x0487: { n:"BrtBeginSxrules14", f:parsenoop },
-    0x0488: { n:"BrtEndSxrules14", f:parsenoop },
-    0x0489: { n:"BrtBeginPRule14", f:parsenoop },
-    0x048A: { n:"BrtEndPRule14", f:parsenoop },
-    0x048B: { n:"BrtBeginPRFilters14", f:parsenoop },
-    0x048C: { n:"BrtEndPRFilters14", f:parsenoop },
-    0x048D: { n:"BrtBeginPRFilter14", f:parsenoop },
-    0x048E: { n:"BrtEndPRFilter14", f:parsenoop },
-    0x048F: { n:"BrtBeginPRFItem14", f:parsenoop },
-    0x0490: { n:"BrtEndPRFItem14", f:parsenoop },
-    0x0491: { n:"BrtBeginCellIgnoreECs14", f:parsenoop },
-    0x0492: { n:"BrtEndCellIgnoreECs14", f:parsenoop },
-    0x0493: { n:"BrtDxf14", f:parsenoop },
-    0x0494: { n:"BrtBeginDxF14s", f:parsenoop },
-    0x0495: { n:"BrtEndDxf14s", f:parsenoop },
-    0x0499: { n:"BrtFilter14", f:parsenoop },
-    0x049A: { n:"BrtBeginCustomFilters14", f:parsenoop },
-    0x049C: { n:"BrtCustomFilter14", f:parsenoop },
-    0x049D: { n:"BrtIconFilter14", f:parsenoop },
-    0x049E: { n:"BrtPivotCacheConnectionName", f:parsenoop },
-    0x0800: { n:"BrtBeginDecoupledPivotCacheIDs", f:parsenoop },
-    0x0801: { n:"BrtEndDecoupledPivotCacheIDs", f:parsenoop },
-    0x0802: { n:"BrtDecoupledPivotCacheID", f:parsenoop },
-    0x0803: { n:"BrtBeginPivotTableRefs", f:parsenoop },
-    0x0804: { n:"BrtEndPivotTableRefs", f:parsenoop },
-    0x0805: { n:"BrtPivotTableRef", f:parsenoop },
-    0x0806: { n:"BrtSlicerCacheBookPivotTables", f:parsenoop },
-    0x0807: { n:"BrtBeginSxvcells", f:parsenoop },
-    0x0808: { n:"BrtEndSxvcells", f:parsenoop },
-    0x0809: { n:"BrtBeginSxRow", f:parsenoop },
-    0x080A: { n:"BrtEndSxRow", f:parsenoop },
-    0x080C: { n:"BrtPcdCalcMem15", f:parsenoop },
-    0x0813: { n:"BrtQsi15", f:parsenoop },
-    0x0814: { n:"BrtBeginWebExtensions", f:parsenoop },
-    0x0815: { n:"BrtEndWebExtensions", f:parsenoop },
-    0x0816: { n:"BrtWebExtension", f:parsenoop },
-    0x0817: { n:"BrtAbsPath15", f:parsenoop },
-    0x0818: { n:"BrtBeginPivotTableUISettings", f:parsenoop },
-    0x0819: { n:"BrtEndPivotTableUISettings", f:parsenoop },
-    0x081B: { n:"BrtTableSlicerCacheIDs", f:parsenoop },
-    0x081C: { n:"BrtTableSlicerCacheID", f:parsenoop },
-    0x081D: { n:"BrtBeginTableSlicerCache", f:parsenoop },
-    0x081E: { n:"BrtEndTableSlicerCache", f:parsenoop },
-    0x081F: { n:"BrtSxFilter15", f:parsenoop },
-    0x0820: { n:"BrtBeginTimelineCachePivotCacheIDs", f:parsenoop },
-    0x0821: { n:"BrtEndTimelineCachePivotCacheIDs", f:parsenoop },
-    0x0822: { n:"BrtTimelineCachePivotCacheID", f:parsenoop },
-    0x0823: { n:"BrtBeginTimelineCacheIDs", f:parsenoop },
-    0x0824: { n:"BrtEndTimelineCacheIDs", f:parsenoop },
-    0x0825: { n:"BrtBeginTimelineCacheID", f:parsenoop },
-    0x0826: { n:"BrtEndTimelineCacheID", f:parsenoop },
-    0x0827: { n:"BrtBeginTimelinesEx", f:parsenoop },
-    0x0828: { n:"BrtEndTimelinesEx", f:parsenoop },
-    0x0829: { n:"BrtBeginTimelineEx", f:parsenoop },
-    0x082A: { n:"BrtEndTimelineEx", f:parsenoop },
-    0x082B: { n:"BrtWorkBookPr15", f:parsenoop },
-    0x082C: { n:"BrtPCDH15", f:parsenoop },
-    0x082D: { n:"BrtBeginTimelineStyle", f:parsenoop },
-    0x082E: { n:"BrtEndTimelineStyle", f:parsenoop },
-    0x082F: { n:"BrtTimelineStyleElement", f:parsenoop },
-    0x0830: { n:"BrtBeginTimelineStylesheetExt15", f:parsenoop },
-    0x0831: { n:"BrtEndTimelineStylesheetExt15", f:parsenoop },
-    0x0832: { n:"BrtBeginTimelineStyles", f:parsenoop },
-    0x0833: { n:"BrtEndTimelineStyles", f:parsenoop },
-    0x0834: { n:"BrtBeginTimelineStyleElements", f:parsenoop },
-    0x0835: { n:"BrtEndTimelineStyleElements", f:parsenoop },
-    0x0836: { n:"BrtDxf15", f:parsenoop },
-    0x0837: { n:"BrtBeginDxfs15", f:parsenoop },
-    0x0838: { n:"brtEndDxfs15", f:parsenoop },
-    0x0839: { n:"BrtSlicerCacheHideItemsWithNoData", f:parsenoop },
-    0x083A: { n:"BrtBeginItemUniqueNames", f:parsenoop },
-    0x083B: { n:"BrtEndItemUniqueNames", f:parsenoop },
-    0x083C: { n:"BrtItemUniqueName", f:parsenoop },
-    0x083D: { n:"BrtBeginExtConn15", f:parsenoop },
-    0x083E: { n:"BrtEndExtConn15", f:parsenoop },
-    0x083F: { n:"BrtBeginOledbPr15", f:parsenoop },
-    0x0840: { n:"BrtEndOledbPr15", f:parsenoop },
-    0x0841: { n:"BrtBeginDataFeedPr15", f:parsenoop },
-    0x0842: { n:"BrtEndDataFeedPr15", f:parsenoop },
-    0x0843: { n:"BrtTextPr15", f:parsenoop },
-    0x0844: { n:"BrtRangePr15", f:parsenoop },
-    0x0845: { n:"BrtDbCommand15", f:parsenoop },
-    0x0846: { n:"BrtBeginDbTables15", f:parsenoop },
-    0x0847: { n:"BrtEndDbTables15", f:parsenoop },
-    0x0848: { n:"BrtDbTable15", f:parsenoop },
-    0x0849: { n:"BrtBeginDataModel", f:parsenoop },
-    0x084A: { n:"BrtEndDataModel", f:parsenoop },
-    0x084B: { n:"BrtBeginModelTables", f:parsenoop },
-    0x084C: { n:"BrtEndModelTables", f:parsenoop },
-    0x084D: { n:"BrtModelTable", f:parsenoop },
-    0x084E: { n:"BrtBeginModelRelationships", f:parsenoop },
-    0x084F: { n:"BrtEndModelRelationships", f:parsenoop },
-    0x0850: { n:"BrtModelRelationship", f:parsenoop },
-    0x0851: { n:"BrtBeginECTxtWiz15", f:parsenoop },
-    0x0852: { n:"BrtEndECTxtWiz15", f:parsenoop },
-    0x0853: { n:"BrtBeginECTWFldInfoLst15", f:parsenoop },
-    0x0854: { n:"BrtEndECTWFldInfoLst15", f:parsenoop },
-    0x0855: { n:"BrtBeginECTWFldInfo15", f:parsenoop },
-    0x0856: { n:"BrtFieldListActiveItem", f:parsenoop },
-    0x0857: { n:"BrtPivotCacheIdVersion", f:parsenoop },
-    0x0858: { n:"BrtSXDI15", f:parsenoop },
-    0xFFFF: { n:"", f:parsenoop }
-};
-
-var evert_RE = evert_key(XLSBRecordEnum, 'n');
-
-/* [MS-XLS] 2.3 Record Enumeration */
-var XLSRecordEnum = {
-    0x0003: { n:"BIFF2NUM", f:parse_BIFF2NUM },
-    0x0004: { n:"BIFF2STR", f:parse_BIFF2STR },
-    0x0006: { n:"Formula", f:parse_Formula },
-    0x0009: { n:'BOF', f:parse_BOF },
-    0x000a: { n:'EOF', f:parse_EOF },
-    0x000c: { n:"CalcCount", f:parse_CalcCount },
-    0x000d: { n:"CalcMode", f:parse_CalcMode },
-    0x000e: { n:"CalcPrecision", f:parse_CalcPrecision },
-    0x000f: { n:"CalcRefMode", f:parse_CalcRefMode },
-    0x0010: { n:"CalcDelta", f:parse_CalcDelta },
-    0x0011: { n:"CalcIter", f:parse_CalcIter },
-    0x0012: { n:"Protect", f:parse_Protect },
-    0x0013: { n:"Password", f:parse_Password },
-    0x0014: { n:"Header", f:parse_Header },
-    0x0015: { n:"Footer", f:parse_Footer },
-    0x0017: { n:"ExternSheet", f:parse_ExternSheet },
-    0x0018: { n:"Lbl", f:parse_Lbl },
-    0x0019: { n:"WinProtect", f:parse_WinProtect },
-    0x001a: { n:"VerticalPageBreaks", f:parse_VerticalPageBreaks },
-    0x001b: { n:"HorizontalPageBreaks", f:parse_HorizontalPageBreaks },
-    0x001c: { n:"Note", f:parse_Note },
-    0x001d: { n:"Selection", f:parse_Selection },
-    0x0022: { n:"Date1904", f:parse_Date1904 },
-    0x0023: { n:"ExternName", f:parse_ExternName },
-    0x0026: { n:"LeftMargin", f:parse_LeftMargin },
-    0x0027: { n:"RightMargin", f:parse_RightMargin },
-    0x0028: { n:"TopMargin", f:parse_TopMargin },
-    0x0029: { n:"BottomMargin", f:parse_BottomMargin },
-    0x002a: { n:"PrintRowCol", f:parse_PrintRowCol },
-    0x002b: { n:"PrintGrid", f:parse_PrintGrid },
-    0x002f: { n:"FilePass", f:parse_FilePass },
-    0x0031: { n:"Font", f:parse_Font },
-    0x0033: { n:"PrintSize", f:parse_PrintSize },
-    0x003c: { n:"Continue", f:parse_Continue },
-    0x003d: { n:"Window1", f:parse_Window1 },
-    0x0040: { n:"Backup", f:parse_Backup },
-    0x0041: { n:"Pane", f:parse_Pane },
-    0x0042: { n:'CodePage', f:parse_CodePage },
-    0x004d: { n:"Pls", f:parse_Pls },
-    0x0050: { n:"DCon", f:parse_DCon },
-    0x0051: { n:"DConRef", f:parse_DConRef },
-    0x0052: { n:"DConName", f:parse_DConName },
-    0x0055: { n:"DefColWidth", f:parse_DefColWidth },
-    0x0059: { n:"XCT", f:parse_XCT },
-    0x005a: { n:"CRN", f:parse_CRN },
-    0x005b: { n:"FileSharing", f:parse_FileSharing },
-    0x005c: { n:'WriteAccess', f:parse_WriteAccess },
-    0x005d: { n:"Obj", f:parse_Obj },
-    0x005e: { n:"Uncalced", f:parse_Uncalced },
-    0x005f: { n:"CalcSaveRecalc", f:parse_CalcSaveRecalc },
-    0x0060: { n:"Template", f:parse_Template },
-    0x0061: { n:"Intl", f:parse_Intl },
-    0x0063: { n:"ObjProtect", f:parse_ObjProtect },
-    0x007d: { n:"ColInfo", f:parse_ColInfo },
-    0x0080: { n:"Guts", f:parse_Guts },
-    0x0081: { n:"WsBool", f:parse_WsBool },
-    0x0082: { n:"GridSet", f:parse_GridSet },
-    0x0083: { n:"HCenter", f:parse_HCenter },
-    0x0084: { n:"VCenter", f:parse_VCenter },
-    0x0085: { n:'BoundSheet8', f:parse_BoundSheet8 },
-    0x0086: { n:"WriteProtect", f:parse_WriteProtect },
-    0x008c: { n:"Country", f:parse_Country },
-    0x008d: { n:"HideObj", f:parse_HideObj },
-    0x0090: { n:"Sort", f:parse_Sort },
-    0x0092: { n:"Palette", f:parse_Palette },
-    0x0097: { n:"Sync", f:parse_Sync },
-    0x0098: { n:"LPr", f:parse_LPr },
-    0x0099: { n:"DxGCol", f:parse_DxGCol },
-    0x009a: { n:"FnGroupName", f:parse_FnGroupName },
-    0x009b: { n:"FilterMode", f:parse_FilterMode },
-    0x009c: { n:"BuiltInFnGroupCount", f:parse_BuiltInFnGroupCount },
-    0x009d: { n:"AutoFilterInfo", f:parse_AutoFilterInfo },
-    0x009e: { n:"AutoFilter", f:parse_AutoFilter },
-    0x00a0: { n:"Scl", f:parse_Scl },
-    0x00a1: { n:"Setup", f:parse_Setup },
-    0x00ae: { n:"ScenMan", f:parse_ScenMan },
-    0x00af: { n:"SCENARIO", f:parse_SCENARIO },
-    0x00b0: { n:"SxView", f:parse_SxView },
-    0x00b1: { n:"Sxvd", f:parse_Sxvd },
-    0x00b2: { n:"SXVI", f:parse_SXVI },
-    0x00b4: { n:"SxIvd", f:parse_SxIvd },
-    0x00b5: { n:"SXLI", f:parse_SXLI },
-    0x00b6: { n:"SXPI", f:parse_SXPI },
-    0x00b8: { n:"DocRoute", f:parse_DocRoute },
-    0x00b9: { n:"RecipName", f:parse_RecipName },
-    0x00bd: { n:"MulRk", f:parse_MulRk },
-    0x00be: { n:"MulBlank", f:parse_MulBlank },
-    0x00c1: { n:'Mms', f:parse_Mms },
-    0x00c5: { n:"SXDI", f:parse_SXDI },
-    0x00c6: { n:"SXDB", f:parse_SXDB },
-    0x00c7: { n:"SXFDB", f:parse_SXFDB },
-    0x00c8: { n:"SXDBB", f:parse_SXDBB },
-    0x00c9: { n:"SXNum", f:parse_SXNum },
-    0x00ca: { n:"SxBool", f:parse_SxBool },
-    0x00cb: { n:"SxErr", f:parse_SxErr },
-    0x00cc: { n:"SXInt", f:parse_SXInt },
-    0x00cd: { n:"SXString", f:parse_SXString },
-    0x00ce: { n:"SXDtr", f:parse_SXDtr },
-    0x00cf: { n:"SxNil", f:parse_SxNil },
-    0x00d0: { n:"SXTbl", f:parse_SXTbl },
-    0x00d1: { n:"SXTBRGIITM", f:parse_SXTBRGIITM },
-    0x00d2: { n:"SxTbpg", f:parse_SxTbpg },
-    0x00d3: { n:"ObProj", f:parse_ObProj },
-    0x00d5: { n:"SXStreamID", f:parse_SXStreamID },
-    0x00d7: { n:"DBCell", f:parse_DBCell },
-    0x00d8: { n:"SXRng", f:parse_SXRng },
-    0x00d9: { n:"SxIsxoper", f:parse_SxIsxoper },
-    0x00da: { n:"BookBool", f:parse_BookBool },
-    0x00dc: { n:"DbOrParamQry", f:parse_DbOrParamQry },
-    0x00dd: { n:"ScenarioProtect", f:parse_ScenarioProtect },
-    0x00de: { n:"OleObjectSize", f:parse_OleObjectSize },
-    0x00e0: { n:"XF", f:parse_XF },
-    0x00e1: { n:'InterfaceHdr', f:parse_InterfaceHdr },
-    0x00e2: { n:'InterfaceEnd', f:parse_InterfaceEnd },
-    0x00e3: { n:"SXVS", f:parse_SXVS },
-    0x00e5: { n:"MergeCells", f:parse_MergeCells },
-    0x00e9: { n:"BkHim", f:parse_BkHim },
-    0x00eb: { n:"MsoDrawingGroup", f:parse_MsoDrawingGroup },
-    0x00ec: { n:"MsoDrawing", f:parse_MsoDrawing },
-    0x00ed: { n:"MsoDrawingSelection", f:parse_MsoDrawingSelection },
-    0x00ef: { n:"PhoneticInfo", f:parse_PhoneticInfo },
-    0x00f0: { n:"SxRule", f:parse_SxRule },
-    0x00f1: { n:"SXEx", f:parse_SXEx },
-    0x00f2: { n:"SxFilt", f:parse_SxFilt },
-    0x00f4: { n:"SxDXF", f:parse_SxDXF },
-    0x00f5: { n:"SxItm", f:parse_SxItm },
-    0x00f6: { n:"SxName", f:parse_SxName },
-    0x00f7: { n:"SxSelect", f:parse_SxSelect },
-    0x00f8: { n:"SXPair", f:parse_SXPair },
-    0x00f9: { n:"SxFmla", f:parse_SxFmla },
-    0x00fb: { n:"SxFormat", f:parse_SxFormat },
-    0x00fc: { n:"SST", f:parse_SST },
-    0x00fd: { n:"LabelSst", f:parse_LabelSst },
-    0x00ff: { n:"ExtSST", f:parse_ExtSST },
-    0x0100: { n:"SXVDEx", f:parse_SXVDEx },
-    0x0103: { n:"SXFormula", f:parse_SXFormula },
-    0x0122: { n:"SXDBEx", f:parse_SXDBEx },
-    0x0137: { n:"RRDInsDel", f:parse_RRDInsDel },
-    0x0138: { n:"RRDHead", f:parse_RRDHead },
-    0x013b: { n:"RRDChgCell", f:parse_RRDChgCell },
-    0x013d: { n:"RRTabId", f:parse_RRTabId },
-    0x013e: { n:"RRDRenSheet", f:parse_RRDRenSheet },
-    0x013f: { n:"RRSort", f:parse_RRSort },
-    0x0140: { n:"RRDMove", f:parse_RRDMove },
-    0x014a: { n:"RRFormat", f:parse_RRFormat },
-    0x014b: { n:"RRAutoFmt", f:parse_RRAutoFmt },
-    0x014d: { n:"RRInsertSh", f:parse_RRInsertSh },
-    0x014e: { n:"RRDMoveBegin", f:parse_RRDMoveBegin },
-    0x014f: { n:"RRDMoveEnd", f:parse_RRDMoveEnd },
-    0x0150: { n:"RRDInsDelBegin", f:parse_RRDInsDelBegin },
-    0x0151: { n:"RRDInsDelEnd", f:parse_RRDInsDelEnd },
-    0x0152: { n:"RRDConflict", f:parse_RRDConflict },
-    0x0153: { n:"RRDDefName", f:parse_RRDDefName },
-    0x0154: { n:"RRDRstEtxp", f:parse_RRDRstEtxp },
-    0x015f: { n:"LRng", f:parse_LRng },
-    0x0160: { n:"UsesELFs", f:parse_UsesELFs },
-    0x0161: { n:"DSF", f:parse_DSF },
-    0x0191: { n:"CUsr", f:parse_CUsr },
-    0x0192: { n:"CbUsr", f:parse_CbUsr },
-    0x0193: { n:"UsrInfo", f:parse_UsrInfo },
-    0x0194: { n:"UsrExcl", f:parse_UsrExcl },
-    0x0195: { n:"FileLock", f:parse_FileLock },
-    0x0196: { n:"RRDInfo", f:parse_RRDInfo },
-    0x0197: { n:"BCUsrs", f:parse_BCUsrs },
-    0x0198: { n:"UsrChk", f:parse_UsrChk },
-    0x01a9: { n:"UserBView", f:parse_UserBView },
-    0x01aa: { n:"UserSViewBegin", f:parse_UserSViewBegin },
-    0x01ab: { n:"UserSViewEnd", f:parse_UserSViewEnd },
-    0x01ac: { n:"RRDUserView", f:parse_RRDUserView },
-    0x01ad: { n:"Qsi", f:parse_Qsi },
-    0x01ae: { n:"SupBook", f:parse_SupBook },
-    0x01af: { n:"Prot4Rev", f:parse_Prot4Rev },
-    0x01b0: { n:"CondFmt", f:parse_CondFmt },
-    0x01b1: { n:"CF", f:parse_CF },
-    0x01b2: { n:"DVal", f:parse_DVal },
-    0x01b5: { n:"DConBin", f:parse_DConBin },
-    0x01b6: { n:"TxO", f:parse_TxO },
-    0x01b7: { n:"RefreshAll", f:parse_RefreshAll },
-    0x01b8: { n:"HLink", f:parse_HLink },
-    0x01b9: { n:"Lel", f:parse_Lel },
-    0x01ba: { n:"CodeName", f:parse_XLSCodeName },
-    0x01bb: { n:"SXFDBType", f:parse_SXFDBType },
-    0x01bc: { n:"Prot4RevPass", f:parse_Prot4RevPass },
-    0x01bd: { n:"ObNoMacros", f:parse_ObNoMacros },
-    0x01be: { n:"Dv", f:parse_Dv },
-    0x01c0: { n:"Excel9File", f:parse_Excel9File },
-    0x01c1: { n:"RecalcId", f:parse_RecalcId, r:2},
-    0x01c2: { n:"EntExU2", f:parse_EntExU2 },
-    0x0200: { n:"Dimensions", f:parse_Dimensions },
-    0x0201: { n:"Blank", f:parse_Blank },
-    0x0203: { n:"Number", f:parse_Number },
-    0x0204: { n:"Label", f:parse_Label },
-    0x0205: { n:"BoolErr", f:parse_BoolErr },
-    0x0207: { n:"String", f:parse_String },
-    0x0208: { n:'Row', f:parse_Row },
-    0x020b: { n:"Index", f:parse_Index },
-    0x0221: { n:"Array", f:parse_Array },
-    0x0225: { n:"DefaultRowHeight", f:parse_DefaultRowHeight },
-    0x0236: { n:"Table", f:parse_Table },
-    0x023e: { n:"Window2", f:parse_Window2 },
-    0x027e: { n:"RK", f:parse_RK },
-    0x0293: { n:"Style", f:parse_Style },
-    0x0418: { n:"BigName", f:parse_BigName },
-    0x041e: { n:"Format", f:parse_Format },
-    0x043c: { n:"ContinueBigName", f:parse_ContinueBigName },
-    0x04bc: { n:"ShrFmla", f:parse_ShrFmla },
-    0x0800: { n:"HLinkTooltip", f:parse_HLinkTooltip },
-    0x0801: { n:"WebPub", f:parse_WebPub },
-    0x0802: { n:"QsiSXTag", f:parse_QsiSXTag },
-    0x0803: { n:"DBQueryExt", f:parse_DBQueryExt },
-    0x0804: { n:"ExtString", f:parse_ExtString },
-    0x0805: { n:"TxtQry", f:parse_TxtQry },
-    0x0806: { n:"Qsir", f:parse_Qsir },
-    0x0807: { n:"Qsif", f:parse_Qsif },
-    0x0808: { n:"RRDTQSIF", f:parse_RRDTQSIF },
-    0x0809: { n:'BOF', f:parse_BOF },
-    0x080a: { n:"OleDbConn", f:parse_OleDbConn },
-    0x080b: { n:"WOpt", f:parse_WOpt },
-    0x080c: { n:"SXViewEx", f:parse_SXViewEx },
-    0x080d: { n:"SXTH", f:parse_SXTH },
-    0x080e: { n:"SXPIEx", f:parse_SXPIEx },
-    0x080f: { n:"SXVDTEx", f:parse_SXVDTEx },
-    0x0810: { n:"SXViewEx9", f:parse_SXViewEx9 },
-    0x0812: { n:"ContinueFrt", f:parse_ContinueFrt },
-    0x0813: { n:"RealTimeData", f:parse_RealTimeData },
-    0x0850: { n:"ChartFrtInfo", f:parse_ChartFrtInfo },
-    0x0851: { n:"FrtWrapper", f:parse_FrtWrapper },
-    0x0852: { n:"StartBlock", f:parse_StartBlock },
-    0x0853: { n:"EndBlock", f:parse_EndBlock },
-    0x0854: { n:"StartObject", f:parse_StartObject },
-    0x0855: { n:"EndObject", f:parse_EndObject },
-    0x0856: { n:"CatLab", f:parse_CatLab },
-    0x0857: { n:"YMult", f:parse_YMult },
-    0x0858: { n:"SXViewLink", f:parse_SXViewLink },
-    0x0859: { n:"PivotChartBits", f:parse_PivotChartBits },
-    0x085a: { n:"FrtFontList", f:parse_FrtFontList },
-    0x0862: { n:"SheetExt", f:parse_SheetExt },
-    0x0863: { n:"BookExt", f:parse_BookExt, r:12},
-    0x0864: { n:"SXAddl", f:parse_SXAddl },
-    0x0865: { n:"CrErr", f:parse_CrErr },
-    0x0866: { n:"HFPicture", f:parse_HFPicture },
-    0x0867: { n:'FeatHdr', f:parse_FeatHdr },
-    0x0868: { n:"Feat", f:parse_Feat },
-    0x086a: { n:"DataLabExt", f:parse_DataLabExt },
-    0x086b: { n:"DataLabExtContents", f:parse_DataLabExtContents },
-    0x086c: { n:"CellWatch", f:parse_CellWatch },
-    0x0871: { n:"FeatHdr11", f:parse_FeatHdr11 },
-    0x0872: { n:"Feature11", f:parse_Feature11 },
-    0x0874: { n:"DropDownObjIds", f:parse_DropDownObjIds },
-    0x0875: { n:"ContinueFrt11", f:parse_ContinueFrt11 },
-    0x0876: { n:"DConn", f:parse_DConn },
-    0x0877: { n:"List12", f:parse_List12 },
-    0x0878: { n:"Feature12", f:parse_Feature12 },
-    0x0879: { n:"CondFmt12", f:parse_CondFmt12 },
-    0x087a: { n:"CF12", f:parse_CF12 },
-    0x087b: { n:"CFEx", f:parse_CFEx },
-    0x087c: { n:"XFCRC", f:parse_XFCRC, r:12 },
-    0x087d: { n:"XFExt", f:parse_XFExt, r:12 },
-    0x087e: { n:"AutoFilter12", f:parse_AutoFilter12 },
-    0x087f: { n:"ContinueFrt12", f:parse_ContinueFrt12 },
-    0x0884: { n:"MDTInfo", f:parse_MDTInfo },
-    0x0885: { n:"MDXStr", f:parse_MDXStr },
-    0x0886: { n:"MDXTuple", f:parse_MDXTuple },
-    0x0887: { n:"MDXSet", f:parse_MDXSet },
-    0x0888: { n:"MDXProp", f:parse_MDXProp },
-    0x0889: { n:"MDXKPI", f:parse_MDXKPI },
-    0x088a: { n:"MDB", f:parse_MDB },
-    0x088b: { n:"PLV", f:parse_PLV },
-    0x088c: { n:"Compat12", f:parse_Compat12, r:12 },
-    0x088d: { n:"DXF", f:parse_DXF },
-    0x088e: { n:"TableStyles", f:parse_TableStyles, r:12 },
-    0x088f: { n:"TableStyle", f:parse_TableStyle },
-    0x0890: { n:"TableStyleElement", f:parse_TableStyleElement },
-    0x0892: { n:"StyleExt", f:parse_StyleExt },
-    0x0893: { n:"NamePublish", f:parse_NamePublish },
-    0x0894: { n:"NameCmt", f:parse_NameCmt },
-    0x0895: { n:"SortData", f:parse_SortData },
-    0x0896: { n:"Theme", f:parse_Theme, r:12 },
-    0x0897: { n:"GUIDTypeLib", f:parse_GUIDTypeLib },
-    0x0898: { n:"FnGrp12", f:parse_FnGrp12 },
-    0x0899: { n:"NameFnGrp12", f:parse_NameFnGrp12 },
-    0x089a: { n:"MTRSettings", f:parse_MTRSettings, r:12 },
-    0x089b: { n:"CompressPictures", f:parse_CompressPictures },
-    0x089c: { n:"HeaderFooter", f:parse_HeaderFooter },
-    0x089d: { n:"CrtLayout12", f:parse_CrtLayout12 },
-    0x089e: { n:"CrtMlFrt", f:parse_CrtMlFrt },
-    0x089f: { n:"CrtMlFrtContinue", f:parse_CrtMlFrtContinue },
-    0x08a3: { n:"ForceFullCalculation", f:parse_ForceFullCalculation },
-    0x08a4: { n:"ShapePropsStream", f:parse_ShapePropsStream },
-    0x08a5: { n:"TextPropsStream", f:parse_TextPropsStream },
-    0x08a6: { n:"RichTextStream", f:parse_RichTextStream },
-    0x08a7: { n:"CrtLayout12A", f:parse_CrtLayout12A },
-    0x1001: { n:"Units", f:parse_Units },
-    0x1002: { n:"Chart", f:parse_Chart },
-    0x1003: { n:"Series", f:parse_Series },
-    0x1006: { n:"DataFormat", f:parse_DataFormat },
-    0x1007: { n:"LineFormat", f:parse_LineFormat },
-    0x1009: { n:"MarkerFormat", f:parse_MarkerFormat },
-    0x100a: { n:"AreaFormat", f:parse_AreaFormat },
-    0x100b: { n:"PieFormat", f:parse_PieFormat },
-    0x100c: { n:"AttachedLabel", f:parse_AttachedLabel },
-    0x100d: { n:"SeriesText", f:parse_SeriesText },
-    0x1014: { n:"ChartFormat", f:parse_ChartFormat },
-    0x1015: { n:"Legend", f:parse_Legend },
-    0x1016: { n:"SeriesList", f:parse_SeriesList },
-    0x1017: { n:"Bar", f:parse_Bar },
-    0x1018: { n:"Line", f:parse_Line },
-    0x1019: { n:"Pie", f:parse_Pie },
-    0x101a: { n:"Area", f:parse_Area },
-    0x101b: { n:"Scatter", f:parse_Scatter },
-    0x101c: { n:"CrtLine", f:parse_CrtLine },
-    0x101d: { n:"Axis", f:parse_Axis },
-    0x101e: { n:"Tick", f:parse_Tick },
-    0x101f: { n:"ValueRange", f:parse_ValueRange },
-    0x1020: { n:"CatSerRange", f:parse_CatSerRange },
-    0x1021: { n:"AxisLine", f:parse_AxisLine },
-    0x1022: { n:"CrtLink", f:parse_CrtLink },
-    0x1024: { n:"DefaultText", f:parse_DefaultText },
-    0x1025: { n:"Text", f:parse_Text },
-    0x1026: { n:"FontX", f:parse_FontX },
-    0x1027: { n:"ObjectLink", f:parse_ObjectLink },
-    0x1032: { n:"Frame", f:parse_Frame },
-    0x1033: { n:"Begin", f:parse_Begin },
-    0x1034: { n:"End", f:parse_End },
-    0x1035: { n:"PlotArea", f:parse_PlotArea },
-    0x103a: { n:"Chart3d", f:parse_Chart3d },
-    0x103c: { n:"PicF", f:parse_PicF },
-    0x103d: { n:"DropBar", f:parse_DropBar },
-    0x103e: { n:"Radar", f:parse_Radar },
-    0x103f: { n:"Surf", f:parse_Surf },
-    0x1040: { n:"RadarArea", f:parse_RadarArea },
-    0x1041: { n:"AxisParent", f:parse_AxisParent },
-    0x1043: { n:"LegendException", f:parse_LegendException },
-    0x1044: { n:"ShtProps", f:parse_ShtProps },
-    0x1045: { n:"SerToCrt", f:parse_SerToCrt },
-    0x1046: { n:"AxesUsed", f:parse_AxesUsed },
-    0x1048: { n:"SBaseRef", f:parse_SBaseRef },
-    0x104a: { n:"SerParent", f:parse_SerParent },
-    0x104b: { n:"SerAuxTrend", f:parse_SerAuxTrend },
-    0x104e: { n:"IFmtRecord", f:parse_IFmtRecord },
-    0x104f: { n:"Pos", f:parse_Pos },
-    0x1050: { n:"AlRuns", f:parse_AlRuns },
-    0x1051: { n:"BRAI", f:parse_BRAI },
-    0x105b: { n:"SerAuxErrBar", f:parse_SerAuxErrBar },
-    0x105c: { n:"ClrtClient", f:parse_ClrtClient },
-    0x105d: { n:"SerFmt", f:parse_SerFmt },
-    0x105f: { n:"Chart3DBarShape", f:parse_Chart3DBarShape },
-    0x1060: { n:"Fbi", f:parse_Fbi },
-    0x1061: { n:"BopPop", f:parse_BopPop },
-    0x1062: { n:"AxcExt", f:parse_AxcExt },
-    0x1063: { n:"Dat", f:parse_Dat },
-    0x1064: { n:"PlotGrowth", f:parse_PlotGrowth },
-    0x1065: { n:"SIIndex", f:parse_SIIndex },
-    0x1066: { n:"GelFrame", f:parse_GelFrame },
-    0x1067: { n:"BopPopCustom", f:parse_BopPopCustom },
-    0x1068: { n:"Fbi2", f:parse_Fbi2 },
-
-    /* These are specified in an older version of the spec */
-    0x0016: { n:"ExternCount", f:parsenoop },
-    0x007e: { n:"RK", f:parsenoop }, /* Not necessarily same as 0x027e */
-    0x007f: { n:"ImData", f:parsenoop },
-    0x0087: { n:"Addin", f:parsenoop },
-    0x0088: { n:"Edg", f:parsenoop },
-    0x0089: { n:"Pub", f:parsenoop },
-    0x0091: { n:"Sub", f:parsenoop },
-    0x0094: { n:"LHRecord", f:parsenoop },
-    0x0095: { n:"LHNGraph", f:parsenoop },
-    0x0096: { n:"Sound", f:parsenoop },
-    0x00a9: { n:"CoordList", f:parsenoop },
-    0x00ab: { n:"GCW", f:parsenoop },
-    0x00bc: { n:"ShrFmla", f:parsenoop }, /* Not necessarily same as 0x04bc */
-    0x00c2: { n:"AddMenu", f:parsenoop },
-    0x00c3: { n:"DelMenu", f:parsenoop },
-    0x00d6: { n:"RString", f:parsenoop },
-    0x00df: { n:"UDDesc", f:parsenoop },
-    0x00ea: { n:"TabIdConf", f:parsenoop },
-    0x0162: { n:"XL5Modify", f:parsenoop },
-    0x01a5: { n:"FileSharing2", f:parsenoop },
-    0x0218: { n:"Name", f:parsenoop },
-    0x0223: { n:"ExternName", f:parse_ExternName },
-    0x0231: { n:"Font", f:parsenoop },
-    0x0406: { n:"Formula", f:parse_Formula },
-    0x086d: { n:"FeatInfo", f:parsenoop },
-    0x0873: { n:"FeatInfo11", f:parsenoop },
-    0x0881: { n:"SXAddl12", f:parsenoop },
-    0x08c0: { n:"AutoWebPub", f:parsenoop },
-    0x08c1: { n:"ListObj", f:parsenoop },
-    0x08c2: { n:"ListField", f:parsenoop },
-    0x08c3: { n:"ListDV", f:parsenoop },
-    0x08c4: { n:"ListCondFmt", f:parsenoop },
-    0x08c5: { n:"ListCF", f:parsenoop },
-    0x08c6: { n:"FMQry", f:parsenoop },
-    0x08c7: { n:"FMSQry", f:parsenoop },
-    0x08c8: { n:"PLV", f:parsenoop }, /* supposedly PLV for Excel 11 */
-    0x08c9: { n:"LnExt", f:parsenoop },
-    0x08ca: { n:"MkrExt", f:parsenoop },
-    0x08cb: { n:"CrtCoopt", f:parsenoop },
-
-    0x0000: {}
-};
-
-
-/* Helper function to call out to ODS parser */
-function parse_ods(zip, opts) {
-    if(typeof module !== "undefined" && typeof require !== 'undefined' && typeof ODS === 'undefined') ODS = require('./od' + 's');
-    if(typeof ODS === 'undefined' || !ODS.parse_ods) throw new Error("Unsupported ODS");
-    return ODS.parse_ods(zip, opts);
-}
-function fix_opts_func(defaults) {
-    return function fix_opts(opts) {
-        for(var i = 0; i != defaults.length; ++i) {
-            var d = defaults[i];
-            if(opts[d[0]] === undefined) opts[d[0]] = d[1];
-            if(d[2] === 'n') opts[d[0]] = Number(opts[d[0]]);
-        }
-    };
-}
-
-var fix_read_opts = fix_opts_func([
-    ['cellNF', false], /* emit cell number format string as .z */
-    ['cellHTML', true], /* emit html string as .h */
-    ['cellFormula', true], /* emit formulae as .f */
-    ['cellStyles', false], /* emits style/theme as .s */
-    ['cellDates', false], /* emit date cells with type `d` */
-
-    ['sheetStubs', false], /* emit empty cells */
-    ['sheetRows', 0, 'n'], /* read n rows (0 = read all rows) */
-
-    ['bookDeps', false], /* parse calculation chains */
-    ['bookSheets', false], /* only try to get sheet names (no Sheets) */
-    ['bookProps', false], /* only try to get properties (no Sheets) */
-    ['bookFiles', false], /* include raw file structure (keys, files, cfb) */
-    ['bookVBA', false], /* include vba raw data (vbaraw) */
-
-    ['password',''], /* password */
-    ['WTF', false] /* WTF mode (throws errors) */
-]);
-
-
-var fix_write_opts = fix_opts_func([
-    ['cellDates', false], /* write date cells with type `d` */
-
-    ['bookSST', false], /* Generate Shared String Table */
-
-    ['bookType', 'xlsx'], /* Type of workbook (xlsx/m/b) */
-
-    ['WTF', false] /* WTF mode (throws errors) */
-]);
-function safe_parse_wbrels(wbrels, sheets) {
-    if(!wbrels) return 0;
-    try {
-        wbrels = sheets.map(function pwbr(w) { return [w.name, wbrels['!id'][w.id].Target]; });
-    } catch(e) { return null; }
-    return !wbrels || wbrels.length === 0 ? null : wbrels;
-}
-
-function safe_parse_ws(zip, path, relsPath, sheet, sheetRels, sheets, opts) {
-    try {
-        sheetRels[sheet]=parse_rels(getzipdata(zip, relsPath, true), path);
-        sheets[sheet]=parse_ws(getzipdata(zip, path),path,opts,sheetRels[sheet]);
-    } catch(e) { if(opts.WTF) throw e; }
-}
-
-var nodirs = function nodirs(x){return x.substr(-1) != '/';};
-function parse_zip(zip, opts) {
-    make_ssf(SSF);
-    opts = opts || {};
-    fix_read_opts(opts);
-    reset_cp();
-
-    /* OpenDocument Part 3 Section 2.2.1 OpenDocument Package */
-    if(safegetzipfile(zip, 'META-INF/manifest.xml')) return parse_ods(zip, opts);
-
-    var entries = keys(zip.files).filter(nodirs).sort();
-    var dir = parse_ct(getzipdata(zip, '[Content_Types].xml'), opts);
-    var xlsb = false;
-    var sheets, binname;
-    if(dir.workbooks.length === 0) {
-        binname = "xl/workbook.xml";
-        if(getzipdata(zip,binname, true)) dir.workbooks.push(binname);
-    }
-    if(dir.workbooks.length === 0) {
-        binname = "xl/workbook.bin";
-        if(!getzipfile(zip,binname,true)) throw new Error("Could not find workbook");
-        dir.workbooks.push(binname);
-        xlsb = true;
-    }
-    if(dir.workbooks[0].substr(-3) == "bin") xlsb = true;
-    if(xlsb) set_cp(1200);
-
-    if(!opts.bookSheets && !opts.bookProps) {
-        strs = [];
-        if(dir.sst) strs=parse_sst(getzipdata(zip, dir.sst.replace(/^\//,'')), dir.sst, opts);
-
-        styles = {};
-        if(dir.style) styles = parse_sty(getzipdata(zip, dir.style.replace(/^\//,'')),dir.style, opts);
-
-        themes = {};
-        if(opts.cellStyles && dir.themes.length) themes = parse_theme(getzipdata(zip, dir.themes[0].replace(/^\//,''), true),dir.themes[0], opts);
-    }
-
-    var wb = parse_wb(getzipdata(zip, dir.workbooks[0].replace(/^\//,'')), dir.workbooks[0], opts);
-
-    var props = {}, propdata = "";
-
-    if(dir.coreprops.length !== 0) {
-        propdata = getzipdata(zip, dir.coreprops[0].replace(/^\//,''), true);
-        if(propdata) props = parse_core_props(propdata);
-        if(dir.extprops.length !== 0) {
-            propdata = getzipdata(zip, dir.extprops[0].replace(/^\//,''), true);
-            if(propdata) parse_ext_props(propdata, props);
-        }
-    }
-
-    var custprops = {};
-    if(!opts.bookSheets || opts.bookProps) {
-        if (dir.custprops.length !== 0) {
-            propdata = getzipdata(zip, dir.custprops[0].replace(/^\//,''), true);
-            if(propdata) custprops = parse_cust_props(propdata, opts);
-        }
-    }
-
-    var out = {};
-    if(opts.bookSheets || opts.bookProps) {
-        if(props.Worksheets && props.SheetNames.length > 0) sheets=props.SheetNames;
-        else if(wb.Sheets) sheets = wb.Sheets.map(function pluck(x){ return x.name; });
-        if(opts.bookProps) { out.Props = props; out.Custprops = custprops; }
-        if(typeof sheets !== 'undefined') out.SheetNames = sheets;
-        if(opts.bookSheets ? out.SheetNames : opts.bookProps) return out;
-    }
-    sheets = {};
-
-    var deps = {};
-    if(opts.bookDeps && dir.calcchain) deps=parse_cc(getzipdata(zip, dir.calcchain.replace(/^\//,'')),dir.calcchain,opts);
-
-    var i=0;
-    var sheetRels = {};
-    var path, relsPath;
-    if(!props.Worksheets) {
-        var wbsheets = wb.Sheets;
-        props.Worksheets = wbsheets.length;
-        props.SheetNames = [];
-        for(var j = 0; j != wbsheets.length; ++j) {
-            props.SheetNames[j] = wbsheets[j].name;
-        }
-    }
-
-    var wbext = xlsb ? "bin" : "xml";
-    var wbrelsfile = 'xl/_rels/workbook.' + wbext + '.rels';
-    var wbrels = parse_rels(getzipdata(zip, wbrelsfile, true), wbrelsfile);
-    if(wbrels) wbrels = safe_parse_wbrels(wbrels, wb.Sheets);
-    /* Numbers iOS hack */
-    var nmode = (getzipdata(zip,"xl/worksheets/sheet.xml",true))?1:0;
-    for(i = 0; i != props.Worksheets; ++i) {
-        if(wbrels) path = 'xl/' + (wbrels[i][1]).replace(/[\/]?xl\//, "");
-        else {
-            path = 'xl/worksheets/sheet'+(i+1-nmode)+"." + wbext;
-            path = path.replace(/sheet0\./,"sheet.");
-        }
-        relsPath = path.replace(/^(.*)(\/)([^\/]*)$/, "$1/_rels/$3.rels");
-        safe_parse_ws(zip, path, relsPath, props.SheetNames[i], sheetRels, sheets, opts);
-    }
-
-    if(dir.comments) parse_comments(zip, dir.comments, sheets, sheetRels, opts);
-
-    out = {
-        Directory: dir,
-        Workbook: wb,
-        Props: props,
-        Custprops: custprops,
-        Deps: deps,
-        Sheets: sheets,
-        SheetNames: props.SheetNames,
-        Strings: strs,
-        Styles: styles,
-        Themes: themes,
-        SSF: SSF.get_table()
-    };
-    if(opts.bookFiles) {
-        out.keys = entries;
-        out.files = zip.files;
-    }
-    if(opts.bookVBA) {
-        if(dir.vba.length > 0) out.vbaraw = getzipdata(zip,dir.vba[0],true);
-        else if(dir.defaults.bin === 'application/vnd.ms-office.vbaProject') out.vbaraw = getzipdata(zip,'xl/vbaProject.bin',true);
-    }
-    return out;
-}
-function add_rels(rels, rId, f, type, relobj) {
-    if(!relobj) relobj = {};
-    if(!rels['!id']) rels['!id'] = {};
-    relobj.Id = 'rId' + rId;
-    relobj.Type = type;
-    relobj.Target = f;
-    if(rels['!id'][relobj.Id]) throw new Error("Cannot rewrite rId " + rId);
-    rels['!id'][relobj.Id] = relobj;
-    rels[('/' + relobj.Target).replace("//","/")] = relobj;
-}
-
-function write_zip(wb, opts) {
-    if(wb && !wb.SSF) {
-        wb.SSF = SSF.get_table();
-    }
-    if(wb && wb.SSF) {
-        make_ssf(SSF); SSF.load_table(wb.SSF);
-        opts.revssf = evert_num(wb.SSF); opts.revssf[wb.SSF[65535]] = 0;
-    }
-    opts.rels = {}; opts.wbrels = {};
-    opts.Strings = []; opts.Strings.Count = 0; opts.Strings.Unique = 0;
-    var wbext = opts.bookType == "xlsb" ? "bin" : "xml";
-    var ct = { workbooks: [], sheets: [], calcchains: [], themes: [], styles: [],
-        coreprops: [], extprops: [], custprops: [], strs:[], comments: [], vba: [],
-        TODO:[], rels:[], xmlns: "" };
-    fix_write_opts(opts = opts || {});
-    var zip = new jszip();
-    var f = "", rId = 0;
-
-    opts.cellXfs = [];
-    get_cell_style(opts.cellXfs, {}, {revssf:{"General":0}});
-
-    f = "docProps/core.xml";
-    zip.file(f, write_core_props(wb.Props, opts));
-    ct.coreprops.push(f);
-    add_rels(opts.rels, 2, f, RELS.CORE_PROPS);
-
-    f = "docProps/app.xml";
-    if(!wb.Props) wb.Props = {};
-    wb.Props.SheetNames = wb.SheetNames;
-    wb.Props.Worksheets = wb.SheetNames.length;
-    zip.file(f, write_ext_props(wb.Props, opts));
-    ct.extprops.push(f);
-    add_rels(opts.rels, 3, f, RELS.EXT_PROPS);
-
-    if(wb.Custprops !== wb.Props && keys(wb.Custprops||{}).length > 0) {
-        f = "docProps/custom.xml";
-        zip.file(f, write_cust_props(wb.Custprops, opts));
-        ct.custprops.push(f);
-        add_rels(opts.rels, 4, f, RELS.CUST_PROPS);
-    }
-
-    f = "xl/workbook." + wbext;
-    zip.file(f, write_wb(wb, f, opts));
-    ct.workbooks.push(f);
-    add_rels(opts.rels, 1, f, RELS.WB);
-
-    for(rId=1;rId <= wb.SheetNames.length; ++rId) {
-        f = "xl/worksheets/sheet" + rId + "." + wbext;
-        zip.file(f, write_ws(rId-1, f, opts, wb));
-        ct.sheets.push(f);
-        add_rels(opts.wbrels, rId, "worksheets/sheet" + rId + "." + wbext, RELS.WS);
-    }
-
-    if(opts.Strings != null && opts.Strings.length > 0) {
-        f = "xl/sharedStrings." + wbext;
-        zip.file(f, write_sst(opts.Strings, f, opts));
-        ct.strs.push(f);
-        add_rels(opts.wbrels, ++rId, "sharedStrings." + wbext, RELS.SST);
-    }
-
-    /* TODO: something more intelligent with themes */
-
-    f = "xl/theme/theme1.xml";
-    zip.file(f, write_theme());
-    ct.themes.push(f);
-    add_rels(opts.wbrels, ++rId, "theme/theme1.xml", RELS.THEME);
-
-    /* TODO: something more intelligent with styles */
-
-    f = "xl/styles." + wbext;
-    zip.file(f, write_sty(wb, f, opts));
-    ct.styles.push(f);
-    add_rels(opts.wbrels, ++rId, "styles." + wbext, RELS.STY);
-
-    zip.file("[Content_Types].xml", write_ct(ct, opts));
-    zip.file('_rels/.rels', write_rels(opts.rels));
-    zip.file('xl/_rels/workbook.' + wbext + '.rels', write_rels(opts.wbrels));
-    return zip;
-}
-function firstbyte(f,o) {
-    switch((o||{}).type || "base64") {
-        case 'buffer': return f[0];
-        case 'base64': return Base64.decode(f.substr(0,12)).charCodeAt(0);
-        case 'binary': return f.charCodeAt(0);
-        case 'array': return f[0];
-        default: throw new Error("Unrecognized type " + o.type);
-    }
-}
-
-function read_zip(data, opts) {
-    var zip, d = data;
-    var o = opts||{};
-    if(!o.type) o.type = (has_buf && Buffer.isBuffer(data)) ? "buffer" : "base64";
-    switch(o.type) {
-        case "base64": zip = new jszip(d, { base64:true }); break;
-        case "binary": case "array": zip = new jszip(d, { base64:false }); break;
-        case "buffer": zip = new jszip(d); break;
-        case "file": zip=new jszip(d=_fs.readFileSync(data)); break;
-        default: throw new Error("Unrecognized type " + o.type);
-    }
-    return parse_zip(zip, o);
-}
-
-function readSync(data, opts) {
-    var zip, d = data, isfile = false, n;
-    var o = opts||{};
-    if(!o.type) o.type = (has_buf && Buffer.isBuffer(data)) ? "buffer" : "base64";
-    if(o.type == "file") { isfile = true; o.type = "buffer"; d = _fs.readFileSync(data); }
-    switch((n = firstbyte(d, o))) {
-        case 0xD0:
-            if(isfile) o.type = "file";
-            return parse_xlscfb(CFB.read(data, o), o);
-        case 0x09: return parse_xlscfb(s2a(o.type === 'base64' ? Base64.decode(data) : data), o);
-        case 0x3C: return parse_xlml(d, o);
-        case 0x50:
-            if(isfile) o.type = "file";
-            return read_zip(data, opts);
-        default: throw new Error("Unsupported file " + n);
-    }
-}
-
-function readFileSync(data, opts) {
-    var o = opts||{}; o.type = 'file';
-    return readSync(data, o);
-}
-function write_zip_type(wb, opts) {
-    var o = opts||{};
-    var z = write_zip(wb, o);
-    switch(o.type) {
-        case "base64": return z.generate({type:"base64"});
-        case "binary": return z.generate({type:"string"});
-        case "buffer": return z.generate({type:"nodebuffer"});
-        case "file": return _fs.writeFileSync(o.file, z.generate({type:"nodebuffer"}));
-        default: throw new Error("Unrecognized type " + o.type);
-    }
-}
-
-function writeSync(wb, opts) {
-    var o = opts||{};
-    switch(o.bookType) {
-        case 'xml': return write_xlml(wb, o);
-        default: return write_zip_type(wb, o);
-    }
-}
-
-function writeFileSync(wb, filename, opts) {
-    var o = opts||{}; o.type = 'file';
-    o.file = filename;
-    switch(o.file.substr(-5).toLowerCase()) {
-        case '.xlsx': o.bookType = 'xlsx'; break;
-        case '.xlsm': o.bookType = 'xlsm'; break;
-        case '.xlsb': o.bookType = 'xlsb'; break;
-    default: switch(o.file.substr(-4).toLowerCase()) {
-        case '.xls': o.bookType = 'xls'; break;
-        case '.xml': o.bookType = 'xml'; break;
-    }}
-    return writeSync(wb, o);
-}
-
-function decode_row(rowstr) { return parseInt(unfix_row(rowstr),10) - 1; }
-function encode_row(row) { return "" + (row + 1); }
-function fix_row(cstr) { return cstr.replace(/([A-Z]|^)(\d+)$/,"$1$$$2"); }
-function unfix_row(cstr) { return cstr.replace(/\$(\d+)$/,"$1"); }
-
-function decode_col(colstr) { var c = unfix_col(colstr), d = 0, i = 0; for(; i !== c.length; ++i) d = 26*d + c.charCodeAt(i) - 64; return d - 1; }
-function encode_col(col) { var s=""; for(++col; col; col=Math.floor((col-1)/26)) s = String.fromCharCode(((col-1)%26) + 65) + s; return s; }
-function fix_col(cstr) { return cstr.replace(/^([A-Z])/,"$$$1"); }
-function unfix_col(cstr) { return cstr.replace(/^\$([A-Z])/,"$1"); }
-
-function split_cell(cstr) { return cstr.replace(/(\$?[A-Z]*)(\$?\d*)/,"$1,$2").split(","); }
-function decode_cell(cstr) { var splt = split_cell(cstr); return { c:decode_col(splt[0]), r:decode_row(splt[1]) }; }
-function encode_cell(cell) { return encode_col(cell.c) + encode_row(cell.r); }
-function fix_cell(cstr) { return fix_col(fix_row(cstr)); }
-function unfix_cell(cstr) { return unfix_col(unfix_row(cstr)); }
-function decode_range(range) { var x =range.split(":").map(decode_cell); return {s:x[0],e:x[x.length-1]}; }
-function encode_range(cs,ce) {
-    if(ce === undefined || typeof ce === 'number') return encode_range(cs.s, cs.e);
-    if(typeof cs !== 'string') cs = encode_cell(cs); if(typeof ce !== 'string') ce = encode_cell(ce);
-    return cs == ce ? cs : cs + ":" + ce;
-}
-
-function safe_decode_range(range) {
-    var o = {s:{c:0,r:0},e:{c:0,r:0}};
-    var idx = 0, i = 0, cc = 0;
-    var len = range.length;
-    for(idx = 0; i < len; ++i) {
-        if((cc=range.charCodeAt(i)-64) < 1 || cc > 26) break;
-        idx = 26*idx + cc;
-    }
-    o.s.c = --idx;
-
-    for(idx = 0; i < len; ++i) {
-        if((cc=range.charCodeAt(i)-48) < 0 || cc > 9) break;
-        idx = 10*idx + cc;
-    }
-    o.s.r = --idx;
-
-    if(i === len || range.charCodeAt(++i) === 58) { o.e.c=o.s.c; o.e.r=o.s.r; return o; }
-
-    for(idx = 0; i != len; ++i) {
-        if((cc=range.charCodeAt(i)-64) < 1 || cc > 26) break;
-        idx = 26*idx + cc;
-    }
-    o.e.c = --idx;
-
-    for(idx = 0; i != len; ++i) {
-        if((cc=range.charCodeAt(i)-48) < 0 || cc > 9) break;
-        idx = 10*idx + cc;
-    }
-    o.e.r = --idx;
-    return o;
-}
-
-function safe_format_cell(cell, v) {
-    if(cell.z !== undefined) try { return (cell.w = SSF.format(cell.z, v)); } catch(e) { }
-    if(!cell.XF) return v;
-    try { return (cell.w = SSF.format(cell.XF.ifmt||0, v)); } catch(e) { return ''+v; }
-}
-
-function format_cell(cell, v) {
-    if(cell == null || cell.t == null) return "";
-    if(cell.w !== undefined) return cell.w;
-    if(v === undefined) return safe_format_cell(cell, cell.v);
-    return safe_format_cell(cell, v);
-}
-
-function sheet_to_json(sheet, opts){
-    var val, row, range, header = 0, offset = 1, r, hdr = [], isempty, R, C, v;
-    var o = opts != null ? opts : {};
-    var raw = o.raw;
-    if(sheet == null || sheet["!ref"] == null) return [];
-    range = o.range !== undefined ? o.range : sheet["!ref"];
-    if(o.header === 1) header = 1;
-    else if(o.header === "A") header = 2;
-    else if(Array.isArray(o.header)) header = 3;
-    switch(typeof range) {
-        case 'string': r = safe_decode_range(range); break;
-        case 'number': r = safe_decode_range(sheet["!ref"]); r.s.r = range; break;
-        default: r = range;
-    }
-    if(header > 0) offset = 0;
-    var rr = encode_row(r.s.r);
-    var cols = new Array(r.e.c-r.s.c+1);
-    var out = new Array(r.e.r-r.s.r-offset+1);
-    var outi = 0;
-    for(C = r.s.c; C <= r.e.c; ++C) {
-        cols[C] = encode_col(C);
-        val = sheet[cols[C] + rr];
-        switch(header) {
-            case 1: hdr[C] = C; break;
-            case 2: hdr[C] = cols[C]; break;
-            case 3: hdr[C] = o.header[C - r.s.c]; break;
-            default:
-                if(val === undefined) continue;
-                hdr[C] = format_cell(val);
-        }
-    }
-
-    for (R = r.s.r + offset; R <= r.e.r; ++R) {
-        rr = encode_row(R);
-        isempty = true;
-        if(header === 1) row = [];
-        else {
-            row = {};
-            if(Object.defineProperty) Object.defineProperty(row, '__rowNum__', {value:R, enumerable:false});
-            else row.__rowNum__ = R;
-        }
-        for (C = r.s.c; C <= r.e.c; ++C) {
-            val = sheet[cols[C] + rr];
-            if(val === undefined || val.t === undefined) continue;
-            v = val.v;
-            switch(val.t){
-                case 'e': continue;
-                case 's': break;
-                case 'b': case 'n': break;
-                default: throw 'unrecognized type ' + val.t;
-            }
-            if(v !== undefined) {
-                row[hdr[C]] = raw ? v : format_cell(val,v);
-                isempty = false;
-            }
-        }
-        if(isempty === false || header === 1) out[outi++] = row;
-    }
-    out.length = outi;
-    return out;
-}
-
-function sheet_to_row_object_array(sheet, opts) { return sheet_to_json(sheet, opts != null ? opts : {}); }
-
-function sheet_to_csv(sheet, opts) {
-    var out = "", txt = "", qreg = /"/g;
-    var o = opts == null ? {} : opts;
-    if(sheet == null || sheet["!ref"] == null) return "";
-    var r = safe_decode_range(sheet["!ref"]);
-    var FS = o.FS !== undefined ? o.FS : ",", fs = FS.charCodeAt(0);
-    var RS = o.RS !== undefined ? o.RS : "\n", rs = RS.charCodeAt(0);
-    var row = "", rr = "", cols = [];
-    var i = 0, cc = 0, val;
-    var R = 0, C = 0;
-    for(C = r.s.c; C <= r.e.c; ++C) cols[C] = encode_col(C);
-    for(R = r.s.r; R <= r.e.r; ++R) {
-        row = "";
-        rr = encode_row(R);
-        for(C = r.s.c; C <= r.e.c; ++C) {
-            val = sheet[cols[C] + rr];
-            txt = val !== undefined ? ''+format_cell(val) : "";
-            for(i = 0, cc = 0; i !== txt.length; ++i) if((cc = txt.charCodeAt(i)) === fs || cc === rs || cc === 34) {
-                txt = "\"" + txt.replace(qreg, '""') + "\""; break; }
-            row += (C === r.s.c ? "" : FS) + txt;
-        }
-        out += row + RS;
-    }
-    return out;
-}
-var make_csv = sheet_to_csv;
-
-function sheet_to_formulae(sheet) {
-    var cmds, y = "", x, val="";
-    if(sheet == null || sheet["!ref"] == null) return "";
-    var r = safe_decode_range(sheet['!ref']), rr = "", cols = [], C;
-    cmds = new Array((r.e.r-r.s.r+1)*(r.e.c-r.s.c+1));
-    var i = 0;
-    for(C = r.s.c; C <= r.e.c; ++C) cols[C] = encode_col(C);
-    for(var R = r.s.r; R <= r.e.r; ++R) {
-        rr = encode_row(R);
-        for(C = r.s.c; C <= r.e.c; ++C) {
-            y = cols[C] + rr;
-            x = sheet[y];
-            val = "";
-            if(x === undefined) continue;
-            if(x.f != null) val = x.f;
-            else if(x.w !== undefined) val = "'" + x.w;
-            else if(x.v === undefined) continue;
-            else val = ""+x.v;
-            cmds[i++] = y + "=" + val;
-        }
-    }
-    cmds.length = i;
-    return cmds;
-}
-
-var utils = {
-    encode_col: encode_col,
-    encode_row: encode_row,
-    encode_cell: encode_cell,
-    encode_range: encode_range,
-    decode_col: decode_col,
-    decode_row: decode_row,
-    split_cell: split_cell,
-    decode_cell: decode_cell,
-    decode_range: decode_range,
-    format_cell: format_cell,
-    get_formulae: sheet_to_formulae,
-    make_csv: sheet_to_csv,
-    make_json: sheet_to_json,
-    make_formulae: sheet_to_formulae,
-    sheet_to_csv: sheet_to_csv,
-    sheet_to_json: sheet_to_json,
-    sheet_to_formulae: sheet_to_formulae,
-    sheet_to_row_object_array: sheet_to_row_object_array
-};
-XLSX.parse_xlscfb = parse_xlscfb;
-XLSX.parse_zip = parse_zip;
-XLSX.read = readSync; //xlsread
-XLSX.readFile = readFileSync; //readFile
-XLSX.readFileSync = readFileSync;
-XLSX.write = writeSync;
-XLSX.writeFile = writeFileSync;
-XLSX.writeFileSync = writeFileSync;
-XLSX.utils = utils;
-XLSX.CFB = CFB;
-XLSX.SSF = SSF;
-})(typeof exports !== 'undefined' ? exports : XLSX);
-var XLS = XLSX;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              INDX( 	 &J6`           (   ˜  è                             ¤À    h T     Ã¬    ò8?dÕ IÎŽ3Îò8?dÕ Ý?dÕÐ      É              	. p a c k l i s t . i ¢À    p Z     Ã¬    ]W›?dÕ áD…3Îô›?dÕ Ý?dÕ`       \               a u t o s p l i t . i x l l   ¢À    h X     Ã¬    ]W›?dÕ áD…3Îô›?dÕ Ý?dÕ`       \               A U T O S P ~ 1 . I X £À    p \     Ã¬    £hœ?dÕ •	Š3ÎQ?dÕ Ý?dÕ                        B e r k e l e y D B . b s l   ¡À    p ^    Ã¬    K˜?dÕ •	Š3Î¶âš?dÕ Ý?dÕ à      Ô             B e r k e l e y D B . d l l   £À    h X     Ã¬    £hœ?dÕ •	Š3ÎQ?dÕ Ý?dÕ                        B E R K E L ~ 1 . B S ¡À    p Z     Ã¬    K˜?dÕ •	Š3Î¶âš?dÕ Ý?dÕ à      Ô             B E R K E L ~ 1 . D L L       ¤À    h R     Ã¬    ò8?dÕ IÎŽ3Îò8?dÕ Ý?dÕÐ      É              P A C K L I ~ 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    keywords: [ "weather", "swirl", "blue", "cloud", "vortex", "spiral", "whirlpool", "spin", "tornado", "hurricane", "typhoon" ],
+    "char": "\ud83c\udf00",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  loop: {
+    keywords: [ "tape", "cassette" ],
+    "char": "\u27bf",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  globe_with_meridians: {
+    keywords: [ "earth", "international", "world", "internet", "interweb", "i18n" ],
+    "char": "\ud83c\udf10",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  m: {
+    keywords: [ "alphabet", "blue-circle", "letter" ],
+    "char": "\u24c2\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  atm: {
+    keywords: [ "money", "sales", "cash", "blue-square", "payment", "bank" ],
+    "char": "\ud83c\udfe7",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  sa: {
+    keywords: [ "japanese", "blue-square", "katakana" ],
+    "char": "\ud83c\ude02\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  passport_control: {
+    keywords: [ "custom", "blue-square" ],
+    "char": "\ud83d\udec2",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  customs: {
+    keywords: [ "passport", "border", "blue-square" ],
+    "char": "\ud83d\udec3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  baggage_claim: {
+    keywords: [ "blue-square", "airport", "transport" ],
+    "char": "\ud83d\udec4",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  left_luggage: {
+    keywords: [ "blue-square", "travel" ],
+    "char": "\ud83d\udec5",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  wheelchair: {
+    keywords: [ "blue-square", "disabled", "a11y", "accessibility" ],
+    "char": "\u267f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  no_smoking: {
+    keywords: [ "cigarette", "blue-square", "smell", "smoke" ],
+    "char": "\ud83d\udead",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  wc: {
+    keywords: [ "toilet", "restroom", "blue-square" ],
+    "char": "\ud83d\udebe",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  parking: {
+    keywords: [ "cars", "blue-square", "alphabet", "letter" ],
+    "char": "\ud83c\udd7f\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  potable_water: {
+    keywords: [ "blue-square", "liquid", "restroom", "cleaning", "faucet" ],
+    "char": "\ud83d\udeb0",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  mens: {
+    keywords: [ "toilet", "restroom", "wc", "blue-square", "gender", "male" ],
+    "char": "\ud83d\udeb9",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  womens: {
+    keywords: [ "purple-square", "woman", "female", "toilet", "loo", "restroom", "gender" ],
+    "char": "\ud83d\udeba",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  baby_symbol: {
+    keywords: [ "orange-square", "child" ],
+    "char": "\ud83d\udebc",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  restroom: {
+    keywords: [ "blue-square", "toilet", "refresh", "wc", "gender" ],
+    "char": "\ud83d\udebb",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  put_litter_in_its_place: {
+    keywords: [ "blue-square", "sign", "human", "info" ],
+    "char": "\ud83d\udeae",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  cinema: {
+    keywords: [ "blue-square", "record", "film", "movie", "curtain", "stage", "theater" ],
+    "char": "\ud83c\udfa6",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  signal_strength: {
+    keywords: [ "blue-square", "reception", "phone", "internet", "connection", "wifi", "bluetooth", "bars" ],
+    "char": "\ud83d\udcf6",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  koko: {
+    keywords: [ "blue-square", "here", "katakana", "japanese", "destination" ],
+    "char": "\ud83c\ude01",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  ng: {
+    keywords: [ "blue-square", "words", "shape", "icon" ],
+    "char": "\ud83c\udd96",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  ok: {
+    keywords: [ "good", "agree", "yes", "blue-square" ],
+    "char": "\ud83c\udd97",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  up: {
+    keywords: [ "blue-square", "above", "high" ],
+    "char": "\ud83c\udd99",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  cool: {
+    keywords: [ "words", "blue-square" ],
+    "char": "\ud83c\udd92",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  "new": {
+    keywords: [ "blue-square", "words", "start" ],
+    "char": "\ud83c\udd95",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  free: {
+    keywords: [ "blue-square", "words" ],
+    "char": "\ud83c\udd93",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  zero: {
+    keywords: [ "0", "numbers", "blue-square", "null" ],
+    "char": "0\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  one: {
+    keywords: [ "blue-square", "numbers", "1" ],
+    "char": "1\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  two: {
+    keywords: [ "numbers", "2", "prime", "blue-square" ],
+    "char": "2\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  three: {
+    keywords: [ "3", "numbers", "prime", "blue-square" ],
+    "char": "3\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  four: {
+    keywords: [ "4", "numbers", "blue-square" ],
+    "char": "4\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  five: {
+    keywords: [ "5", "numbers", "blue-square", "prime" ],
+    "char": "5\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  six: {
+    keywords: [ "6", "numbers", "blue-square" ],
+    "char": "6\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  seven: {
+    keywords: [ "7", "numbers", "blue-square", "prime" ],
+    "char": "7\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  eight: {
+    keywords: [ "8", "blue-square", "numbers" ],
+    "char": "8\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  nine: {
+    keywords: [ "blue-square", "numbers", "9" ],
+    "char": "9\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  keycap_ten: {
+    keywords: [ "numbers", "10", "blue-square" ],
+    "char": "\ud83d\udd1f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  asterisk: {
+    keywords: [ "star", "keycap" ],
+    "char": "*\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  1234: {
+    keywords: [ "numbers", "blue-square" ],
+    "char": "\ud83d\udd22",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  eject_button: {
+    keywords: [ "blue-square" ],
+    "char": "\u23cf\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_forward: {
+    keywords: [ "blue-square", "right", "direction", "play" ],
+    "char": "\u25b6\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  pause_button: {
+    keywords: [ "pause", "blue-square" ],
+    "char": "\u23f8",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  next_track_button: {
+    keywords: [ "forward", "next", "blue-square" ],
+    "char": "\u23ed",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  stop_button: {
+    keywords: [ "blue-square" ],
+    "char": "\u23f9",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  record_button: {
+    keywords: [ "blue-square" ],
+    "char": "\u23fa",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  play_or_pause_button: {
+    keywords: [ "blue-square", "play", "pause" ],
+    "char": "\u23ef",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  previous_track_button: {
+    keywords: [ "backward" ],
+    "char": "\u23ee",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  fast_forward: {
+    keywords: [ "blue-square", "play", "speed", "continue" ],
+    "char": "\u23e9",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  rewind: {
+    keywords: [ "play", "blue-square" ],
+    "char": "\u23ea",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  twisted_rightwards_arrows: {
+    keywords: [ "blue-square", "shuffle", "music", "random" ],
+    "char": "\ud83d\udd00",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  repeat: {
+    keywords: [ "loop", "record" ],
+    "char": "\ud83d\udd01",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  repeat_one: {
+    keywords: [ "blue-square", "loop" ],
+    "char": "\ud83d\udd02",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_backward: {
+    keywords: [ "blue-square", "left", "direction" ],
+    "char": "\u25c0\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_up_small: {
+    keywords: [ "blue-square", "triangle", "direction", "point", "forward", "top" ],
+    "char": "\ud83d\udd3c",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_down_small: {
+    keywords: [ "blue-square", "direction", "bottom" ],
+    "char": "\ud83d\udd3d",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_double_up: {
+    keywords: [ "blue-square", "direction", "top" ],
+    "char": "\u23eb",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_double_down: {
+    keywords: [ "blue-square", "direction", "bottom" ],
+    "char": "\u23ec",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_right: {
+    keywords: [ "blue-square", "next" ],
+    "char": "\u27a1\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_left: {
+    keywords: [ "blue-square", "previous", "back" ],
+    "char": "\u2b05\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_up: {
+    keywords: [ "blue-square", "continue", "top", "direction" ],
+    "char": "\u2b06\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_down: {
+    keywords: [ "blue-square", "direction", "bottom" ],
+    "char": "\u2b07\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_upper_right: {
+    keywords: [ "blue-square", "point", "direction", "diagonal", "northeast" ],
+    "char": "\u2197\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_lower_right: {
+    keywords: [ "blue-square", "direction", "diagonal", "southeast" ],
+    "char": "\u2198\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_lower_left: {
+    keywords: [ "blue-square", "direction", "diagonal", "southwest" ],
+    "char": "\u2199\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_upper_left: {
+    keywords: [ "blue-square", "point", "direction", "diagonal", "northwest" ],
+    "char": "\u2196\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_up_down: {
+    keywords: [ "blue-square", "direction", "way", "vertical" ],
+    "char": "\u2195\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  left_right_arrow: {
+    keywords: [ "shape", "direction", "horizontal", "sideways" ],
+    "char": "\u2194\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrows_counterclockwise: {
+    keywords: [ "blue-square", "sync", "cycle" ],
+    "char": "\ud83d\udd04",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_right_hook: {
+    keywords: [ "blue-square", "return", "rotate", "direction" ],
+    "char": "\u21aa\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  leftwards_arrow_with_hook: {
+    keywords: [ "back", "return", "blue-square", "undo", "enter" ],
+    "char": "\u21a9\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_heading_up: {
+    keywords: [ "blue-square", "direction", "top" ],
+    "char": "\u2934\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrow_heading_down: {
+    keywords: [ "blue-square", "direction", "bottom" ],
+    "char": "\u2935\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  hash: {
+    keywords: [ "symbol", "blue-square", "twitter" ],
+    "char": "#\ufe0f\u20e3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  information_source: {
+    keywords: [ "blue-square", "alphabet", "letter" ],
+    "char": "\u2139\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  abc: {
+    keywords: [ "blue-square", "alphabet" ],
+    "char": "\ud83d\udd24",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  abcd: {
+    keywords: [ "blue-square", "alphabet" ],
+    "char": "\ud83d\udd21",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  capital_abcd: {
+    keywords: [ "alphabet", "words", "blue-square" ],
+    "char": "\ud83d\udd20",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  symbols: {
+    keywords: [ "blue-square", "music", "note", "ampersand", "percent", "glyphs", "characters" ],
+    "char": "\ud83d\udd23",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  musical_note: {
+    keywords: [ "score", "tone", "sound" ],
+    "char": "\ud83c\udfb5",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  notes: {
+    keywords: [ "music", "score" ],
+    "char": "\ud83c\udfb6",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  wavy_dash: {
+    keywords: [ "draw", "line", "moustache", "mustache", "squiggle", "scribble" ],
+    "char": "\u3030\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  curly_loop: {
+    keywords: [ "scribble", "draw", "shape", "squiggle" ],
+    "char": "\u27b0",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  heavy_check_mark: {
+    keywords: [ "ok", "nike", "answer", "yes", "tick" ],
+    "char": "\u2714\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  arrows_clockwise: {
+    keywords: [ "sync", "cycle", "round", "repeat" ],
+    "char": "\ud83d\udd03",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  heavy_plus_sign: {
+    keywords: [ "math", "calculation", "addition", "more", "increase" ],
+    "char": "\u2795",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  heavy_minus_sign: {
+    keywords: [ "math", "calculation", "subtract", "less" ],
+    "char": "\u2796",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  heavy_division_sign: {
+    keywords: [ "divide", "math", "calculation" ],
+    "char": "\u2797",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  heavy_multiplication_x: {
+    keywords: [ "math", "calculation" ],
+    "char": "\u2716\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  heavy_dollar_sign: {
+    keywords: [ "money", "sales", "payment", "currency", "buck" ],
+    "char": "\ud83d\udcb2",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  currency_exchange: {
+    keywords: [ "money", "sales", "dollar", "travel" ],
+    "char": "\ud83d\udcb1",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  copyright: {
+    keywords: [ "ip", "license", "circle", "law", "legal" ],
+    "char": "\xa9\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  registered: {
+    keywords: [ "alphabet", "circle" ],
+    "char": "\xae\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  tm: {
+    keywords: [ "trademark", "brand", "law", "legal" ],
+    "char": "\u2122\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  end: {
+    keywords: [ "words", "arrow" ],
+    "char": "\ud83d\udd1a",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  back: {
+    keywords: [ "arrow", "words", "return" ],
+    "char": "\ud83d\udd19",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  on: {
+    keywords: [ "arrow", "words" ],
+    "char": "\ud83d\udd1b",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  top: {
+    keywords: [ "words", "blue-square" ],
+    "char": "\ud83d\udd1d",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  soon: {
+    keywords: [ "arrow", "words" ],
+    "char": "\ud83d\udd1c",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  ballot_box_with_check: {
+    keywords: [ "ok", "agree", "confirm", "black-square", "vote", "election", "yes", "tick" ],
+    "char": "\u2611\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  radio_button: {
+    keywords: [ "input", "old", "music", "circle" ],
+    "char": "\ud83d\udd18",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  white_circle: {
+    keywords: [ "shape", "round" ],
+    "char": "\u26aa",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_circle: {
+    keywords: [ "shape", "button", "round" ],
+    "char": "\u26ab",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  red_circle: {
+    keywords: [ "shape", "error", "danger" ],
+    "char": "\ud83d\udd34",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  large_blue_circle: {
+    keywords: [ "shape", "icon", "button" ],
+    "char": "\ud83d\udd35",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  small_orange_diamond: {
+    keywords: [ "shape", "jewel", "gem" ],
+    "char": "\ud83d\udd38",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  small_blue_diamond: {
+    keywords: [ "shape", "jewel", "gem" ],
+    "char": "\ud83d\udd39",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  large_orange_diamond: {
+    keywords: [ "shape", "jewel", "gem" ],
+    "char": "\ud83d\udd36",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  large_blue_diamond: {
+    keywords: [ "shape", "jewel", "gem" ],
+    "char": "\ud83d\udd37",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  small_red_triangle: {
+    keywords: [ "shape", "direction", "up", "top" ],
+    "char": "\ud83d\udd3a",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_small_square: {
+    keywords: [ "shape", "icon" ],
+    "char": "\u25aa\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  white_small_square: {
+    keywords: [ "shape", "icon" ],
+    "char": "\u25ab\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_large_square: {
+    keywords: [ "shape", "icon", "button" ],
+    "char": "\u2b1b",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  white_large_square: {
+    keywords: [ "shape", "icon", "stone", "button" ],
+    "char": "\u2b1c",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  small_red_triangle_down: {
+    keywords: [ "shape", "direction", "bottom" ],
+    "char": "\ud83d\udd3b",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_medium_square: {
+    keywords: [ "shape", "button", "icon" ],
+    "char": "\u25fc\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  white_medium_square: {
+    keywords: [ "shape", "stone", "icon" ],
+    "char": "\u25fb\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_medium_small_square: {
+    keywords: [ "icon", "shape", "button" ],
+    "char": "\u25fe",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  white_medium_small_square: {
+    keywords: [ "shape", "stone", "icon", "button" ],
+    "char": "\u25fd",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_square_button: {
+    keywords: [ "shape", "input", "frame" ],
+    "char": "\ud83d\udd32",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  white_square_button: {
+    keywords: [ "shape", "input" ],
+    "char": "\ud83d\udd33",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  speaker: {
+    keywords: [ "sound", "volume", "silence", "broadcast" ],
+    "char": "\ud83d\udd08",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  sound: {
+    keywords: [ "volume", "speaker", "broadcast" ],
+    "char": "\ud83d\udd09",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  loud_sound: {
+    keywords: [ "volume", "noise", "noisy", "speaker", "broadcast" ],
+    "char": "\ud83d\udd0a",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  mute: {
+    keywords: [ "sound", "volume", "silence", "quiet" ],
+    "char": "\ud83d\udd07",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  mega: {
+    keywords: [ "sound", "speaker", "volume" ],
+    "char": "\ud83d\udce3",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  loudspeaker: {
+    keywords: [ "volume", "sound" ],
+    "char": "\ud83d\udce2",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  bell: {
+    keywords: [ "sound", "notification", "christmas", "xmas", "chime" ],
+    "char": "\ud83d\udd14",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  no_bell: {
+    keywords: [ "sound", "volume", "mute", "quiet", "silent" ],
+    "char": "\ud83d\udd15",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  black_joker: {
+    keywords: [ "poker", "cards", "game", "play", "magic" ],
+    "char": "\ud83c\udccf",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  mahjong: {
+    keywords: [ "game", "play", "chinese", "kanji" ],
+    "char": "\ud83c\udc04",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  spades: {
+    keywords: [ "poker", "cards", "suits", "magic" ],
+    "char": "\u2660\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clubs: {
+    keywords: [ "poker", "cards", "magic", "suits" ],
+    "char": "\u2663\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  hearts: {
+    keywords: [ "poker", "cards", "magic", "suits" ],
+    "char": "\u2665\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  diamonds: {
+    keywords: [ "poker", "cards", "magic", "suits" ],
+    "char": "\u2666\ufe0f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  flower_playing_cards: {
+    keywords: [ "game", "sunset", "red" ],
+    "char": "\ud83c\udfb4",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  thought_balloon: {
+    keywords: [ "bubble", "cloud", "speech", "thinking", "dream" ],
+    "char": "\ud83d\udcad",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  right_anger_bubble: {
+    keywords: [ "caption", "speech", "thinking", "mad" ],
+    "char": "\ud83d\uddef",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  speech_balloon: {
+    keywords: [ "bubble", "words", "message", "talk", "chatting" ],
+    "char": "\ud83d\udcac",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  left_speech_bubble: {
+    keywords: [ "words", "message", "talk", "chatting" ],
+    "char": "\ud83d\udde8",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock1: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd50",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock2: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd51",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock3: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd52",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock4: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd53",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock5: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd54",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock6: {
+    keywords: [ "time", "late", "early", "schedule", "dawn", "dusk" ],
+    "char": "\ud83d\udd55",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock7: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd56",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock8: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd57",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock9: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd58",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock10: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd59",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock11: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd5a",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock12: {
+    keywords: [ "time", "noon", "midnight", "midday", "late", "early", "schedule" ],
+    "char": "\ud83d\udd5b",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock130: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd5c",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock230: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd5d",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock330: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd5e",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock430: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd5f",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock530: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd60",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock630: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd61",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock730: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd62",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock830: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd63",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock930: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd64",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock1030: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd65",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock1130: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd66",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  clock1230: {
+    keywords: [ "time", "late", "early", "schedule" ],
+    "char": "\ud83d\udd67",
+    fitzpatrick_scale: false,
+    category: "symbols"
+  },
+  afghanistan: {
+    keywords: [ "af", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  aland_islands: {
+    keywords: [ "\xc5land", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddfd",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  albania: {
+    keywords: [ "al", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  algeria: {
+    keywords: [ "dz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde9\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  american_samoa: {
+    keywords: [ "american", "ws", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  andorra: {
+    keywords: [ "ad", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  angola: {
+    keywords: [ "ao", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  anguilla: {
+    keywords: [ "ai", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  antarctica: {
+    keywords: [ "aq", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  antigua_barbuda: {
+    keywords: [ "antigua", "barbuda", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  argentina: {
+    keywords: [ "ar", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  armenia: {
+    keywords: [ "am", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  aruba: {
+    keywords: [ "aw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  australia: {
+    keywords: [ "au", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  austria: {
+    keywords: [ "at", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  azerbaijan: {
+    keywords: [ "az", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bahamas: {
+    keywords: [ "bs", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bahrain: {
+    keywords: [ "bh", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bangladesh: {
+    keywords: [ "bd", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  barbados: {
+    keywords: [ "bb", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\udde7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  belarus: {
+    keywords: [ "by", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  belgium: {
+    keywords: [ "be", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  belize: {
+    keywords: [ "bz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  benin: {
+    keywords: [ "bj", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddef",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bermuda: {
+    keywords: [ "bm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bhutan: {
+    keywords: [ "bt", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bolivia: {
+    keywords: [ "bo", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  caribbean_netherlands: {
+    keywords: [ "bonaire", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bosnia_herzegovina: {
+    keywords: [ "bosnia", "herzegovina", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  botswana: {
+    keywords: [ "bw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  brazil: {
+    keywords: [ "br", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  british_indian_ocean_territory: {
+    keywords: [ "british", "indian", "ocean", "territory", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  british_virgin_islands: {
+    keywords: [ "british", "virgin", "islands", "bvi", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  brunei: {
+    keywords: [ "bn", "darussalam", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  bulgaria: {
+    keywords: [ "bg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  burkina_faso: {
+    keywords: [ "burkina", "faso", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  burundi: {
+    keywords: [ "bi", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cape_verde: {
+    keywords: [ "cabo", "verde", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddfb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cambodia: {
+    keywords: [ "kh", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cameroon: {
+    keywords: [ "cm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  canada: {
+    keywords: [ "ca", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  canary_islands: {
+    keywords: [ "canary", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cayman_islands: {
+    keywords: [ "cayman", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  central_african_republic: {
+    keywords: [ "central", "african", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  chad: {
+    keywords: [ "td", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  chile: {
+    keywords: [ "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cn: {
+    keywords: [ "china", "chinese", "prc", "flag", "country", "nation", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  christmas_island: {
+    keywords: [ "christmas", "island", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddfd",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cocos_islands: {
+    keywords: [ "cocos", "keeling", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  colombia: {
+    keywords: [ "co", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  comoros: {
+    keywords: [ "km", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  congo_brazzaville: {
+    keywords: [ "congo", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  congo_kinshasa: {
+    keywords: [ "congo", "democratic", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cook_islands: {
+    keywords: [ "cook", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  costa_rica: {
+    keywords: [ "costa", "rica", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  croatia: {
+    keywords: [ "hr", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udded\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cuba: {
+    keywords: [ "cu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  curacao: {
+    keywords: [ "cura\xe7ao", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cyprus: {
+    keywords: [ "cy", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  czech_republic: {
+    keywords: [ "cz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  denmark: {
+    keywords: [ "dk", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde9\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  djibouti: {
+    keywords: [ "dj", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde9\ud83c\uddef",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  dominica: {
+    keywords: [ "dm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde9\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  dominican_republic: {
+    keywords: [ "dominican", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde9\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  ecuador: {
+    keywords: [ "ec", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  egypt: {
+    keywords: [ "eg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  el_salvador: {
+    keywords: [ "el", "salvador", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddfb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  equatorial_guinea: {
+    keywords: [ "equatorial", "gn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  eritrea: {
+    keywords: [ "er", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  estonia: {
+    keywords: [ "ee", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  ethiopia: {
+    keywords: [ "et", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  eu: {
+    keywords: [ "european", "union", "flag", "banner" ],
+    "char": "\ud83c\uddea\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  falkland_islands: {
+    keywords: [ "falkland", "islands", "malvinas", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddeb\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  faroe_islands: {
+    keywords: [ "faroe", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddeb\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  fiji: {
+    keywords: [ "fj", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddeb\ud83c\uddef",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  finland: {
+    keywords: [ "fi", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddeb\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  fr: {
+    keywords: [ "banner", "flag", "nation", "france", "french", "country" ],
+    "char": "\ud83c\uddeb\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  french_guiana: {
+    keywords: [ "french", "guiana", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  french_polynesia: {
+    keywords: [ "french", "polynesia", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  french_southern_territories: {
+    keywords: [ "french", "southern", "territories", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  gabon: {
+    keywords: [ "ga", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  gambia: {
+    keywords: [ "gm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  georgia: {
+    keywords: [ "ge", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  de: {
+    keywords: [ "german", "nation", "flag", "country", "banner" ],
+    "char": "\ud83c\udde9\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  ghana: {
+    keywords: [ "gh", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  gibraltar: {
+    keywords: [ "gi", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  greece: {
+    keywords: [ "gr", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  greenland: {
+    keywords: [ "gl", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  grenada: {
+    keywords: [ "gd", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guadeloupe: {
+    keywords: [ "gp", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf5",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guam: {
+    keywords: [ "gu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guatemala: {
+    keywords: [ "gt", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guernsey: {
+    keywords: [ "gg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guinea: {
+    keywords: [ "gn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guinea_bissau: {
+    keywords: [ "gw", "bissau", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  guyana: {
+    keywords: [ "gy", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  haiti: {
+    keywords: [ "ht", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udded\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  honduras: {
+    keywords: [ "hn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udded\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  hong_kong: {
+    keywords: [ "hong", "kong", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udded\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  hungary: {
+    keywords: [ "hu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udded\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  iceland: {
+    keywords: [ "is", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  india: {
+    keywords: [ "in", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  indonesia: {
+    keywords: [ "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  iran: {
+    keywords: [ "iran,", "islamic", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  iraq: {
+    keywords: [ "iq", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  ireland: {
+    keywords: [ "ie", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  isle_of_man: {
+    keywords: [ "isle", "man", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  israel: {
+    keywords: [ "il", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  it: {
+    keywords: [ "italy", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddee\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  cote_divoire: {
+    keywords: [ "ivory", "coast", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  jamaica: {
+    keywords: [ "jm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddef\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  jp: {
+    keywords: [ "japanese", "nation", "flag", "country", "banner" ],
+    "char": "\ud83c\uddef\ud83c\uddf5",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  jersey: {
+    keywords: [ "je", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddef\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  jordan: {
+    keywords: [ "jo", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddef\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kazakhstan: {
+    keywords: [ "kz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kenya: {
+    keywords: [ "ke", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kiribati: {
+    keywords: [ "ki", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kosovo: {
+    keywords: [ "xk", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfd\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kuwait: {
+    keywords: [ "kw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kyrgyzstan: {
+    keywords: [ "kg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  laos: {
+    keywords: [ "lao", "democratic", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  latvia: {
+    keywords: [ "lv", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddfb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  lebanon: {
+    keywords: [ "lb", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\udde7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  lesotho: {
+    keywords: [ "ls", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  liberia: {
+    keywords: [ "lr", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  libya: {
+    keywords: [ "ly", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  liechtenstein: {
+    keywords: [ "li", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  lithuania: {
+    keywords: [ "lt", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  luxembourg: {
+    keywords: [ "lu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  macau: {
+    keywords: [ "macao", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  macedonia: {
+    keywords: [ "macedonia,", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  madagascar: {
+    keywords: [ "mg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  malawi: {
+    keywords: [ "mw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  malaysia: {
+    keywords: [ "my", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  maldives: {
+    keywords: [ "mv", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddfb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mali: {
+    keywords: [ "ml", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  malta: {
+    keywords: [ "mt", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  marshall_islands: {
+    keywords: [ "marshall", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  martinique: {
+    keywords: [ "mq", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mauritania: {
+    keywords: [ "mr", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mauritius: {
+    keywords: [ "mu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mayotte: {
+    keywords: [ "yt", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfe\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mexico: {
+    keywords: [ "mx", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddfd",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  micronesia: {
+    keywords: [ "micronesia,", "federated", "states", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddeb\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  moldova: {
+    keywords: [ "moldova,", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  monaco: {
+    keywords: [ "mc", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mongolia: {
+    keywords: [ "mn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  montenegro: {
+    keywords: [ "me", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  montserrat: {
+    keywords: [ "ms", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  morocco: {
+    keywords: [ "ma", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  mozambique: {
+    keywords: [ "mz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  myanmar: {
+    keywords: [ "mm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  namibia: {
+    keywords: [ "na", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  nauru: {
+    keywords: [ "nr", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  nepal: {
+    keywords: [ "np", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddf5",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  netherlands: {
+    keywords: [ "nl", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  new_caledonia: {
+    keywords: [ "new", "caledonia", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  new_zealand: {
+    keywords: [ "new", "zealand", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  nicaragua: {
+    keywords: [ "ni", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  niger: {
+    keywords: [ "ne", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  nigeria: {
+    keywords: [ "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  niue: {
+    keywords: [ "nu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  norfolk_island: {
+    keywords: [ "norfolk", "island", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  northern_mariana_islands: {
+    keywords: [ "northern", "mariana", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf2\ud83c\uddf5",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  north_korea: {
+    keywords: [ "north", "korea", "nation", "flag", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddf5",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  norway: {
+    keywords: [ "no", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf3\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  oman: {
+    keywords: [ "om_symbol", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf4\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  pakistan: {
+    keywords: [ "pk", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  palau: {
+    keywords: [ "pw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  palestinian_territories: {
+    keywords: [ "palestine", "palestinian", "territories", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  panama: {
+    keywords: [ "pa", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  papua_new_guinea: {
+    keywords: [ "papua", "new", "guinea", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  paraguay: {
+    keywords: [ "py", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  peru: {
+    keywords: [ "pe", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  philippines: {
+    keywords: [ "ph", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  pitcairn_islands: {
+    keywords: [ "pitcairn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  poland: {
+    keywords: [ "pl", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  portugal: {
+    keywords: [ "pt", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  puerto_rico: {
+    keywords: [ "puerto", "rico", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  qatar: {
+    keywords: [ "qa", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf6\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  reunion: {
+    keywords: [ "r\xe9union", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf7\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  romania: {
+    keywords: [ "ro", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf7\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  ru: {
+    keywords: [ "russian", "federation", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf7\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  rwanda: {
+    keywords: [ "rw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf7\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  st_barthelemy: {
+    keywords: [ "saint", "barth\xe9lemy", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde7\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  st_helena: {
+    keywords: [ "saint", "helena", "ascension", "tristan", "cunha", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  st_kitts_nevis: {
+    keywords: [ "saint", "kitts", "nevis", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  st_lucia: {
+    keywords: [ "saint", "lucia", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  st_pierre_miquelon: {
+    keywords: [ "saint", "pierre", "miquelon", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf5\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  st_vincent_grenadines: {
+    keywords: [ "saint", "vincent", "grenadines", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  samoa: {
+    keywords: [ "ws", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfc\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  san_marino: {
+    keywords: [ "san", "marino", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  sao_tome_principe: {
+    keywords: [ "sao", "tome", "principe", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  saudi_arabia: {
+    keywords: [ "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  senegal: {
+    keywords: [ "sn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  serbia: {
+    keywords: [ "rs", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf7\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  seychelles: {
+    keywords: [ "sc", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  sierra_leone: {
+    keywords: [ "sierra", "leone", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  singapore: {
+    keywords: [ "sg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  sint_maarten: {
+    keywords: [ "sint", "maarten", "dutch", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddfd",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  slovakia: {
+    keywords: [ "sk", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  slovenia: {
+    keywords: [ "si", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  solomon_islands: {
+    keywords: [ "solomon", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\udde7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  somalia: {
+    keywords: [ "so", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  south_africa: {
+    keywords: [ "south", "africa", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddff\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  south_georgia_south_sandwich_islands: {
+    keywords: [ "south", "georgia", "sandwich", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddec\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  kr: {
+    keywords: [ "south", "korea", "nation", "flag", "country", "banner" ],
+    "char": "\ud83c\uddf0\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  south_sudan: {
+    keywords: [ "south", "sd", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  es: {
+    keywords: [ "spain", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  sri_lanka: {
+    keywords: [ "sri", "lanka", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf1\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  sudan: {
+    keywords: [ "sd", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\udde9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  suriname: {
+    keywords: [ "sr", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  swaziland: {
+    keywords: [ "sz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  sweden: {
+    keywords: [ "se", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  switzerland: {
+    keywords: [ "ch", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde8\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  syria: {
+    keywords: [ "syrian", "arab", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf8\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  taiwan: {
+    keywords: [ "tw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tajikistan: {
+    keywords: [ "tj", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddef",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tanzania: {
+    keywords: [ "tanzania,", "united", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  thailand: {
+    keywords: [ "th", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  timor_leste: {
+    keywords: [ "timor", "leste", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf1",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  togo: {
+    keywords: [ "tg", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tokelau: {
+    keywords: [ "tk", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf0",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tonga: {
+    keywords: [ "to", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf4",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  trinidad_tobago: {
+    keywords: [ "trinidad", "tobago", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf9",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tunisia: {
+    keywords: [ "tn", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tr: {
+    keywords: [ "turkey", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  turkmenistan: {
+    keywords: [ "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  turks_caicos_islands: {
+    keywords: [ "turks", "caicos", "islands", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\udde8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  tuvalu: {
+    keywords: [ "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddf9\ud83c\uddfb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  uganda: {
+    keywords: [ "ug", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfa\ud83c\uddec",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  ukraine: {
+    keywords: [ "ua", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfa\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  united_arab_emirates: {
+    keywords: [ "united", "arab", "emirates", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\udde6\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  uk: {
+    keywords: [ "united", "kingdom", "great", "britain", "northern", "ireland", "flag", "nation", "country", "banner", "british", "UK", "english", "england", "union jack" ],
+    "char": "\ud83c\uddec\ud83c\udde7",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  england: {
+    keywords: [ "flag", "english" ],
+    "char": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  scotland: {
+    keywords: [ "flag", "scottish" ],
+    "char": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  wales: {
+    keywords: [ "flag", "welsh" ],
+    "char": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  us: {
+    keywords: [ "united", "states", "america", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfa\ud83c\uddf8",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  us_virgin_islands: {
+    keywords: [ "virgin", "islands", "us", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\uddee",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  uruguay: {
+    keywords: [ "uy", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfa\ud83c\uddfe",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  uzbekistan: {
+    keywords: [ "uz", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfa\ud83c\uddff",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  vanuatu: {
+    keywords: [ "vu", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\uddfa",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  vatican_city: {
+    keywords: [ "vatican", "city", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\udde6",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  venezuela: {
+    keywords: [ "ve", "bolivarian", "republic", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  vietnam: {
+    keywords: [ "viet", "nam", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfb\ud83c\uddf3",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  wallis_futuna: {
+    keywords: [ "wallis", "futuna", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfc\ud83c\uddeb",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  western_sahara: {
+    keywords: [ "western", "sahara", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddea\ud83c\udded",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  yemen: {
+    keywords: [ "ye", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddfe\ud83c\uddea",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  zambia: {
+    keywords: [ "zm", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddff\ud83c\uddf2",
+    fitzpatrick_scale: false,
+    category: "flags"
+  },
+  zimbabwe: {
+    keywords: [ "zw", "flag", "nation", "country", "banner" ],
+    "char": "\ud83c\uddff\ud83c\uddfc",
+    fitzpatrick_scale: false,
+    category: "flags"
+  }
+});

@@ -910,214 +910,383 @@
     };
     var normalizeWhitespace = function (text) {
       var result = foldl(text, function (acc, c) {
-        if (isCollapsi                            <i class="fa fa-check"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="cont-col2">
-                                                    <div class="desc"> You have 4 pending tasks.
-                                                        <span class="label label-sm label-warning "> Take action
-                                                            <i class="fa fa-share"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col2">
-                                            <div class="date"> Just now </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="col1">
-                                                <div class="cont">
-                                                    <div class="cont-col1">
-                                                        <div class="label label-sm label-danger">
-                                                            <i class="fa fa-bar-chart-o"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cont-col2">
-                                                        <div class="desc"> Finance Report for year 2013 has been released. </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col2">
-                                                <div class="date"> 20 mins </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="col1">
-                                            <div class="cont">
-                                                <div class="cont-col1">
-                                                    <div class="label label-sm label-default">
-                                                        <i class="fa fa-user"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="cont-col2">
-                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col2">
-                                            <div class="date"> 24 mins </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="col1">
-                                            <div class="cont">
-                                                <div class="cont-col1">
-                                                    <div class="label label-sm label-info">
-                                                        <i class="fa fa-shopping-cart"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="cont-col2">
-                                                    <div class="desc"> New order received with
-                                                        <span class="label label-sm label-success"> Reference Number: DR23923 </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col2">
-                                            <div class="date"> 30 mins </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="col1">
-                                            <div class="cont">
-                                                <div class="cont-col1">
-                                                    <div class="label label-sm label-success">
-                                                        <i class="fa fa-user"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="cont-col2">
-                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col2">
-                                            <div class="date"> 24 mins </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="col1">
-                                            <div class="cont">
-                                                <div class="cont-col1">
-                                                    <div class="label label-sm label-warning">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="cont-col2">
-                                                    <div class="desc"> Web server hardware needs to be upgraded.
-                                                        <span class="label label-sm label-default "> Overdue </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col2">
-                                            <div class="date"> 2 hours </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="col1">
-                                                <div class="cont">
-                                                    <div class="cont-col1">
-                                                        <div class="label label-sm label-info">
-                                                            <i class="fa fa-briefcase"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cont-col2">
-                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col2">
-                                                <div class="date"> 20 mins </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane page-quick-sidebar-settings" id="quick_sidebar_tab_3">
-                            <div class="page-quick-sidebar-settings-list">
-                                <h3 class="list-heading">General Settings</h3>
-                                <ul class="list-items borderless">
-                                    <li> Enable Notifications
-                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="success" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                    <li> Allow Tracking
-                                        <input type="checkbox" class="make-switch" data-size="small" data-on-color="info" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                    <li> Log Errors
-                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="danger" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                    <li> Auto Sumbit Issues
-                                        <input type="checkbox" class="make-switch" data-size="small" data-on-color="warning" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                    <li> Enable SMS Alerts
-                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="success" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                </ul>
-                                <h3 class="list-heading">System Settings</h3>
-                                <ul class="list-items borderless">
-                                    <li> Security Level
-                                        <select class="form-control input-inline input-sm input-small">
-                                            <option value="1">Normal</option>
-                                            <option value="2" selected>Medium</option>
-                                            <option value="e">High</option>
-                                        </select>
-                                    </li>
-                                    <li> Failed Email Attempts
-                                        <input class="form-control input-inline input-sm input-small" value="5" /> </li>
-                                    <li> Secondary SMTP Port
-                                        <input class="form-control input-inline input-sm input-small" value="3560" /> </li>
-                                    <li> Notify On System Error
-                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="danger" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                    <li> Notify On SMTP Error
-                                        <input type="checkbox" class="make-switch" checked data-size="small" data-on-color="warning" data-on-text="ON" data-off-color="default" data-off-text="OFF"> </li>
-                                </ul>
-                                <div class="inner-content">
-                                    <button class="btn btn-success">
-                                        <i class="icon-settings"></i> Save Changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END QUICK SIDEBAR -->
-        </div>
-        <!-- END CONTAINER -->
-        <!-- BEGIN FOOTER -->
-        <div class="page-footer">
-            <div class="page-footer-inner"> 2014 &copy; Metronic by keenthemes.
-                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
-            </div>
-            <div class="scroll-to-top">
-                <i class="icon-arrow-up"></i>
-            </div>
-        </div>
-        <!-- END FOOTER -->
-        <!--[if lt IE 9]>
-<script src="../assets/global/plugins/respond.min.js"></script>
-<script src="../assets/global/plugins/excanvas.min.js"></script> 
-<![endif]-->
-        <!-- BEGIN CORE PLUGINS -->
-        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-        <!-- END CORE PLUGINS -->
-        <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
-        <!-- END THEME GLOBAL SCRIPTS -->
-        <!-- BEGIN THEME LAYOUT SCRIPTS -->
-        <script src="../assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-        <!-- END THEME LAYOUT SCRIPTS -->
-    </body>
+        if (isCollapsibleWhitespace(c) || c === nbsp) {
+          if (acc.pcIsSpace || acc.str === '' || acc.str.length === text.length - 1 || isNewline(text, acc.str.length + 1)) {
+            return {
+              pcIsSpace: false,
+              str: acc.str + nbsp
+            };
+          } else {
+            return {
+              pcIsSpace: true,
+              str: acc.str + ' '
+            };
+          }
+        } else {
+          return {
+            pcIsSpace: isNewLineChar(c),
+            str: acc.str + c
+          };
+        }
+      }, {
+        pcIsSpace: false,
+        str: ''
+      });
+      return result.str;
+    };
 
-</html>tor).childNodes, function (elm) {
+    var doPaste = function (editor, content, internal, pasteAsText) {
+      var args = process(editor, content, internal);
+      if (args.cancelled === false) {
+        insertContent(editor, args.content, pasteAsText);
+      }
+    };
+    var pasteHtml$1 = function (editor, html, internalFlag) {
+      var internal = internalFlag ? internalFlag : isMarked(html);
+      doPaste(editor, unmark(html), internal, false);
+    };
+    var pasteText = function (editor, text) {
+      var encodedText = editor.dom.encode(text).replace(/\r\n/g, '\n');
+      var normalizedText = normalizeWhitespace(encodedText);
+      var html = convert(normalizedText, getForcedRootBlock(editor), getForcedRootBlockAttrs(editor));
+      doPaste(editor, html, false, true);
+    };
+    var getDataTransferItems = function (dataTransfer) {
+      var items = {};
+      var mceInternalUrlPrefix = 'data:text/mce-internal,';
+      if (dataTransfer) {
+        if (dataTransfer.getData) {
+          var legacyText = dataTransfer.getData('Text');
+          if (legacyText && legacyText.length > 0) {
+            if (legacyText.indexOf(mceInternalUrlPrefix) === -1) {
+              items['text/plain'] = legacyText;
+            }
+          }
+        }
+        if (dataTransfer.types) {
+          for (var i = 0; i < dataTransfer.types.length; i++) {
+            var contentType = dataTransfer.types[i];
+            try {
+              items[contentType] = dataTransfer.getData(contentType);
+            } catch (ex) {
+              items[contentType] = '';
+            }
+          }
+        }
+      }
+      return items;
+    };
+    var getClipboardContent = function (editor, clipboardEvent) {
+      var content = getDataTransferItems(clipboardEvent.clipboardData || editor.getDoc().dataTransfer);
+      return isMsEdge() ? global$4.extend(content, { 'text/html': '' }) : content;
+    };
+    var hasContentType = function (clipboardContent, mimeType) {
+      return mimeType in clipboardContent && clipboardContent[mimeType].length > 0;
+    };
+    var hasHtmlOrText = function (content) {
+      return hasContentType(content, 'text/html') || hasContentType(content, 'text/plain');
+    };
+    var parseDataUri = function (uri) {
+      var matches = /data:([^;]+);base64,([a-z0-9\+\/=]+)/i.exec(uri);
+      if (matches) {
+        return {
+          type: matches[1],
+          data: decodeURIComponent(matches[2])
+        };
+      } else {
+        return {
+          type: null,
+          data: null
+        };
+      }
+    };
+    var isValidDataUriImage = function (editor, imgElm) {
+      var filter = getImagesDataImgFilter(editor);
+      return filter ? filter(imgElm) : true;
+    };
+    var extractFilename = function (editor, str) {
+      var m = str.match(/([\s\S]+?)\.(?:jpeg|jpg|png|gif)$/i);
+      return m ? editor.dom.encode(m[1]) : null;
+    };
+    var uniqueId = createIdGenerator('mceclip');
+    var pasteImage = function (editor, imageItem) {
+      var _a = parseDataUri(imageItem.uri), base64 = _a.data, type = _a.type;
+      var id = uniqueId();
+      var name = getImagesReuseFilename(editor) && imageItem.blob.name ? extractFilename(editor, imageItem.blob.name) : id;
+      var img = new domGlobals.Image();
+      img.src = imageItem.uri;
+      if (isValidDataUriImage(editor, img)) {
+        var blobCache = editor.editorUpload.blobCache;
+        var blobInfo = void 0;
+        var existingBlobInfo = blobCache.getByData(base64, type);
+        if (!existingBlobInfo) {
+          blobInfo = blobCache.create(id, imageItem.blob, base64, name);
+          blobCache.add(blobInfo);
+        } else {
+          blobInfo = existingBlobInfo;
+        }
+        pasteHtml$1(editor, '<img src="' + blobInfo.blobUri() + '">', false);
+      } else {
+        pasteHtml$1(editor, '<img src="' + imageItem.uri + '">', false);
+      }
+    };
+    var isClipboardEvent = function (event) {
+      return event.type === 'paste';
+    };
+    var readBlobsAsDataUris = function (items) {
+      return global$3.all(map(items, function (item) {
+        return new global$3(function (resolve) {
+          var blob = item.getAsFile ? item.getAsFile() : item;
+          var reader = new window.FileReader();
+          reader.onload = function () {
+            resolve({
+              blob: blob,
+              uri: reader.result
+            });
+          };
+          reader.readAsDataURL(blob);
+        });
+      }));
+    };
+    var getImagesFromDataTransfer = function (dataTransfer) {
+      var items = dataTransfer.items ? map(from$1(dataTransfer.items), function (item) {
+        return item.getAsFile();
+      }) : [];
+      var files = dataTransfer.files ? from$1(dataTransfer.files) : [];
+      var images = filter(items.length > 0 ? items : files, function (file) {
+        return /^image\/(jpeg|png|gif|bmp)$/.test(file.type);
+      });
+      return images;
+    };
+    var pasteImageData = function (editor, e, rng) {
+      var dataTransfer = isClipboardEvent(e) ? e.clipboardData : e.dataTransfer;
+      if (getPasteDataImages(editor) && dataTransfer) {
+        var images = getImagesFromDataTransfer(dataTransfer);
+        if (images.length > 0) {
+          e.preventDefault();
+          readBlobsAsDataUris(images).then(function (blobResults) {
+            if (rng) {
+              editor.selection.setRng(rng);
+            }
+            each(blobResults, function (result) {
+              pasteImage(editor, result);
+            });
+          });
+          return true;
+        }
+      }
+      return false;
+    };
+    var isBrokenAndroidClipboardEvent = function (e) {
+      var clipboardData = e.clipboardData;
+      return domGlobals.navigator.userAgent.indexOf('Android') !== -1 && clipboardData && clipboardData.items && clipboardData.items.length === 0;
+    };
+    var isKeyboardPasteEvent = function (e) {
+      return global$5.metaKeyPressed(e) && e.keyCode === 86 || e.shiftKey && e.keyCode === 45;
+    };
+    var registerEventHandlers = function (editor, pasteBin, pasteFormat) {
+      var keyboardPasteEvent = value();
+      var keyboardPastePlainTextState;
+      editor.on('keydown', function (e) {
+        function removePasteBinOnKeyUp(e) {
+          if (isKeyboardPasteEvent(e) && !e.isDefaultPrevented()) {
+            pasteBin.remove();
+          }
+        }
+        if (isKeyboardPasteEvent(e) && !e.isDefaultPrevented()) {
+          keyboardPastePlainTextState = e.shiftKey && e.keyCode === 86;
+          if (keyboardPastePlainTextState && global$1.webkit && domGlobals.navigator.userAgent.indexOf('Version/') !== -1) {
+            return;
+          }
+          e.stopImmediatePropagation();
+          keyboardPasteEvent.set(e);
+          window.setTimeout(function () {
+            keyboardPasteEvent.clear();
+          }, 100);
+          if (global$1.ie && keyboardPastePlainTextState) {
+            e.preventDefault();
+            firePaste(editor, true);
+            return;
+          }
+          pasteBin.remove();
+          pasteBin.create();
+          editor.once('keyup', removePasteBinOnKeyUp);
+          editor.once('paste', function () {
+            editor.off('keyup', removePasteBinOnKeyUp);
+          });
+        }
+      });
+      function insertClipboardContent(clipboardContent, isKeyBoardPaste, plainTextMode, internal) {
+        var content;
+        if (hasContentType(clipboardContent, 'text/html')) {
+          content = clipboardContent['text/html'];
+        } else {
+          content = pasteBin.getHtml();
+          internal = internal ? internal : isMarked(content);
+          if (pasteBin.isDefaultContent(content)) {
+            plainTextMode = true;
+          }
+        }
+        content = trimHtml(content);
+        pasteBin.remove();
+        var isPlainTextHtml = internal === false && isPlainText(content);
+        var isImage = isImageUrl(content);
+        if (!content.length || isPlainTextHtml && !isImage) {
+          plainTextMode = true;
+        }
+        if (plainTextMode || isImage) {
+          if (hasContentType(clipboardContent, 'text/plain') && isPlainTextHtml) {
+            content = clipboardContent['text/plain'];
+          } else {
+            content = innerText(content);
+          }
+        }
+        if (pasteBin.isDefaultContent(content)) {
+          if (!isKeyBoardPaste) {
+            editor.windowManager.alert('Please use Ctrl+V/Cmd+V keyboard shortcuts to paste contents.');
+          }
+          return;
+        }
+        if (plainTextMode) {
+          pasteText(editor, content);
+        } else {
+          pasteHtml$1(editor, content, internal);
+        }
+      }
+      var getLastRng = function () {
+        return pasteBin.getLastRng() || editor.selection.getRng();
+      };
+      editor.on('paste', function (e) {
+        var isKeyBoardPaste = keyboardPasteEvent.isSet();
+        var clipboardContent = getClipboardContent(editor, e);
+        var plainTextMode = pasteFormat.get() === 'text' || keyboardPastePlainTextState;
+        var internal = hasContentType(clipboardContent, internalHtmlMime());
+        keyboardPastePlainTextState = false;
+        if (e.isDefaultPrevented() || isBrokenAndroidClipboardEvent(e)) {
+          pasteBin.remove();
+          return;
+        }
+        if (!hasHtmlOrText(clipboardContent) && pasteImageData(editor, e, getLastRng())) {
+          pasteBin.remove();
+          return;
+        }
+        if (!isKeyBoardPaste) {
+          e.preventDefault();
+        }
+        if (global$1.ie && (!isKeyBoardPaste || e.ieFake) && !hasContentType(clipboardContent, 'text/html')) {
+          pasteBin.create();
+          editor.dom.bind(pasteBin.getEl(), 'paste', function (e) {
+            e.stopPropagation();
+          });
+          editor.getDoc().execCommand('Paste', false, null);
+          clipboardContent['text/html'] = pasteBin.getHtml();
+        }
+        if (hasContentType(clipboardContent, 'text/html')) {
+          e.preventDefault();
+          if (!internal) {
+            internal = isMarked(clipboardContent['text/html']);
+          }
+          insertClipboardContent(clipboardContent, isKeyBoardPaste, plainTextMode, internal);
+        } else {
+          global$2.setEditorTimeout(editor, function () {
+            insertClipboardContent(clipboardContent, isKeyBoardPaste, plainTextMode, internal);
+          }, 0);
+        }
+      });
+    };
+    var registerEventsAndFilters = function (editor, pasteBin, pasteFormat) {
+      registerEventHandlers(editor, pasteBin, pasteFormat);
+      var src;
+      editor.parser.addNodeFilter('img', function (nodes, name, args) {
+        var isPasteInsert = function (args) {
+          return args.data && args.data.paste === true;
+        };
+        var remove = function (node) {
+          if (!node.attr('data-mce-object') && src !== global$1.transparentSrc) {
+            node.remove();
+          }
+        };
+        var isWebKitFakeUrl = function (src) {
+          return src.indexOf('webkit-fake-url') === 0;
+        };
+        var isDataUri = function (src) {
+          return src.indexOf('data:') === 0;
+        };
+        if (!getPasteDataImages(editor) && isPasteInsert(args)) {
+          var i = nodes.length;
+          while (i--) {
+            src = nodes[i].attr('src');
+            if (!src) {
+              continue;
+            }
+            if (isWebKitFakeUrl(src)) {
+              remove(nodes[i]);
+            } else if (!getAllowHtmlDataUrls(editor) && isDataUri(src)) {
+              remove(nodes[i]);
+            }
+          }
+        }
+      });
+    };
+
+    var getPasteBinParent = function (editor) {
+      return global$1.ie && editor.inline ? domGlobals.document.body : editor.getBody();
+    };
+    var isExternalPasteBin = function (editor) {
+      return getPasteBinParent(editor) !== editor.getBody();
+    };
+    var delegatePasteEvents = function (editor, pasteBinElm, pasteBinDefaultContent) {
+      if (isExternalPasteBin(editor)) {
+        editor.dom.bind(pasteBinElm, 'paste keyup', function (_e) {
+          if (!isDefault(editor, pasteBinDefaultContent)) {
+            editor.fire('paste');
+          }
+        });
+      }
+    };
+    var create = function (editor, lastRngCell, pasteBinDefaultContent) {
+      var dom = editor.dom, body = editor.getBody();
+      lastRngCell.set(editor.selection.getRng());
+      var pasteBinElm = editor.dom.add(getPasteBinParent(editor), 'div', {
+        'id': 'mcepastebin',
+        'class': 'mce-pastebin',
+        'contentEditable': true,
+        'data-mce-bogus': 'all',
+        'style': 'position: fixed; top: 50%; width: 10px; height: 10px; overflow: hidden; opacity: 0'
+      }, pasteBinDefaultContent);
+      if (global$1.ie || global$1.gecko) {
+        dom.setStyle(pasteBinElm, 'left', dom.getStyle(body, 'direction', true) === 'rtl' ? 65535 : -65535);
+      }
+      dom.bind(pasteBinElm, 'beforedeactivate focusin focusout', function (e) {
+        e.stopPropagation();
+      });
+      delegatePasteEvents(editor, pasteBinElm, pasteBinDefaultContent);
+      pasteBinElm.focus();
+      editor.selection.select(pasteBinElm, true);
+    };
+    var remove = function (editor, lastRngCell) {
+      if (getEl(editor)) {
+        var pasteBinClone = void 0;
+        var lastRng = lastRngCell.get();
+        while (pasteBinClone = editor.dom.get('mcepastebin')) {
+          editor.dom.remove(pasteBinClone);
+          editor.dom.unbind(pasteBinClone);
+        }
+        if (lastRng) {
+          editor.selection.setRng(lastRng);
+        }
+      }
+      lastRngCell.set(null);
+    };
+    var getEl = function (editor) {
+      return editor.dom.get('mcepastebin');
+    };
+    var getHtml = function (editor) {
+      var copyAndRemove = function (toElm, fromElm) {
+        toElm.appendChild(fromElm);
+        editor.dom.remove(fromElm, true);
+      };
+      var pasteBinClones = global$4.grep(getPasteBinParent(editor).childNodes, function (elm) {
         return elm.id === 'mcepastebin';
       });
       var pasteBinElm = pasteBinClones.shift();
